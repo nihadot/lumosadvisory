@@ -6,29 +6,29 @@ import img4 from "../../assets/Img/pexels-photo-5716035.jpg"
 function CFO_Services() {
   return (
     <>
-    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
       <div className="flex">
 
-        <div className="min-h-screen w-60 flex flex-col justify-between">
+        {/* <div className="min-h-screen w-60 flex flex-col justify-between">
             
-        </div>
+        </div> */}
 
-        <div className="w-full">
-        <img className='ml-5 mt-5 w-[200px]' src={LA} alt="" />
+        <div className="w-full pl-5">
+        <img className='mt-5 w-[200px]' src={LA} alt="" />
 
-        <div className="flex ml-5 mt-5 h-[330px]">
+        <div className="flex mt-5 h-[330px]">
           <div className="bg-black w-1.5 h-[50%]">l</div>
-          <img className='w-[1195px]' src={img4} alt="" />
+          <img className='w-[1220px]' src={img4} alt="" />
         </div>
 
-        <div className="flex gap-14 ml-7">
+        <div className="flex gap-14">
           <div className="w-[550px]">
             <h1 className='text-black pt-2 text-xl font-medium'>Outsourced CFO Services</h1>
             <p className='text-teal-600 pt-2 text-sm'>Outsourced CFO Services provides expert financial guidance without the expense of a full-time CFO. Opting for our Outsourced CFO Services positions SME clients for financial stability and strategic growth, equipping them with the expertise and insights to thrive in a competitive market.</p>
             <p className='text-teal-600 pt-2 text-sm'>Here’s an in-depth look at what these services entail, why partnering with us is a superior choice, and our comprehensive process and approach.</p>
 
-            <p className='text-teal-600 pt-2 text-sm'><span className='font-medium'>Financial Planning and Analysis:</span>Tailored financial strategies, forecasting, and budgeting to drive business growth.</p>
-            <p className='text-teal-600 pt-2 text-sm'><span className='font-medium'>Cost Management:</span>Identifying cost-saving opportunities and optimizing spending to enhance profitability.</p>
+            <p className='text-teal-600 pt-2 text-sm'><span className='font-medium'>Financial Planning and Analysis:</span> Tailored financial strategies, forecasting, and budgeting to drive business growth.</p>
+            <p className='text-teal-600 pt-2 text-sm'><span className='font-medium'>Cost Management:</span> Identifying cost-saving opportunities and optimizing spending to enhance profitability.</p>
 
           </div>
 
@@ -48,7 +48,7 @@ function CFO_Services() {
 
 
       </div>
-    </div>
+    {/* </div> */}
     </>
   )
 }

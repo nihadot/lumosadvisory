@@ -2,7 +2,6 @@ import './App.css'
 import About from './Layouts/About/About'
 import Home from './Layouts/Home/Home'
 import WhyChoose from './Layouts/Choosing/WhyChoose'
-import Layout from './Layouts/Layout'
 import Business_Transformation from './Layouts/Services/Business_Transformation'
 import Business_plan from './Layouts/Services/Business_plan'
 import Business_valuations from './Layouts/Services/Business_valuations'
@@ -10,6 +9,8 @@ import Accounting from './Layouts/Services/Accounting'
 import CFO_Services from './Layouts/Services/CFO_Services'
 import Tax from './Layouts/Services/Tax'
 import { BrowserRouter, Route, Router, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
+import Demo from './Layouts/Home/Demo'
+import Layout from './Layouts/Layout/Layout'
 
 function App() {
 
@@ -35,7 +36,11 @@ function App() {
           path: "services",
           element: <Business_Transformation/>
         }
-      ]}  
+      ]}  ,
+      {
+        path:"/demo",
+        element:<Demo/>,
+      }
     ])
 
   return (
