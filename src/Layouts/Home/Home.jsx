@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
     {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
-      <div className="flex">
+      <div id='home' className="flex">
 
         {/* <div className="min-h-screen w-60 flex flex-col justify-between fixed top-0 left-0 z-10">
             

@@ -7,7 +7,7 @@ function CFO_Services() {
   return (
     <>
     {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
-      <div className="flex">
+      <div id='service-one' className="flex">
 
         {/* <div className="min-h-screen w-60 flex flex-col justify-between">
             

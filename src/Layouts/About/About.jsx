@@ -14,7 +14,7 @@ function About() {
   return (
     <>
       {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
-        <div className="flex">
+        <div id='about' className="flex">
           {/* <div className="min-h-screen w-60 flex flex-col justify-between"></div> */}
 
           <div className="flex w-full justify-around">

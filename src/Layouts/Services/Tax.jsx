@@ -7,7 +7,7 @@ function Tax() {
   return (
     <>
     {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
-      <div className="flex h-screen">
+      <div id='service-six' className="flex h-screen">
 
         {/* <div className="min-h-screen w-60 flex flex-col justify-between">
             

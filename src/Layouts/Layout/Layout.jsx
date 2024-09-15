@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "../Home/Home";
-import Leftside from "../Home/Leftside";
 import WhyChoose from "../Choosing/WhyChoose";
 import CFO_Services from "../Services/CFO_Services";
 import Business_Transformation from "../Services/Business_Transformation";
@@ -9,17 +8,18 @@ import Business_plan from "../Services/Business_plan";
 import Business_valuations from "../Services/Business_valuations";
 import Accounting from "../Services/Accounting";
 import Tax from "../Services/Tax";
+import LeftBar from "./LeftBar";
 
 function Layout() {
   return (
     <>
       <div className=" bg w-full h-screen">
-        <Leftside />
+        <LeftBar/>
         <div className="ms-[200px] main h-[100vh] overflow-y-auto me-20">
           <Home/>
           <About />
           <WhyChoose/>
-          {/* <CFO_Services/> */}
+          <CFO_Services/>
           <Business_Transformation/>
           <Business_plan/>
           <Business_valuations/>
