@@ -9,6 +9,7 @@ import Business_valuations from "../Services/Business_valuations";
 import Accounting from "../Services/Accounting";
 import Tax from "../Services/Tax";
 import LeftBar from "./LeftBar";
+import Contact from "../Contact/Contact";
 
 function Layout() {
   return (
@@ -25,6 +26,7 @@ function Layout() {
           <Business_valuations/>
           <Accounting/>
           <Tax/>
+          <Contact/>
         </div>
       </div>
 

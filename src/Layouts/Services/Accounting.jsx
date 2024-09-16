@@ -6,12 +6,7 @@ import img8 from "../../assets/Img/pexels-mikhail-nilov-8297226.jpg"
 function Accounting() {
   return (
     <>
-    {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
       <div id='service-five' className="flex">
-
-        {/* <div className="min-h-screen w-60 flex flex-col justify-between">
-            
-        </div> */}
 
         <div className="flex w-full justify-between">
             <div className="w-[650px] px-5 text-justify">
@@ -38,7 +33,6 @@ function Accounting() {
 
 
       </div>
-    {/* </div> */}
     </>
   )
 }

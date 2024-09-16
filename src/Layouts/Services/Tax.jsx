@@ -6,12 +6,7 @@ import img9 from "../../assets/Img/pexels-photo-8297478.jpg"
 function Tax() {
   return (
     <>
-    {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
       <div id='service-six' className="flex h-screen">
-
-        {/* <div className="min-h-screen w-60 flex flex-col justify-between">
-            
-        </div> */}
 
         <div className="w-full">
         <img className='ml-5 mt-5 w-[200px]' src={LA} alt="" />
@@ -43,7 +38,6 @@ function Tax() {
 
 
       </div>
-    {/* </div> */}
     </>
   )
 }
