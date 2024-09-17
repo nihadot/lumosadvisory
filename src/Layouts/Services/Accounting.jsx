@@ -9,7 +9,7 @@ function Accounting() {
       <div id='service-five' className="flex">
 
         <div className="flex w-full justify-between">
-            <div className="w-[650px] px-5 mac-book:px-12 text-justify">
+            <div className="w-[650px]  1200px:ps-12 pe-3  text-justify">
                 <img className='mt-5 w-[200px]' src={LA} alt="" />
                 <h1 className='mt-10 text-black text-[18px] font-medium'>Accounting and Book-Keeping </h1>
                 <p className='text-teal-600 pt-2 text-[12px]'>Our expert accounting and bookkeeping services are designed to keep our clients’ business running smoothly, allowing you to focus on what you do best – growing your enterprise.</p>
@@ -22,12 +22,12 @@ function Accounting() {
                 <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>Payroll Processing:</span> Provide timely and accurate payroll processing, ensure compliant calculation of wages, arrears and deductions in-line with labor regulations.</p>
             </div>
 
-            <div className="flex">
+            <div className="flex w-[445px]">
                 <div className="flex flex-col">
                     <div className="bg-white w-1.5  h-[50%]"></div>
                     <div className="bg-black w-1.5  h-[50%]"></div>
                 </div>
-                <img className='w-[510px] h-screen' src={img8} alt="Loading..." />
+                <img className='w-[435px] object-cover h-screen' src={img8} alt="Loading..." />
             </div>
         </div>
 

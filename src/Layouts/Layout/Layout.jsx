@@ -11,14 +11,17 @@ import Tax from "../Services/Tax";
 import LeftBar from "./LeftBar";
 import Contact from "../Contact/Contact";
 import MobileMenu from "./MobileMenu"
+import { images } from "../../static";
 
 function Layout() {
   return (
     <>
-      <div className=" bg w-full h-screen m-auto">
+      <div className=" w-full h-screen m-auto relative">
+        <img src={images.layout} alt="" className="  h-screen object-cover absolute z-50 left-0 top-0" />
+        <img src={images.right} alt="" className="  h-screen object-contain fixed z-[100] right-0 top-0" />
         <LeftBar/>
-        <MobileMenu/>
-        <div className="main w-full min-h-screen ps-[175px] pe-[78px] mac-book:pe-[86px]">
+        {/* <MobileMenu/> */}
+        <div className="main w-full min-h-screen ps-[11.597vw] pe-[5.208vw] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
           <Home/>
           <About />

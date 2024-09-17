@@ -61,7 +61,7 @@ function About() {
     <>
       <div id='about' className="relative flex">
         <div className="flex flex-1">
-          <div className="flex-1 p-6 mac-book:p-12">
+          <div className="flex-1 1200px:p-12">
             <img className='mt-1 mac-book:mt-5 w-[200px]' src={LA} alt="" />
             <h1 className='mt-16 text-black text-[18px] font-medium'>About Lumos</h1>
             <h1 className='pt-2 text-teal-600 text-[16px] font-medium'>Who We Are?</h1>

@@ -20,11 +20,11 @@ function Contact() {
   return (
     <>
       <div id="contact" className="flex flex-col h-screen">
-        <div className="flex w-full h-[300px] mac-book:-[330px]  ps-6 mac-book:ps-12">
+        <div className="1200px:ps-12 flex w-full h-[300px] ">
           <div className="max-w-[290px] w-full h-full">
             <img className="ml-5 mt-5 w-full max-w-[200px]" src={LA} alt="" />
 
-            <div className="ps-6 mt-10 text-[12px] text-teal-600">
+            <div className=" mt-10 text-[12px] text-teal-600">
               <h1 className="font-bold mb-2 text-[16px]">Contact</h1>
               <div className="flex gap-3">
                 <div className="w-0.5 bg-teal-600"></div>
@@ -47,11 +47,11 @@ function Contact() {
             <img className="object-cover w-full h-full" src={img9} alt="" />
           </div>
         </div>
-        <div className="ps-12 mac-book:ps-16">
+        <div className="1200px:ps-12">
           <h1 className="text-teal-600 m-2 mac-book:m-4 text-[16px] font-semibold">
             Client Testimonies
           </h1>
-          <div className="flex justify-between pe-14">
+          <div className="flex justify-between pe-8">
             <div className="">
               <div className="max-w-[450px] w-full h-[180px] p-2 bg-teal-600">
                 <div className="w-full text-emerald-600 h-full bg-white rounded p-4 text-[12px]">

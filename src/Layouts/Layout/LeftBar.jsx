@@ -17,7 +17,7 @@ function LeftBar() {
   };
 
   return (
-    <div className='h-screen hidden fixed top-0 left-0 justify-between  md:flex flex-col w-[175px]'>
+    <div className='h-screen hidden fixed top-0 left-0 justify-between z-[100] w-[180px]  md:flex flex-col '>
       <div className="mt-10 pl-6 text-sm mac-book:text-base">
         <a
           href="#home"
@@ -98,6 +98,15 @@ function LeftBar() {
           </div>
         )}
         {/* End of Services section */}
+
+        <a
+              href="#contact"
+              className={`block py-1 ${activeSubLink === 'contact' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleSubLinkClick('contact')}
+            >
+              Contact
+            </a>
+
       </div>
 
       <div className="w-full h-fit flex gap-3 ps-6">

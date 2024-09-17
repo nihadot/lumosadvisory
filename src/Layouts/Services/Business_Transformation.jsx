@@ -36,7 +36,7 @@ function Business_Transformation() {
     <>
       <div id='service-two' className="relative flex">
         <div className="flex w-full justify-between">
-          <div className="w-[650px] px-5 mac-book:px-12 text-justify">
+          <div className="w-[650px] 1200px:ps-12 pe-3 text-justify">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h1 className='mt-10 text-black text-[18px] font-medium'>Business Transformation <br />and Performance Improvement</h1>
             <p className='text-teal-600 pt-2 text-[12px]'>Business Transformation and Performance Improvement services are essential for SMEs striving to remain competitive and achieve sustainable growth. We offer a suite of specialized services designed to optimize various facets of business operations, ensuring efficiency and enhanced performance.</p>
@@ -64,7 +64,7 @@ function Business_Transformation() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-2 px-4 w-[470px] z-50">
+              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-2 px-4 w-[445px] z-50">
                 <h2 className="text-xl font-bold ">Our Process and Approach</h2>
                 <p className='pt-2 text-[10px]'><span className='font-medium'>Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className='pt-2 text-[10px]'><span className='font-medium'>Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
@@ -78,11 +78,11 @@ function Business_Transformation() {
           </div>
 
           <div className="flex">
-            <div className="flex flex-col">
+            <div className="flex flex-col max-w-[439px]">
               <div className="bg-white w-1.5 h-[50%]"></div>
               <div className="bg-black w-1.5 h-[50%]"></div>
             </div>
-            <img className='w-[510px] h-screen object-cover' src={img5} alt="Business Transformation" />
+            <img className='w-[433px] h-screen object-cover' src={img5} alt="Business Transformation" />
           </div>
           
         </div>

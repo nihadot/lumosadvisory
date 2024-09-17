@@ -8,15 +8,15 @@ function Tax() {
     <>
       <div id='service-six' className="flex h-screen">
 
-        <div className="w-full ps-6 mac-book:ps-12">
-        <img className='ml-5 mt-5 w-[200px]' src={LA} alt="" />
+        <div className="w-full 1200px:ps-12">
+        <img className=' mt-5 w-[200px]' src={LA} alt="" />
 
-        <div className="flex ml-5 mt-5 h-[250px] mac-book:h-[340px] ">
+        <div className="flex  mt-5 h-[250px] ">
           <div className="bg-black w-1.5 h-[50%]">l</div>
           <img className='w-full object-cover h-full' src={img9} alt="" />
         </div>
 
-        <div className="flex gap-14 ml-7">
+        <div className="flex gap-3 1400px:gap-14">
           <div className="w-[550px] ">
             <h1 className='text-black pt-2 text-[18px] font-medium'>Tax and Compliance Services</h1>
             <p className='text-teal-600 pt-2 text-[12px]'>Our trusted partners specialize in navigating the intricate landscape of UAE tax laws and regulations, ensuring our clients’ business remains fully compliant while optimizing tax efficiency.</p>

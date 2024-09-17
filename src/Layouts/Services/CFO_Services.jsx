@@ -33,7 +33,7 @@ function CFO_Services() {
     <>
       <div id='service-one' className="flex w-full relative h-screen bg-cover bg-center">
 
-        <div className="w-full ps-6 mac-book:ps-12 ">
+        <div className="w-full 1200px:ps-12 ">
           <img className='mt-3 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
 
           <div className="flex mt-5 h-fit">
@@ -41,7 +41,7 @@ function CFO_Services() {
             <img className='w-full object-cover h-[250px] mac-book:h-[300px] ' src={img4} alt="Outsourced CFO Services" />
           </div>
 
-          <div className="flex w-full gap-14 mt-3 mac-book:mt-5 ">
+          <div className="flex w-full gap-3 1400px:gap-14 mt-3 mac-book:mt-5 ">
             <div className="max-w-[550px] w-full">
               <h1 className='text-black pt-2 text-[18px] font-medium'>Outsourced CFO Services</h1>
               <p className='text-teal-600 pt-2 text-[12px]'>Outsourced CFO Services provides expert financial guidance without the expense of a full-time CFO. Opting for our Outsourced CFO Services positions SME clients for financial stability and strategic growth, equipping them with the expertise and insights to thrive in a competitive market.</p>

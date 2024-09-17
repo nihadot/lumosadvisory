@@ -33,7 +33,7 @@ function Business_valuations() {
     <>
       <div id='service-four' className="relative flex">
         <div className="flex w-full justify-between">
-          <div className="w-[650px] px-6 mac-book:px-12 text-justify ">
+          <div className="w-[650px]  1200px:ps-12 pe-3  text-justify ">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h1 className='mt-10 text-black text-[18px] font-medium'>Business Valuations</h1>
             <p className='text-teal-600 pt-2 text-[12px]'>Business valuations are critical for numerous purposes, including mergers and acquisitions, estate planning, tax planning, and financing. They provide a clear and accurate depiction of your business's market value. For SME clients, having an accurate valuation is essential for strategic growth, competitive edge, and informed decision-making in terms of potential divestment and monetization.</p>
@@ -60,7 +60,7 @@ function Business_valuations() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-1 px-5 w-[470px] z-50">
+              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-1 px-5 w-[445px] z-50">
                 <h2 className="text-xl font-bold mt-2">Our Process and Approach</h2>
                 <p className='pt-2 text-[10px]'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
                 <p className='pt-2 text-[10px]'><span className='font-medium'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
@@ -74,12 +74,12 @@ function Business_valuations() {
             )}
           </div>
 
-          <div className="flex">
+          <div className="flex w-[439px]">
             <div className="flex flex-col">
               <div className="bg-white w-1.5 h-[50%]"></div>
               <div className="bg-black w-1.5 h-[50%]"></div>
             </div>
-            <img className='w-[510px] h-screen' src={img7} alt="Business Valuations" />
+            <img className='w-[433px] h-screen object-cover' src={img7} alt="Business Valuations" />
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import linkedin from "../assets/Img/linkedin-fill-svgrepo-com.svg"
 import readMore from "../assets/Img/triangle-svgrepo-com.svg"
 import menu from "../assets/Img/menu-svgrepo-com.svg"
 import logo from "../assets/Img/Lumos Advisory Logo-01.png"
+import layout from "../assets/Img/Mask group (4).svg";
+import right from "../assets/Img/Mask group (1).svg";
 export default {
     image1,
     facebook_icon,
@@ -13,5 +15,7 @@ export default {
     linkedin,
     readMore,
     menu,
-    logo
+    logo,
+    layout,
+right
 }
