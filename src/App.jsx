@@ -19,29 +19,7 @@ function App() {
     {
       path: "/",
       element: <Layout/>,
-      // children: [
-      //   {
-      //     path: "",
-      //     element: <Home/>
-      //   },
-      //   {
-      //     path: "about",
-      //     element: <About/>
-      //   },
-      //   {
-      //     path: "why-choose-us",
-      //     element: <WhyChoose/>
-      //   },
-      //   {
-      //     path: "services",
-      //     element: <Business_Transformation/>
-      //   }
-      // ]
     }  ,
-      // {
-      //   path:"/demo",
-      //   element:<Demo/>,
-      // }
     ])
 
   return (

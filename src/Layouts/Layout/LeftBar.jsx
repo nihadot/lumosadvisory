@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import social_logos from "../../assets/Img/SM Icons-01.png";
+import { images } from '../../static';
 
 function LeftBar() {
   const [activeSection, setActiveSection] = useState('home');
@@ -16,11 +17,11 @@ function LeftBar() {
   };
 
   return (
-    <div className='h-screen fixed top-0 left-0 justify-between py-8 flex flex-col w-[200px]'>
-      <div className="mt-10 pl-8">
+    <div className='h-screen hidden fixed top-0 left-0 justify-between  md:flex flex-col w-[175px]'>
+      <div className="mt-10 pl-6 text-sm mac-book:text-base">
         <a
           href="#home"
-          className={`block py-2 ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
+          className={`block py-1 ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('home')}
         >
           Home
@@ -28,7 +29,7 @@ function LeftBar() {
 
         <a
           href="#about"
-          className={`block py-2 ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
+          className={`block py-1 ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('about')}
         >
           About
@@ -36,7 +37,7 @@ function LeftBar() {
 
         <a
           href="#why-choose-us"
-          className={`block py-2 ${activeSection === 'why-choose-us' ? 'text-black' : 'text-white'}`}
+          className={`block py-1 ${activeSection === 'why-choose-us' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('why-choose-us')}
         >
           Why Choose Us
@@ -45,13 +46,13 @@ function LeftBar() {
         {/* Services section */}
         <a
           href="#services"
-          className={`block py-2 ${activeSection === 'services' ? 'text-black' : 'text-white'}`}
+          className={`block py-1 ${activeSection === 'services' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('services')}
         >
           Our Services
         </a>
         {activeSection === 'services' && (
-          <div className="pl-4">
+          <div className="pl-2">
             <a
               href="#service-one"
               className={`block py-1 ${activeSubLink === 'service-one' ? 'text-black' : 'text-white'}`}
@@ -99,7 +100,21 @@ function LeftBar() {
         {/* End of Services section */}
       </div>
 
-      <img className='w-20 h-fit mb-10 m-auto' src={social_logos} alt="Social Media Icons" />
+      <div className="w-full h-fit flex gap-3 ps-6">
+        <a href=''>
+         <img className='w-6 h-6 mb-10 m-auto' src={images.facebook_icon} alt="Social Media Icons" />
+        </a>
+
+        <a href=''>
+         <img className='w-6 h-6 mb-10 m-auto' src={images.instagram} alt="Social Media Icons" />
+        </a>
+
+
+        <a href=''>
+         <img className='w-6 h-6 mb-10 m-auto' src={images.linkedin} alt="Social Media Icons" />
+        </a>
+
+      </div>
     </div>
   );
 }

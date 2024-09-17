@@ -10,13 +10,16 @@ import Accounting from "../Services/Accounting";
 import Tax from "../Services/Tax";
 import LeftBar from "./LeftBar";
 import Contact from "../Contact/Contact";
+import MobileMenu from "./MobileMenu"
 
 function Layout() {
   return (
     <>
-      <div className=" bg w-full h-screen">
+      <div className=" bg w-full h-screen max-w-[1440px] m-auto">
         <LeftBar/>
-        <div className="ms-[200px] main h-[100vh] overflow-y-auto me-20">
+        <MobileMenu/>
+        <div className="main w-full min-h-screen ps-[175px] pe-[78px] mac-book:pe-[86px]">
+          <div className="w-full h-screen main-inner-content overflow-y-scroll">
           <Home/>
           <About />
           <WhyChoose/>
@@ -27,7 +30,13 @@ function Layout() {
           <Accounting/>
           <Tax/>
           <Contact/>
+
+
+      
+          </div>
         </div>
+        {/* <div className="ms-[174px] layout  h-[100vh] overflow-y-auto">
+        </div> */}
       </div>
 
       {/* <div className="relative h-screen bg-cover bg-center top-0 left-0" style={{ backgroundImage: `url(${backgroundImage})` }}>
