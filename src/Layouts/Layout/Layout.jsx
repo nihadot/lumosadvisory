@@ -15,7 +15,7 @@ import MobileMenu from "./MobileMenu"
 function Layout() {
   return (
     <>
-      <div className=" bg w-full h-screen max-w-[1440px] m-auto">
+      <div className=" bg w-full h-screen m-auto">
         <LeftBar/>
         <MobileMenu/>
         <div className="main w-full min-h-screen ps-[175px] pe-[78px] mac-book:pe-[86px]">
