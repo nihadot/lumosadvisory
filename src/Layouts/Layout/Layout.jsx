@@ -21,7 +21,7 @@ function Layout() {
         <img src={images.right} alt="" className="  h-screen object-contain fixed z-[100] right-0 top-0" />
         <LeftBar/>
         {/* <MobileMenu/> */}
-        <div className="main w-full min-h-screen ps-[11.597vw] pe-[5.208vw] absolute z-50">
+        <div className="main w-full min-h-screen ps-[11.597vw] pe-[4.514vw] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
           <Home/>
           <About />

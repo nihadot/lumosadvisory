@@ -62,25 +62,24 @@ function About() {
       <div id='about' className="relative flex">
         <div className="flex flex-1">
           <div className="flex-1 1200px:p-12">
-            <img className='mt-1 mac-book:mt-5 w-[200px]' src={LA} alt="" />
-            <h1 className='mt-16 text-black text-[18px] font-medium'>About Lumos</h1>
-            <h1 className='pt-2 text-teal-600 text-[16px] font-medium'>Who We Are?</h1>
-            <p className='text-teal-600 pt-2 text-[12px]'>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>
+            <img className='mt-0 w-[200px]' src={LA} alt="" />
+            <h2 >About Lumos</h2>
+            <h3>Who We Are?</h3>
+            <p>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>
 
-            <h1 className='pt-2 text-teal-600 text-[16px] font-medium'>Our Vision</h1>
-            <p className='text-teal-600 pt-2 text-[12px]'>{ourVision}</p>
+            <h3>Our Vision</h3>
+            <p>{ourVision}</p>
 
-            <h1 className='pt-2 text-teal-600 text-[16px] font-medium'>Our Mission</h1>
-            <p className='text-teal-600 pt-2 text-[12px]'>{ourMission}</p>
+            <h3>Our Mission</h3>
+            <p>{ourMission}</p>
 
             <div className="flex gap-5">
-              <h1 className='pt-2 text-teal-600 text-[16px] font-medium'>Why focus on SMEs?</h1>
-              <div className="flex items-center justify-center mt-2">
+              <h3>Why focus on SMEs?</h3>
+              <div className="flex items-center justify-center mt-0">
               
               <img className='w-5 h-5' src={images.readMore} alt="" />
 
               <button 
-                className="text-teal-600 mt-0 text-[12px] ms-2 text-center"
                 onClick={togglePopup}
                 >
                 Click to know more
@@ -91,13 +90,13 @@ function About() {
 
             <div className="mt-3">
               <p htmlFor="" className='text-[10px] mb-3 text-teal-600'>references:</p>
-              <p className='mb-3 text-[10px] text-teal-600 max-w-[350px] w-full'>
+              <h6 className='mb-3 text-[10px] text-teal-600 max-w-[350px] w-full'>
               [1] SMEs contribute 60% of the UAE's GDP, creating more job opportunities for Finance Professionals. (thefinancestory.com)
-              </p>
+              </h6>
 
-              <p className='text-[10px] text-teal-600 max-w-[350px] w-full'>
+              <h6 className='text-[10px] text-teal-600 max-w-[350px] w-full'>
               [2] Small and Medium Enterprises | The Official Portal of the UAE Government
-              </p>
+              </h6>
             
 
 
@@ -105,16 +104,16 @@ function About() {
             </div>
 
             {isPopupVisible && (
-              <div  ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-1 px-5 max-w-[445px] w-full z-50">
-                <h2 className="text-xl font-bold mb-0">Why focus on SMEs?</h2>
-                <p className='pt-2 text-[10px]'><span className='font-medium'>Innovation:</span> SMEs often pioneer new products and services, pushing industries forward.</p>
-                <p className='pt-2 text-[10px]'><span className='font-medium'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
-                <p className='pt-2 text-[10px]'><span className='font-medium'>Community Impact:</span> SMEs usually operate locally, nurturing community and social cohesion.</p>
-                <p className='pt-2 text-[10px]'><span className='font-medium'>Economic Diversity:</span> They offer varied goods and services, balancing economic scales and reducing dependency on large corporations.</p>
-                <p className='pt-2 text-[10px]'><span className='font-medium'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
+              <div  ref={popupRef} className="absolute top-28 right-0 bg-[#5F8F93] text-white bg-opacity-50 py-1 px-5 max-w-[445px] w-full z-50">
+                <h3 className="text-white">Why focus on SMEs?</h3>
+                <p className='text-white'><span className='text-white'>Innovation:</span> SMEs often pioneer new products and services, pushing industries forward.</p>
+                <p className='text-white'><span className='text-white'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
+                <p className='text-white'><span className='text-white'>Community Impact:</span> SMEs usually operate locally, nurturing community and social cohesion.</p>
+                <p className='text-white'><span className='text-white'>Economic Diversity:</span> They offer varied goods and services, balancing economic scales and reducing dependency on large corporations.</p>
+                <p className='text-white'><span className='text-white'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
 
-                <p className='pt-2 text-[10px]'>According to the Ministry of Economy of UAE the SME sector accounts for more than 94% of all companies in the country[1]. They employ more than 86% of the private sector’s workforce and made up over 60% of the non-oil GDP[1][2].</p>
-                <p className='pt-2 text-[10px] mb-2'>We seek to serve this underserved yet massive segment with quality financial services which bring value to their business and empower stakeholders to achieve their targets.</p>
+                <p className='text-white'>According to the Ministry of Economy of UAE the SME sector accounts for more than 94% of all companies in the country[1]. They employ more than 86% of the private sector’s workforce and made up over 60% of the non-oil GDP[1][2].</p>
+                <p className='text-white mb-2'>We seek to serve this underserved yet massive segment with quality financial services which bring value to their business and empower stakeholders to achieve their targets.</p>
 
              
               </div>

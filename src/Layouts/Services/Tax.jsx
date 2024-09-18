@@ -18,19 +18,19 @@ function Tax() {
 
         <div className="flex gap-3 1400px:gap-14">
           <div className="w-[550px] ">
-            <h1 className='text-black pt-2 text-[18px] font-medium'>Tax and Compliance Services</h1>
-            <p className='text-teal-600 pt-2 text-[12px]'>Our trusted partners specialize in navigating the intricate landscape of UAE tax laws and regulations, ensuring our clients’ business remains fully compliant while optimizing tax efficiency.</p>
-            <p className='text-teal-600 pt-2 text-[12px]'>Our comprehensive range of tax and compliance services includes:</p>
+            <h2 >Tax and Compliance Services</h2>
+            <p>Our trusted partners specialize in navigating the intricate landscape of UAE tax laws and regulations, ensuring our clients’ business remains fully compliant while optimizing tax efficiency.</p>
+            <p>Our comprehensive range of tax and compliance services includes:</p>
 
-            <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>VAT Services:</span> Registration for VAT (Value Added Tax) with the Federal Tax Authority (FTA), preparation and filing of VAT returns in compliance with FTA guidelines, VAT advisory services to maximize input tax recovery and minimize liabilities.</p>
-            <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>Corporate Tax Services:</span> Preparation and filing of corporate income tax returns, tax planning strategies to optimize your tax position, compliance with local tax laws and regulations.</p>
+            <p><span>VAT Services:</span> Registration for VAT (Value Added Tax) with the Federal Tax Authority (FTA), preparation and filing of VAT returns in compliance with FTA guidelines, VAT advisory services to maximize input tax recovery and minimize liabilities.</p>
+            <p><span>Corporate Tax Services:</span> Preparation and filing of corporate income tax returns, tax planning strategies to optimize your tax position, compliance with local tax laws and regulations.</p>
 
           </div>
 
           <div className="w-[550px] pt-2">
-            <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>Customs and Excise Tax:</span> Guidance on customs duties and excise tax compliance, import and export tax advisory services, assistance with customs declarations and documentation.</p>
-            <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>Tax Advisory and Consulting:</span> Strategic tax advice tailored to your business goals, analysis of tax implications for business transactions and investments, and assistance in tax audits and disputes with tax authorities.</p>
-            <p className='text-teal-600 pt-2 text-[12px]'><span className='font-medium'>Compliance Support:</span> Ensuring adherence to all regulatory requirements in the UAE, assistance with regulatory filings and reporting obligations, and keeping your business updated with changes in tax and compliance regulations</p>
+            <p><span>Customs and Excise Tax:</span> Guidance on customs duties and excise tax compliance, import and export tax advisory services, assistance with customs declarations and documentation.</p>
+            <p><span>Tax Advisory and Consulting:</span> Strategic tax advice tailored to your business goals, analysis of tax implications for business transactions and investments, and assistance in tax audits and disputes with tax authorities.</p>
+            <p><span>Compliance Support:</span> Ensuring adherence to all regulatory requirements in the UAE, assistance with regulatory filings and reporting obligations, and keeping your business updated with changes in tax and compliance regulations</p>
           </div>
         </div>
 
