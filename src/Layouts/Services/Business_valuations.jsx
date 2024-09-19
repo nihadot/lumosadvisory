@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img7 from "../../assets/Img/pexels-photo-7698819.jpg";
+import img7 from "../../assets/Img/pexels-photo-7698819 1.svg";
 import { images } from '../../static';
 
 function Business_valuations() {
@@ -31,9 +31,9 @@ function Business_valuations() {
 
   return (
     <>
-      <div id='service-four' className="relative flex">
+      <div id='service-four' className="relative max-h-[850px] w-full h-full  flex">
         <div className="flex w-full justify-between">
-          <div className="w-[650px]  1200px:ps-12 pe-3  text-justify ">
+          <div className="w-[650px]  ps-4 pe-2   text-justify ">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h2 className='mt-10'>Business Valuations</h2>
             <p>Business valuations are critical for numerous purposes, including mergers and acquisitions, estate planning, tax planning, and financing. They provide a clear and accurate depiction of your business's market value. For SME clients, having an accurate valuation is essential for strategic growth, competitive edge, and informed decision-making in terms of potential divestment and monetization.</p>
@@ -59,7 +59,7 @@ function Business_valuations() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-1 px-5 w-[445px] z-50">
+              <div ref={popupRef} className="absolute top-44 right-0 bg-[#5F8F93] text-white bg-opacity-50 py-1 px-5 w-[445px] z-50">
                 <h3 className='text-white'>Our Process and Approach</h3>
                 <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
                 <p className='text-white'><span className='text-white'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
@@ -73,13 +73,12 @@ function Business_valuations() {
             )}
           </div>
 
-          <div className="flex w-[439px]">
-            <div className="flex flex-col">
-              <div className="bg-white w-1.5 h-[50%]"></div>
-              <div className="bg-black w-1.5 h-[50%]"></div>
-            </div>
-            <img className='w-[433px] h-screen object-cover' src={img7} alt="Business Valuations" />
+          <div className="flex relative w-[439px] max-h-[690px] h-full">
+              <div className="bg-black absolute bottom-0 w-1.5 h-[50%]"></div>
+            <img className=' max-w-[433px] ms-[6px] object-cover max-h-[690px] h-screen' src={img7} alt="Business Plan" />
           </div>
+
+          
         </div>
       </div>
     </>

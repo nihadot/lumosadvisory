@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png";
 import social_logos from "../../assets/Img/SM Icons-01.png";
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img5 from "../../assets/Img/pexels-photo-3756681.jpg";
+import img5 from "../../assets/Img/pexels-photo-3756681 1.svg";
 import { GoTriangleLeft } from "react-icons/go";
 import { images } from '../../static';
 
@@ -34,9 +34,9 @@ function Business_Transformation() {
 
   return (
     <>
-      <div id='service-two' className="relative flex">
-        <div className="flex w-full justify-between">
-          <div className="w-[650px] 1200px:ps-12 pe-3 text-justify">
+      <div id='service-two' className="relative max-h-[850px] w-full h-full flex">
+        <div className="flex w-full">
+          <div className="flex-1  ps-4 pe-2">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h2  className='mt-10'>Business Transformation <br />and Performance Improvement</h2>
             <p>Business Transformation and Performance Improvement services are essential for SMEs striving to remain competitive and achieve sustainable growth. We offer a suite of specialized services designed to optimize various facets of business operations, ensuring efficiency and enhanced performance.</p>
@@ -63,7 +63,7 @@ function Business_Transformation() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-44 right-0 bg-teal-600 text-white bg-opacity-50 py-2 px-4 w-[445px] z-50">
+              <div ref={popupRef} className="absolute top-44 right-0 bg-[#5F8F93] text-white bg-opacity-50 py-2 px-4 w-[445px] z-50">
                 <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white"><span className="text-white">Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className="text-white"><span className="text-white">Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
@@ -76,12 +76,9 @@ function Business_Transformation() {
             )}
           </div>
 
-          <div className="flex">
-            <div className="flex flex-col max-w-[439px]">
-              <div className="bg-white w-1.5 h-[50%]"></div>
-              <div className="bg-black w-1.5 h-[50%]"></div>
-            </div>
-            <img className='w-[433px] h-screen object-cover' src={img5} alt="Business Transformation" />
+          <div className="flex w-[439px] relative h-full max-h-[690px]">
+                <div className="bg-black w-1.5 h-[50%] bottom-0 absolute"></div>
+                <img className=' max-w-[433px] ms-[6px] object-cover max-h-[690px] h-screen' src={img5} alt="Loading..." />
           </div>
           
         </div>

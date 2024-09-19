@@ -101,8 +101,8 @@ function LeftBar() {
 
         <a
               href="#contact"
-              className={`block py-1 ${activeSubLink === 'contact' ? 'text-black' : 'text-white'}`}
-              onClick={() => handleSubLinkClick('contact')}
+              className={`block py-1 ${activeSection === 'contact' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleClick('contact')}
             >
               Contact
             </a>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img2 from "../../assets/Img/pexels-photo-7108191.jpg";
+import img2 from "../../assets/Img/pexels-photo-7108191 1.svg";
 import { images } from '../../static';
 
 
@@ -59,10 +59,10 @@ function About() {
 
   return (
     <>
-      <div id='about' className="relative flex">
+      <div id='about' className="relative max-h-[850px] w-full h-full flex">
         <div className="flex flex-1">
-          <div className="flex-1 1200px:p-12">
-            <img className='mt-0 w-[200px]' src={LA} alt="" />
+          <div className="flex-1  ps-4 pe-2 ">
+            <img className='mt-4 w-[200px]' src={LA} alt="" />
             <h2 >About Lumos</h2>
             <h3>Who We Are?</h3>
             <p>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>
@@ -122,7 +122,7 @@ function About() {
 
           <div className="flex w-[439px]">
             <div className="bg-black w-1.5 h-[50%]"></div>
-            <img className=' h-screen  w-[433px]' src={img2} alt="Loading..." />
+            <img className=' h-screen  max-w-[433px] object-cover max-h-[690px]' src={img2} alt="Loading..." />
           </div>
         </div>
       </div>

@@ -2,17 +2,17 @@ import React from 'react'
 import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png"
 import social_logos from "../../assets/Img/SM Icons-01.png"
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img3 from "../../assets/Img/pexels-photo-6802052.jpg"
+import img3 from "../../assets/Img/pexels-photo-6802052 2.svg"
 
 
 function WhyChoose() {
   return (
     <>
-      <div id='why-choose-us' className="flex">
+      <div id='why-choose-us' className="flex max-h-[850px] w-full h-full">
 
 
         <div className="flex flex-1">
-            <div className="flex-1 1200px:p-12">
+            <div className="flex-1  ps-4 pe-2 ">
                 <img className='mt-1 mac-book:mt-5  w-[200px]' src={LA} alt="" />
                 <h2 >Why Choose Us</h2>
                 <h3 >What We Offer</h3>
@@ -28,7 +28,7 @@ function WhyChoose() {
 
             <div className="flex w-[439px]">
                 <div className="bg-black w-1.5 h-[50%]"></div>
-                <img className=' w-[433px] h-screen' src={img3} alt="Loading..." />
+                <img className=' max-w-[433px] object-cover max-h-[690px] h-screen' src={img3} alt="Loading..." />
             </div>
         </div>
 

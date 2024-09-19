@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png";
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img9 from "../../assets/Img/pexels-photo-8297478.jpg";
+import img9 from "../../assets/Img/pexels-photo-257923 1.svg";
 
 function Contact() {
 
@@ -20,14 +20,14 @@ function Contact() {
   return (
     <>
       <div id="contact" className="flex flex-col h-screen">
-        <div className="1200px:ps-12 flex w-full h-[300px] ">
+        <div className=" ps-12 flex w-full h-[300px] ">
           <div className="max-w-[290px] w-full h-full">
             <img className="ml-5 mt-5 w-full max-w-[200px]" src={LA} alt="" />
 
             <div className=" mt-10 text-[12px] text-teal-600">
               <h2 >Contact</h2>
               <div className="flex gap-3">
-                <div className="w-0.5 bg-teal-600"></div>
+                <div className="w-0.5 bg-[#5F8F93]"></div>
                 <div className="">
                   <p>
                   +971 52 650 4080 [ ] <br />
@@ -49,7 +49,7 @@ function Contact() {
             <img className="object-cover w-full h-full" src={img9} alt="" />
           </div>
         </div>
-        <div className="1200px:ps-12">
+        <div className=" ps-12">
           <h3 className="mt-10">
             Client Testimonies
           </h3>

@@ -6,9 +6,9 @@ import img1 from "../../assets/Img/pexels-cottonbro-4065895.jpg"
 function Home() {
   return (
     <>
-      <div id='home' className="flex  w-full ">
+      <div id='home' className="flex  w-full h-full max-h-[850px]  ">
         <div className="flex flex-1">
-            <div className="flex-1">
+            <div className="flex-1  ps-4 pe-2 ">
                 <img className='max-w-[400px] w-full mx-auto p-16' src={LA} alt="" />
                 <div className="max-w-[500px] w-full p-5 mx-auto text-justify">
                 <h1>Welcome to Lumos Advisory</h1>
@@ -20,7 +20,7 @@ function Home() {
 
             <div className="flex max-w-[439px] w-full">
                 <div className="bg-black w-1.5 h-[50%]"></div>
-                <img className='h-screen w-full max-w-[433px]' src={img1} alt="Loading..." />
+                <img className='h-screen w-full max-w-[433px] object-cover max-h-[690px]' src={img1} alt="Loading..." />
             </div>
         </div>
       </div>

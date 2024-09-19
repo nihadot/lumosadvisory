@@ -1,15 +1,15 @@
 import React from 'react'
 import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png"
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img8 from "../../assets/Img/pexels-mikhail-nilov-8297226.jpg"
+import img8 from "../../assets/Img/pexels-mikhail-nilov-8297226 1.svg"
 
 function Accounting() {
   return (
     <>
-      <div id='service-five' className="flex">
+      <div id='service-five' className="flex max-h-[850px] w-full h-full">
 
         <div className="flex w-full justify-between">
-            <div className="w-[650px]  1200px:ps-12 pe-3  text-justify">
+            <div className="w-[650px] ps-4 pe-2  text-justify">
                 <img className='mt-5 w-[200px]' src={LA} alt="" />
                 <h2 className='mt-16'>Accounting and Book-Keeping </h2>
                 <p>Our expert accounting and bookkeeping services are designed to keep our clients’ business running smoothly, allowing you to focus on what you do best – growing your enterprise.</p>
@@ -22,13 +22,10 @@ function Accounting() {
                 <p><span>Payroll Processing:</span> Provide timely and accurate payroll processing, ensure compliant calculation of wages, arrears and deductions in-line with labor regulations.</p>
             </div>
 
-            <div className="flex w-[445px]">
-                <div className="flex flex-col">
-                    <div className="bg-white w-1.5  h-[50%]"></div>
-                    <div className="bg-black w-1.5  h-[50%]"></div>
-                </div>
-                <img className='w-[435px] object-cover h-screen' src={img8} alt="Loading..." />
-            </div>
+            <div className="flex relative w-[439px] max-h-[690px] h-full">
+              <div className="bg-black absolute bottom-0 w-1.5 h-[50%]"></div>
+            <img className=' max-w-[433px] ms-[6px] object-cover max-h-[690px] h-screen' src={img8} alt="Business Plan" />
+          </div>
         </div>
 
 
