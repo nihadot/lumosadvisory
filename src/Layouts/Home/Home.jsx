@@ -6,7 +6,7 @@ import img1 from "../../assets/Img/pexels-cottonbro-4065895.jpg"
 function Home() {
   return (
     <>
-      <div id='home' className="flex  w-full h-full max-h-[850px]  ">
+      <div id='home' className="flex  w-full h-full max-h-[700px]  ">
         <div className="flex flex-1">
             <div className="flex-1  ps-12 pe-2 ">
                 <img className='max-w-[400px] w-full mx-auto p-16' src={LA} alt="" />

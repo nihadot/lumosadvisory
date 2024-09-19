@@ -8,7 +8,7 @@ import img3 from "../../assets/Img/pexels-photo-6802052 2.svg"
 function WhyChoose() {
   return (
     <>
-      <div id='why-choose-us' className="flex max-h-[850px] w-full h-full">
+      <div id='why-choose-us' className="flex max-h-[700px] w-full h-full">
 
 
         <div className="flex flex-1">

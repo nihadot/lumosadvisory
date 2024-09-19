@@ -12,7 +12,13 @@ function Business_valuations() {
   };
 
   const handleClickOutside = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
+    // If click is outside popup and not on toggle button, close the popup
+    if (
+      popupRef.current &&
+      !popupRef.current.contains(event.target) &&
+      toggleButtonRef.current &&
+      !toggleButtonRef.current.contains(event.target)
+    ) {
       setPopupVisible(false);
     }
   };
@@ -31,7 +37,7 @@ function Business_valuations() {
 
   return (
     <>
-      <div id='service-four' className="relative max-h-[850px] w-full h-full  flex">
+      <div id='service-four' className="relative max-h-[700px] w-full h-full  flex">
         <div className="flex w-full justify-between">
           <div className="w-[650px]  ps-12 pe-2   text-justify ">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />

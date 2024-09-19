@@ -59,7 +59,7 @@ function About() {
 
   return (
     <>
-      <div id='about' className="relative max-h-[850px] w-full h-full flex">
+      <div id='about' className="relative max-h-[700px] w-full h-full flex">
         <div className="flex flex-1">
           <div className="flex-1  ps-12 pe-2 ">
             <img className='mt-4 w-[200px]' src={LA} alt="" />

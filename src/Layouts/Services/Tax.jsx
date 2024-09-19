@@ -6,7 +6,7 @@ import img9 from "../../assets/Img/pexels-photo-8297478 1.svg"
 function Tax() {
   return (
     <>
-      <div id='service-six' className="flex w-full h-full relative max-h-[850px] min-h-[120vh] bg-cover bg-center">
+      <div id='service-six' className="flex w-full h-full relative max-h-[1000px] min-h-[850px]  bg-cover bg-center">
 
         <div className="w-full   ps-12">
         <img className=' mt-3 w-[200px]' src={LA} alt="" />

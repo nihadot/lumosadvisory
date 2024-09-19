@@ -8,11 +8,19 @@ function CFO_Services() {
   const popupRef = useRef(null);
 
   const togglePopup = () => {
-    setPopupVisible(!isPopupVisible);
+    setPopupVisible(prev => !prev);
+
   };
 
+  console.log(isPopupVisible,'isPopupVisible')
   const handleClickOutside = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
+    // If click is outside popup and not on toggle button, close the popup
+    if (
+      popupRef.current &&
+      !popupRef.current.contains(event.target) &&
+      toggleButtonRef.current &&
+      !toggleButtonRef.current.contains(event.target)
+    ) {
       setPopupVisible(false);
     }
   };
@@ -31,7 +39,7 @@ function CFO_Services() {
 
   return (
     <>
-      <div id='service-one' className="flex w-full h-full relative max-h-[850px] min-h-[120vh] bg-cover bg-center">
+      <div id='service-one' className="flex w-full h-full relative max-h-[1000px] min-h-[850px] bg-cover bg-center">
 
         <div className="w-full  ps-12 ">
           <img className='mt-3 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
