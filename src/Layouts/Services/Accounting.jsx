@@ -9,7 +9,7 @@ function Accounting() {
       <div id='service-five' className="flex max-h-[850px] w-full h-full">
 
         <div className="flex w-full justify-between">
-            <div className="w-[650px] ps-4 pe-2  text-justify">
+            <div className="w-[650px] ps-12 pe-2  text-justify">
                 <img className='mt-5 w-[200px]' src={LA} alt="" />
                 <h2 className='mt-16'>Accounting and Book-Keeping </h2>
                 <p>Our expert accounting and bookkeeping services are designed to keep our clients’ business running smoothly, allowing you to focus on what you do best – growing your enterprise.</p>

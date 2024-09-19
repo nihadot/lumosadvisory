@@ -36,7 +36,7 @@ function Business_Transformation() {
     <>
       <div id='service-two' className="relative max-h-[850px] w-full h-full flex">
         <div className="flex w-full">
-          <div className="flex-1  ps-4 pe-2">
+          <div className="flex-1  ps-12 pe-2">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h2  className='mt-10'>Business Transformation <br />and Performance Improvement</h2>
             <p>Business Transformation and Performance Improvement services are essential for SMEs striving to remain competitive and achieve sustainable growth. We offer a suite of specialized services designed to optimize various facets of business operations, ensuring efficiency and enhanced performance.</p>

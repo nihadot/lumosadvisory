@@ -78,8 +78,8 @@ function Layout() {
   return (
     <>
       <div className=" w-full h-screen m-auto relative">
-        <img src={images.layout} alt="" className=" block w-[565px] h-screen object-none m-0 p-0 absolute z-50 left-0 top-0" />
-        <img src={images.right} alt="" className="block  h-screen object-none fixed z-[100] right-0 top-0 w-[74px]" />
+        <img src={images.layout} alt="" className=" block w-[565px] h-screen object-cover m-0 p-0 absolute z-50 left-0 top-0" />
+        <img src={images.right} alt="" className="block  h-screen object-cover fixed z-[100] right-0 top-0 w-[74px]" />
         <LeftBar/>
         {/* <MobileMenu/> */}
         <div className="main w-full min-h-screen ps-[167px] pe-[72px] absolute z-50">

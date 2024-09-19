@@ -12,7 +12,7 @@ function WhyChoose() {
 
 
         <div className="flex flex-1">
-            <div className="flex-1  ps-4 pe-2 ">
+            <div className="flex-1  ps-12 pe-2 ">
                 <img className='mt-1 mac-book:mt-5  w-[200px]' src={LA} alt="" />
                 <h2 >Why Choose Us</h2>
                 <h3 >What We Offer</h3>

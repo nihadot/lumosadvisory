@@ -33,7 +33,7 @@ function Business_plan() {
     <>
       <div id='service-three' className="max-h-[850px] w-full h-full relative flex">
         <div className="flex flex-1">
-          <div className="flex-1  ps-4 pe-2">
+          <div className="flex-1  ps-12 pe-2">
             <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
             <h2 className='mt-10' >Feasibility Studies and Business Plan</h2>
             <p>Conducting thorough feasibility studies for existing and new services and products and preparing a detailed and robust business plan are critical steps for the success of any SME business. Our services cater specifically to these needs by offering comprehensive planning, analysis, and strategic insights.</p>
