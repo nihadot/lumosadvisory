@@ -5,10 +5,10 @@ import { images } from '../../static';
 
 
 const ourVisionContentOne = 'We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.'
-const ourVisionContentTwo = 'We envision a world where SME owners and stakeholders are well equipped to achieve their financial goals. SMEs are important to any economy as they drive economic growth through innovation, employment, and community development. We will be your trusted advisor and be by your side in every step of your journey.'
+// const ourVisionContentTwo = 'We envision a world where SME owners and stakeholders are well equipped to achieve their financial goals. SMEs are important to any economy as they drive economic growth through innovation, employment, and community development. We will be your trusted advisor and be by your side in every step of your journey.'
 
 const ourMissionContentOne = 'We strive to help SME clients succeed in their business journey by providing them with data-driven tools for practical decision-making and designing custom and cost-effective strategies for sustainable growth at an affordable price.';
-const ourMissionContentTwo = 'Our mission is to guide SME clients through their business journey, ensuring growth and adding significant value every step of the way. We help our clients unlock the right value potential by helping formulate sustainable growth strategies, implementing the right controls as required for the business, and providing customized solutions tailored to the unique needs of each business.';
+// const ourMissionContentTwo = 'Our mission is to guide SME clients through their business journey, ensuring growth and adding significant value every step of the way. We help our clients unlock the right value potential by helping formulate sustainable growth strategies, implementing the right controls as required for the business, and providing customized solutions tailored to the unique needs of each business.';
 function About() {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const popupRef = useRef(null);
@@ -18,9 +18,9 @@ function About() {
 
   const togglePopup = () => {
     // isPopupVisible ? 
-    setOurVision(ourVisionContentTwo)
+    // setOurVision(ourVisionContentTwo)
     // : 
-    setOurMission(ourMissionContentTwo)
+    // setOurMission(ourMissionContentTwo)
     // setOurVision(ourVisionContentOne)
 
 
