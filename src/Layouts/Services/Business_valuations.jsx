@@ -40,7 +40,10 @@ function Business_valuations() {
       <div id='service-four' className="relative max-h-[77.778vh] w-full h-full  flex">
         <div className="flex w-full justify-between">
           <div className="w-[650px]  ps-[5.333vh] pe-[0.889vh]   text-justify ">
-            <img className='mt-[0.444vh] mac-book:mt-[2.222vh]  w-[22.222vh]' src={LA} alt="Lumos Advisory Logo" />
+          <div className="sticky h-20 flex items-center top-0 left-0">
+            
+            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+          </div>
             <h2 className='mt-[0.111vh]0'>Business Valuations</h2>
             <p>Business valuations are critical for numerous purposes, including mergers and acquisitions, estate planning, tax planning, and financing. They provide a clear and accurate depiction of your business's market value. For SME clients, having an accurate valuation is essential for strategic growth, competitive edge, and informed decision-making in terms of potential divestment and monetization.</p>
 

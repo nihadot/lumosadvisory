@@ -13,7 +13,11 @@ function WhyChoose() {
 
         <div className="flex flex-1">
             <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
+              <div className="sticky h-20 flex items-center top-0 left-0">
+
                 <img className='mt-[4.222vh]  w-[22.222vh]' src={LA} alt="" />
+              </div>
+
                 <h2 >Why Choose Us</h2>
                 <h3 >What We Offer</h3>
                 <p><span>Comprehensive Support:</span> We provide end-to-end assistance to SMEs, from ideation to execution, making sure their business vision is realized effectively.</p>

@@ -63,8 +63,10 @@ function About() {
         <div className="flex flex-1">
           <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
             <div className=" max-w-[66.667vh] ">
-
-            <img className='mt-[1.778vh] w-[22.222vh]' src={LA} alt="" />
+          <div className="sticky h-20 flex items-center top-0 left-0">
+            
+            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+          </div>
             <h2 >About Lumos</h2>
             <h3>Who We Are?</h3>
             <p>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>

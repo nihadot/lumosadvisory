@@ -41,8 +41,10 @@ function CFO_Services() {
       <div id='service-one' className="flex w-full  relative h-[111.111vh] bg-cover bg-center">
 
         <div className="w-full  ps-[5.333vh] ">
-          <img className='mt-[4.222vh] w-[22.222vh]' src={LA} alt="Lumos Advisory Logo" />
-
+          <div className="sticky h-20 flex items-center top-0 left-0">
+            
+            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+          </div>
           <div className="flex mt-[2.222vh] h-[50vh]">
             <div className="bg-black w-[0.667vh] h-[50%]">l</div>
             <div className="flex-1 ">

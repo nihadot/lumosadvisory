@@ -94,8 +94,10 @@ function Contact() {
       <div id="contact" className="flex pb-5 flex-col">
         <div className=" ps-[5.333vh] flex w-full h-[60.333vh]">
           <div className="max-w-[32.222vh] w-full h-full">
-            <img className=" ml-[2.222vh] mt-[10.222vh] w-full max-w-[22.222vh]" src={LA} alt="" />
-
+          <div className="sticky h-20 flex items-center top-0 left-0">
+            
+            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+          </div>
             <div className=" mt-[6.111vh] text-[1.333vh] text-[#5F8F93]">
               <h2 >Contact</h2>
               <div className="flex gap-[1.333vh]">
@@ -130,7 +132,7 @@ function Contact() {
           <div className="flex justify-between pe-[3.556vh]">
             <div className="">
               <div className="max-w-[60vh] w-full h-[22vh] p-[0.889vh] bg-[#5F8F93]">
-                <div className="w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
+                <div className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
                   <span>
                     {testimonials[index-1]?.title}
                   </span>
@@ -138,16 +140,16 @@ function Contact() {
                     {testimonials[index-1]?.paragraph}
                   </p>
                    
-                   <div className="flex items-center justify-center ">
+                   <div className="flex absolute bottom-1 left-[48%] items-center justify-center ">
 
-              <img onClick={incrementIndex} className='w-[2.222vh] h-[2.222vh]' src={images.nextSlide} alt="" />
+              <img onClick={incrementIndex} className='w-[2.222vh]  h-[2.222vh]' src={images.nextSlide} alt="" />
                    </div>
 
                 </div>
               </div>
-              <div className="max-w-[60vh] w-full h-[21.111vh]  px-[0.889vh] pt-0 bg-[#5F8F93]">
+              <div className="max-w-[60vh] relative w-full h-[21.111vh]  px-[0.889vh] pt-0 bg-[#5F8F93]">
                 <div className="w-full h-full bg-white rounded-b-none rounded-t p-[1.778vh] text-[1.333vh]">
-              <div className="flex justify-center mb-1 items-center">
+              <div className="flex absolute top-1 left-[48%] justify-center mb-1 items-center">
               <img onClick={decrementIndex} className='w-[2.222vh] h-[2.222vh]' src={images.bottomSlide} alt="" />
 
               </div>
@@ -168,7 +170,7 @@ function Contact() {
               <input name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Name" className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
               <input  name="mobileNumber" onChange={handleChange} value={formData.mobileNumber} type="number" placeholder="Mobile no." className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
               <input name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <textarea name="message" onChange={handleChange} value={formData.message} placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"></textarea>
+              <textarea name="message" onChange={handleChange} value={formData.message} placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] outline-none p-[1.0vh] rounded mt-[1.5vh]"></textarea>
               <div className="flex justify-between text-white text-[2vh]">
                 <input type="submit" value='Sent' />
                 <input type="reset" value='Cancel'/>

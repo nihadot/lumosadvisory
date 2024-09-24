@@ -10,7 +10,10 @@ function Accounting() {
 
         <div className="flex w-full justify-between">
             <div className="w-[650px] ps-[5.333vh] pe-[0.889vh]  text-justify">
-                <img className='mt-[0.444vh] mac-book:mt-[2.222vh]  w-[22.222vh]' src={LA} alt="" />
+            <div className="sticky h-20 flex items-center top-0 left-0">
+            
+            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+          </div>
                 <h2 className='mt-[0.111vh]6'>Accounting and Book-Keeping </h2>
                 <p>Our expert accounting and bookkeeping services are designed to keep our clients’ business running smoothly, allowing you to focus on what you do best – growing your enterprise.</p>
                 <p>Whether you’re a start-up, small business, or established corporation, our commitment remains the same: to deliver reliable, efficient, and personalized accounting services that support your financial success.</p>
