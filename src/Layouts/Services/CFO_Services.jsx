@@ -12,7 +12,6 @@ function CFO_Services() {
 
   };
 
-  console.log(isPopupVisible,'isPopupVisible')
   const handleClickOutside = (event) => {
     // If click is outside popup and not on toggle button, close the popup
     if (
@@ -39,21 +38,22 @@ function CFO_Services() {
 
   return (
     <>
-      <div id='service-one' className="flex w-full h-full relative max-h-[1000px] min-h-[850px] bg-cover bg-center">
+      <div id='service-one' className="flex w-full  relative h-[111.111vh] bg-cover bg-center">
 
-        <div className="w-full  ps-12 ">
-          <img className='mt-3 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
+        <div className="w-full  ps-[5.333vh] ">
+          <img className='mt-[4.222vh] w-[22.222vh]' src={LA} alt="Lumos Advisory Logo" />
 
-          <div className="flex mt-5 h-[450px]">
-            <div className="bg-black w-1.5 h-[50%]">l</div>
+          <div className="flex mt-[2.222vh] h-[50vh]">
+            <div className="bg-black w-[0.667vh] h-[50%]">l</div>
             <div className="flex-1 ">
               
-            <img className='w-full object-cover h-[390px] ' src={img4} alt="Outsourced CFO Services" />
+            <img className='w-full object-cover h-[48.333vh] ' src={img4} alt="Outsourced CFO Services" />
             </div>
           </div>
 
-          <div className="flex w-full gap-3 1400px:gap-14  mt-2 ">
-            <div className="max-w-[550px] w-full">
+          <div className="flex w-full justify-between gap-[1.333vh] ]  mt-[0.889vh] "> 
+            {/* //mt-[6.222vh */}
+            <div className="max-w-[61.111vh] w-full">
               <h2>Outsourced CFO Services</h2>
               <p>Outsourced CFO Services provides expert financial guidance without the expense of a full-time CFO. Opting for our Outsourced CFO Services positions SME clients for financial stability and strategic growth, equipping them with the expertise and insights to thrive in a competitive market.</p>
               <p>Here’s an in-depth look at what these services entail, why partnering with us is a superior choice, and our comprehensive process and approach.</p>
@@ -62,18 +62,18 @@ function CFO_Services() {
               <p><span>Cost Management:</span> Identifying cost-saving opportunities and optimizing spending to enhance profitability.</p>
             </div>
 
-            <div className="max-w-[550px] w-full pt-0 pe-2">
+            <div className="max-w-[61.111vh] w-full pt-0 pe-[0.889vh]">
               <p><span>Cash Flow Management:</span> Ensuring liquidity and efficient cash flow handling to maintain business health.</p>
               <p><span>Risk Management:</span> Proactively identifying and mitigating financial risks.</p>
               <p><span>Financial Reporting:</span> Accurate and timely financial reports to inform decision-making.</p>
               <p><span>Strategic Insight:</span> Long-term financial planning and market positioning to achieve sustainable success.</p>
               <p><span>Continuous Monitoring and Reporting:</span> Provide regular updates, build customizable dashboards, conduct strategic reviews, and help with support and advisory where needed.</p>
 
-              <div className="flex gap-5">
+              <div className="flex gap-[1.556vh]">
                 <h3 >Our Process and Approach</h3>
                 <div className="flex items-center justify-center mt-0">
               
-              <img className='w-5 h-5' src={images.readMore} alt="" />
+              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
 
               <button 
                 
@@ -88,7 +88,7 @@ function CFO_Services() {
             </div>
 
             {isPopupVisible && (
-                <div ref={popupRef} className="absolute top-[180px] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-3 px-4 w-[420px] z-50">
+                <div ref={popupRef} className="absolute top-[19vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
                   <h3 className="text-white">Why focus on SMEs?</h3>
                   <p className='text-white'><span className='text-white'>Initial Consultation:</span>  Understanding your business, its goals, and financial challenges is the stepping stone. We conduct a thorough analysis to tailor our services.</p>
                   <p className='text-white'><span className='text-white'>Customized Plan Development:</span> Based on the initial consultation, we craft a bespoke financial management plan. This plan covers all critical areas of financial health, from budgeting to risk management.</p>

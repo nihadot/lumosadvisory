@@ -6,11 +6,11 @@ import img1 from "../../assets/Img/pexels-cottonbro-4065895.jpg"
 function Home() {
   return (
     <>
-      <div id='home' className="flex  w-full h-full max-h-[700px]  ">
+      <div id='home' className="flex  w-full h-full max-h-[77.778vh]  ">
         <div className="flex flex-1">
-            <div className="flex-1  ps-12 pe-2 ">
-                <img className='max-w-[400px] w-full mx-auto p-16' src={LA} alt="" />
-                <div className="max-w-[500px] w-full p-5 mx-auto text-justify">
+            <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
+                <img className='max-w-[44.444vh] w-full mx-auto p-[7.111vh]' src={LA} alt="" />
+                <div className="max-w-[58.999vh] w-full p-[2.222vh] mx-auto text-justify">
                 <h1>Welcome to Lumos Advisory</h1>
                 <p>Lumos Advisory has been established by a seasoned and experienced team to be a trusted partner for Small and Medium Enterprises (SMEs) in the United Arab Emirates (UAE) as they circumnavigate the dynamic challenges and uncertainties of tomorrow.</p>
                 <p>From early-stage ventures seeking strategic direction to established businesses pursuing performance improvement and scalability, our advisory offers bespoke solutions addressing the specific needs of every prospective client.</p>
@@ -18,9 +18,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className="flex max-w-[439px] w-full">
-                <div className="bg-black w-1.5 h-[50%]"></div>
-                <img className='h-screen w-full max-w-[433px] object-cover max-h-[690px]' src={img1} alt="Loading..." />
+            <div className="flex max-w-[48.778vh] w-full">
+                <div className="bg-black w-[0.667vh] h-[50%]"></div>
+                <img className='h-screen w-full max-w-[48.111vh] object-cover max-h-[77.778vh]' src={img1} alt="Loading..." />
             </div>
         </div>
       </div>

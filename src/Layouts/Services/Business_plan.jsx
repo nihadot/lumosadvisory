@@ -37,11 +37,11 @@ function Business_plan() {
 
   return (
     <>
-      <div id='service-three' className="max-h-[700px] w-full h-full relative flex">
+      <div id='service-three' className="max-h-[83vh] w-full h-full relative flex">
         <div className="flex flex-1">
-          <div className="flex-1  ps-12 pe-2">
-            <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
-            <h2 className='mt-10' >Feasibility Studies and Business Plan</h2>
+          <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
+            <img className='mt-[0.444vh] mac-book:mt-[2.222vh]  w-[22.222vh]' src={LA} alt="Lumos Advisory Logo" />
+            <h2 className='mt-[0.111vh]0' >Feasibility Studies and Business Plan</h2>
             <p>Conducting thorough feasibility studies for existing and new services and products and preparing a detailed and robust business plan are critical steps for the success of any SME business. Our services cater specifically to these needs by offering comprehensive planning, analysis, and strategic insights.</p>
             <p>Partnering with us means leveraging expertise, tailored solutions, and a proven approach to inch closer to your business objectives. We're committed to empowering SME clients to navigate the complexities of the business world with confidence and clarity.</p>
 
@@ -53,11 +53,11 @@ function Business_plan() {
             <p><span >Financial Analysis:</span> Delivering expert financial evaluations, including cash flow projections, break-even analysis, and funding requirements.</p>
             <p><span >Risk Assessment:</span> Identifying potential business risks and developing strategies to mitigate them.</p>
 
-            <div className="flex gap-5">
+            <div className="flex gap-[1.556vh]">
               <h3 >Our Process and Approach</h3>
               <div className="flex items-center justify-center mt-0">
               
-              <img className='w-5 h-5' src={images.readMore} alt="" />
+              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -68,7 +68,7 @@ function Business_plan() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-36 right-0 bg-[#5F8F93] text-white bg-opacity-50 py-2 px-4 w-[445px] z-50">
+              <div ref={popupRef} className="absolute top-[10vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] w-[49.444vh] z-50">
                 <h3 className="text-white">Our Process and Approach:</h3>
                 <p className="text-white">Our methodology is designed to be systematic and thorough, ensuring that each phase is carefully executed.</p>
                 <p className="text-white"><span className="text-white">Initial Consultation:</span> We start by understanding your business goals, challenges, and requirements.</p>
@@ -81,9 +81,9 @@ function Business_plan() {
             )}
           </div>
 
-          <div className="flex relative w-[439px] max-h-[690px] h-full">
-              <div className="bg-black absolute bottom-0 w-1.5 h-[50%]"></div>
-            <img className=' max-w-[433px] ms-[6px] object-cover max-h-[690px] h-screen' src={img6} alt="Business Plan" />
+          <div className="flex relative w-[48.778vh] max-h-[77.778vh] h-full">
+              <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
+            <img className=' max-w-[48.111vh] ms-[0.667vh] object-cover max-h-[77.778vh] h-screen' src={img6} alt="Business Plan" />
           </div>
         </div>
       </div>

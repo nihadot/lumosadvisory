@@ -40,11 +40,11 @@ function Business_Transformation() {
 
   return (
     <>
-      <div id='service-two' className="relative max-h-[700px] w-full h-full flex">
+      <div id='service-two' className="relative max-h-[77.778vh] w-full h-full flex">
         <div className="flex w-full">
-          <div className="flex-1  ps-12 pe-2">
-            <img className='mt-5 w-[200px]' src={LA} alt="Lumos Advisory Logo" />
-            <h2  className='mt-10'>Business Transformation <br />and Performance Improvement</h2>
+          <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
+            <img className='mt-[4.222vh]  w-[22.222vh]' src={LA} alt="Lumos Advisory Logo" />
+            <h2  className='mt-[0.111vh]0'>Business Transformation <br />and Performance Improvement</h2>
             <p>Business Transformation and Performance Improvement services are essential for SMEs striving to remain competitive and achieve sustainable growth. We offer a suite of specialized services designed to optimize various facets of business operations, ensuring efficiency and enhanced performance.</p>
 
             <h3>Service Offerings</h3>
@@ -54,11 +54,11 @@ function Business_Transformation() {
             <p><span>Technology Integration:</span> We assist in integrating advanced technological solutions that streamline operations and enhance data management.</p>
             <p><span>Change Management:</span> Our team supports your organization through transitions, ensuring smooth implementation of new strategies and technologies.</p>
 
-            <div className="flex gap-5">
+            <div className="flex gap-[0.556vh]">
               <h3 >Our Process and Approach</h3>
               <div className="flex items-center justify-center mt-0">
               
-              <img className='w-5 h-5' src={images.readMore} alt="" />
+              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -69,7 +69,7 @@ function Business_Transformation() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-44 right-0 bg-[#5F8F93] text-white bg-opacity-50 py-2 px-4 w-[445px] z-50">
+              <div ref={popupRef} className="absolute top-[10.556vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] w-[49.444vh] z-50">
                 <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white"><span className="text-white">Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className="text-white"><span className="text-white">Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
@@ -82,9 +82,9 @@ function Business_Transformation() {
             )}
           </div>
 
-          <div className="flex w-[439px] relative h-full max-h-[690px]">
-                <div className="bg-black w-1.5 h-[50%] bottom-0 absolute"></div>
-                <img className=' max-w-[433px] ms-[6px] object-cover max-h-[690px] h-screen' src={img5} alt="Loading..." />
+          <div className="flex w-[48.778vh] relative h-full max-h-[77.778vh]">
+                <div className="bg-black w-[0.667vh] h-[50%] bottom-0 absolute"></div>
+                <img className=' max-w-[48.111vh] ms-[0.667vh] object-cover max-h-[77.778vh] h-screen' src={img5} alt="Loading..." />
           </div>
           
         </div>

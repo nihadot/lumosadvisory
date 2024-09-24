@@ -68,9 +68,9 @@ h1{
     font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 26px;
-    line-height: 36px;
-    margin-bottom: 14px;
+    font-size: 3.555vh;
+    line-height: 4vh;
+    margin-bottom: 1.999vh;
     color: #5F8F93;
 }
 
@@ -79,19 +79,20 @@ p{
     font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
-    /* line-height: 24px; */
+    font-size: 1.9vh;
+    /*  1.333vh */
+    /* line-height: 2.667vh; */
     color: #5F8F93;
-    margin: 8px 0px;
+    margin: 0.999vh 0px;
 }
 
 h2{
     font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
-    margin: 14px 0px 14px 0px;
-    line-height: 24px;
+    font-size: 2.5vh;
+    margin: 1.556vh 0px 1.556vh 0px;
+    line-height: 2.667vh;
     color: #000000;
 }
 
@@ -99,18 +100,18 @@ h3{
     font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2.3vh;
+    line-height: 2.667vh;
     color: #5F8F93;
-    margin: 14px 0px 14px 0px;
+    margin: 1.556vh 0px 1.556vh 0px;
 }
 
 label{
     font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.999vh;
+    line-height: 2.667vh;
     color: #5F8F93;
 }
 
@@ -118,9 +119,9 @@ button{
     font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 12px;
-    margin-left: 10px;
-    line-height: 24px;
+    font-size: 1.4vh;
+    margin-left: 1vh;
+    line-height: 2.667vh;
     color: #5F8F93;
 }
 
@@ -128,8 +129,8 @@ h5{
     font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.999vh;
+    line-height: 2vh;
     color: #5F8F93;
 }
 
@@ -137,8 +138,8 @@ h6{
     font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.999vh;
+    line-height: 2vh;
     color: #5F8F93;
 }
 
@@ -147,7 +148,16 @@ span{
   font-family: 'Charter-regular', serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 1.8vh;
+  line-height: 2.667vh;
   color: #5F8F93;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }

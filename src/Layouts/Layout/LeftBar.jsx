@@ -17,11 +17,11 @@ function LeftBar() {
   };
 
   return (
-    <div className='h-screen hidden fixed top-0 left-0 justify-between z-[100] w-[180px]  md:flex flex-col '>
-      <div className="mt-10 pl-6 text-sm mac-book:text-base">
+    <div className='h-screen hidden fixed top-0 bg-transparent left-0 justify-between z-[100] w-[21.111vh]  md:flex flex-col '>
+      <div className="mt-[4.444vh] pl-[2.667vh] text-[1.999vh] ">
         <a
           href="#home"
-          className={`block py-1 ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
+          className={`block py-[0.444vh] ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('home')}
         >
           Home
@@ -29,7 +29,7 @@ function LeftBar() {
 
         <a
           href="#about"
-          className={`block py-1 ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
+          className={`block py-[0.444vh] ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('about')}
         >
           About
@@ -37,7 +37,7 @@ function LeftBar() {
 
         <a
           href="#why-choose-us"
-          className={`block py-1 ${activeSection === 'why-choose-us' ? 'text-black' : 'text-white'}`}
+          className={`block py-[0.444vh] ${activeSection === 'why-choose-us' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('why-choose-us')}
         >
           Why Choose Us
@@ -46,51 +46,51 @@ function LeftBar() {
         {/* Services section */}
         <a
           href="#services"
-          className={`block py-1 ${activeSection === 'services' ? 'text-black' : 'text-white'}`}
+          className={`block py-[0.444vh] ${activeSection === 'services' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('services')}
         >
           Our Services
         </a>
         {activeSection === 'services' && (
-          <div className="pl-2">
+          <div className="pl-[0vh]">
             <a
               href="#service-one"
-              className={`block py-1 ${activeSubLink === 'service-one' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSubLink === 'service-one' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-one')}
             >
               Outsourced <br />CFO Services
             </a>
             <a
               href="#service-two"
-              className={`block py-1 ${activeSubLink === 'service-two' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSubLink === 'service-two' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-two')}
             >
               Business <br />Transformation <br />and Performance Improvement
             </a>
             <a
               href="#service-three"
-              className={`block py-1 ${activeSubLink === 'service-three' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSubLink === 'service-three' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-three')}
             >
               Feasibility <br />Studies and <br />Business Plan
             </a>
             <a
               href="#service-four"
-              className={`block py-1 ${activeSubLink === 'service-four' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSubLink === 'service-four' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-four')}
             >
               Business <br />Valuations
             </a>
             <a
               href="#service-five"
-              className={`block py-1 ${activeSubLink === 'service-five' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSubLink === 'service-five' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-five')}
             >
               Accounting and <br />Book-Keeping
             </a>
             <a
               href="#service-six"
-              className={`block py-1 ${activeSubLink === 'service-six' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.889vh] ${activeSubLink === 'service-six' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-six')}
             >
               Tax and <br />Compliance <br />Services
@@ -101,7 +101,7 @@ function LeftBar() {
 
         <a
               href="#contact"
-              className={`block py-1 ${activeSection === 'contact' ? 'text-black' : 'text-white'}`}
+              className={`block py-[0.444vh] ${activeSection === 'contact' ? 'text-black' : 'text-white'}`}
               onClick={() => handleClick('contact')}
             >
               Contact
@@ -109,18 +109,18 @@ function LeftBar() {
 
       </div>
 
-      <div className="w-full h-fit flex gap-3 ps-6">
+      <div className="w-full h-fit flex gap-[1.333vh] ps-[2.667vh]">
         <a href=''>
-         <img className='w-6 h-6 mb-10 m-auto' src={images.facebook_icon} alt="Social Media Icons" />
+         <img className='w-[2.667vh] h-[2.667vh] mb-[4.444vh] m-auto' src={images.facebook_icon} alt="Social Media Icons" />
         </a>
 
         <a href=''>
-         <img className='w-6 h-6 mb-10 m-auto' src={images.instagram} alt="Social Media Icons" />
+         <img className='w-[2.667vh] h-[2.667vh] mb-[4.444vh] m-auto' src={images.instagram} alt="Social Media Icons" />
         </a>
 
 
         <a href=''>
-         <img className='w-6 h-6 mb-10 m-auto' src={images.linkedin} alt="Social Media Icons" />
+         <img className='w-[2.667vh] h-[2.667vh] mb-[4.444vh] m-auto' src={images.linkedin} alt="Social Media Icons" />
         </a>
 
       </div>
