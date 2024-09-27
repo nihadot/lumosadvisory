@@ -3,6 +3,7 @@ import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
 import img9 from "../../assets/Img/pexels-photo-257923 1.svg";
 import { images } from "../../static";
+import { Link } from "react-router-dom";
 
 function Contact() {
 
@@ -19,41 +20,12 @@ function Contact() {
 
   const [testimonials,setTestimonials]= useState([
     {
-      title:"Lorem ipsum dolor, sit amet consectetur",
-      paragraph:`reiciendis minima eius dicta laudantium earum officiis
-                    possimus, aliquam quos ratione incidunt non nobis enim.
-                    Reprehenderit nisi perspiciatis distinctio dolorum.
-                    adipisicing elit. Veritatis rem, facere quas inventore
-                    commodi id minus, dolor nisi`
+      imageUrl:images.metaled_trade,
+      paragraph:`Metaled Trade DMCC engaged Lumos Advisory recently on a financial planning and business valuation assignment. The team helped build a detailed 5-year business plan for budgeting and performance tracking purposes. The business plan formed a fundamental basis using which they also performed a business valuation using the projected cash flows. The team validated the valuation using comparable public and private transactions in the metals trading space which was very reassuring and gave me comfort to understand the range of valuation. In addition, Lumos also carried out a sensitivity analysis on the key valuation drivers to help understand the impact of these on my business valuation in an upcycle, downcycle and a normalized commodity cycle scenario. They were extremely professional in their dealings, demonstrated a strong understanding of my business and added value with their thought process. I do sincerely recommend Lumos Advisory for any business analysis, commercial and financial due diligence, valuation, outsourced CFO services and financial planning assignments
+\nIndronil Mukherjee, Manager Director.
+www.metaledtrade.com`
     },
-    {
-      title:"Lorem ipsum dolor, sit amet consectetur",
-      paragraph:`
-        nisi perspiciatis distinctio dolorum. adipisicing elit.
-                    Veritatis rem, facere quas inventore commodi id minus, dolor
-                    nisi officiis ipsa eligendi beatae modi necessitatibus eius
-                    at non ipsum, recusandae suscipit!
-      `
-    },
-    {
-      title:"Lorem ipsum dolor, sit amet consectetur",
-      paragraph:`
-        nisi perspiciatis distinctio dolorum. adipisicing elit.
-                    Veritatis rem, facere quas inventore commodi id minus, dolor
-                    nisi officiis ipsa eligendi beatae modi necessitatibus eius
-                    at non ipsum, recusandae suscipit!
-      `
-    }
-    ,
-    {
-      title:"Lorem ipsum dolor, sit amet consectetur",
-      paragraph:`
-        nisi perspiciatis distinctio dolorum. adipisicing elit.
-                    Veritatis rem, facere quas inventore commodi id minus, dolor
-                    nisi officiis ipsa eligendi beatae modi necessitatibus eius
-                    at non ipsum, recusandae suscipit!
-      `
-    }
+    
   ]);
 
   const [index,setIndex] = useState(1);
@@ -84,6 +56,18 @@ function Contact() {
         return prev;
       }else{
         return prev-1;
+      }
+    })
+  }
+
+  const [readMore,setReadMore] = useState(272);
+
+  const toggleHandleMoreReadOption = ()=>{
+    setReadMore((prev)=>{
+      if(prev === 272){
+        return testimonials[index-1]?.paragraph.length;
+      }else{
+        return 272;
       }
     })
   }
@@ -131,14 +115,17 @@ function Contact() {
 
           <div className="flex justify-between pe-[3.556vh]">
             <div className="">
-              <div className="max-w-[60vh] w-full h-[22vh] p-[0.889vh] bg-[#5F8F93]">
+              <div className="max-w-[60vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
                 <div className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
-                  <span>
+                  {/* <span>
                     {testimonials[index-1]?.title}
-                  </span>
-                  <p >
-                    {testimonials[index-1]?.paragraph}
+                  </span> */}
+                  <img className="w-[12vh] h-[3vh]" src={testimonials[index-1]?.imageUrl} alt="logo" />
+                  <p className={`line-clamp-4 whitespace-pre text-balance ${ readMore  !== 272 && 'overflow-y-scroll' } `} >
+                    {testimonials[index-1]?.paragraph && testimonials[index-1]?.paragraph.length > readMore ? testimonials[index-1]?.paragraph.split(0,readMore-3)+'...' : testimonials[index-1]?.paragraph }
                   </p>
+               
+                  { testimonials[index-1]?.paragraph && testimonials[index-1]?.paragraph.length > readMore && <p onClick={toggleHandleMoreReadOption}>more...</p>}
                    
                    <div className="flex absolute bottom-1 left-[48%] items-center justify-center ">
 
@@ -167,12 +154,12 @@ function Contact() {
             </div>
 
             <form onSubmit={handleSubmit} className="max-w-[60vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]">
-              <input name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Name" className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <input  name="mobileNumber" onChange={handleChange} value={formData.mobileNumber} type="number" placeholder="Mobile no." className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <input name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <textarea name="message" onChange={handleChange} value={formData.message} placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] outline-none p-[1.0vh] rounded mt-[1.5vh]"></textarea>
+              <input name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Name" className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <input  name="mobileNumber" onChange={handleChange} value={formData.mobileNumber} type="number" placeholder="Mobile no." className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <input name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <textarea name="message" onChange={handleChange} value={formData.message} placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none p-[1.0vh] rounded mt-[1.5vh]"></textarea>
               <div className="flex justify-between text-white text-[2vh]">
-                <input type="submit" value='Sent' />
+                <input type="submit" value='Send' />
                 <input type="reset" value='Cancel'/>
               </div>
             </form>

@@ -27,7 +27,7 @@
 
   /* Charter Regular */
 @font-face {
-    font-family: 'Charter';
+    font-family: 'Charter-Regular';
     src: url('./assets/Fonts/charter/eot/Charter-Regular.eot'); /* IE9 */
     src: 
          url('./assets/Fonts/charter/woff2/Charter-Regular.woff2') format('woff2'), /* Super modern browsers */
@@ -47,7 +47,7 @@
   }
   /* Optionally apply global styles */
   body {
-    font-family: 'Charter', 'Arial', sans-serif;
+    font-family: 'Charter-Regular', '';
   }
 
 main::-webkit-scrollbar{
@@ -65,7 +65,7 @@ main::-webkit-scrollbar{
 }
 
 h1{
-    /* font-family: 'Charter-bold', serif; */
+    font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3vh;
@@ -77,7 +77,7 @@ h1{
 
 
 p{
-    /* font-family: 'Charter-regular', serif; */
+    font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.7vh;
@@ -88,7 +88,7 @@ p{
 }
 
 h2{
-    /* font-family: 'Charter-bold', serif; */
+    font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2.2vh;
@@ -99,7 +99,7 @@ h2{
 }
 
 h3{
-    /* font-family: 'Charter-bold', serif; */
+    font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2vh;
@@ -118,7 +118,7 @@ h3{
 } */
 
 button{
-    /* font-family: 'Charter-bold', serif; */
+    font-family: 'Charter-bold', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.3vh;
@@ -128,7 +128,7 @@ button{
 }
 
 h5{
-    /* font-family: 'Charter-regular', serif; */
+    font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.999vh;
@@ -137,7 +137,7 @@ h5{
 }
 
 h6{
-    /* font-family: 'Charter-regular', serif; */
+    font-family: 'Charter-regular', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.999vh; 
@@ -148,7 +148,7 @@ h6{
 
 
 span{
-  /* font-family: 'Charter-regular', serif; */
+  font-family: 'Charter-regular', serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.7;

@@ -38,7 +38,7 @@ function CFO_Services() {
 
   return (
     <>
-      <div id='service-one' className="flex w-full  relative h-[111.111vh] bg-cover bg-center">
+      <div id='service-one' className="flex w-full  relative min-h-[111.111vh] h-fit max-h-fit bg-cover bg-center">
 
         <div className="w-full  ps-[5.333vh] ">
           <div className="sticky h-20 flex items-center top-0 left-0">

@@ -40,7 +40,7 @@ function Business_Transformation() {
 
   return (
     <>
-      <div id='service-two' className="relative max-h-[77.778vh] w-full h-full flex">
+      <div id='service-two' className="relative min-h-[77.778vh] max-h-fit h-fit w-full flex">
         <div className="flex w-full">
           <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
           <div className="sticky h-20 flex items-center top-0 left-0">

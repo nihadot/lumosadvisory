@@ -37,7 +37,7 @@ function Business_valuations() {
 
   return (
     <>
-      <div id='service-four' className="relative max-h-[77.778vh] w-full h-full  flex">
+      <div id='service-four' className="relative min-h-[77.778vh] max-h-fit w-full h-fit max-h-fit  flex">
         <div className="flex w-full justify-between">
           <div className="w-[650px]  ps-[5.333vh] pe-[0.889vh]   text-justify ">
           <div className="sticky h-20 flex items-center top-0 left-0">

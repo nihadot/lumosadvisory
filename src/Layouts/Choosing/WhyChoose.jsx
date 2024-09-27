@@ -8,14 +8,14 @@ import img3 from "../../assets/Img/pexels-photo-6802052 2.svg"
 function WhyChoose() {
   return (
     <>
-      <div id='why-choose-us' className="flex max-h-[77.778vh] w-full h-full">
+      <div id='why-choose-us' className="flex min-h-[77.778vh] w-full h-fit max-h-fit">
 
 
         <div className="flex flex-1">
             <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
-              <div className="sticky h-20 flex items-center top-0 left-0">
+              <div className="sticky mb-[5vh] h-20 flex items-center top-0 left-0">
 
-                <img className='mt-[4.222vh]  w-[22.222vh]' src={LA} alt="" />
+                <img className='mt-[5.222vh]  w-[22.222vh]' src={LA} alt="" />
               </div>
 
                 <h2 >Why Choose Us</h2>

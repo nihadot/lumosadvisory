@@ -59,13 +59,13 @@ function About() {
 
   return (
     <>
-      <div id='about' className="relative  max-h-[82.778vh] w-full h-full flex">
+      <div id='about' className="relative max-h-fit  min-h-[77.778vh] w-full h-fit flex">
         <div className="flex flex-1">
           <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
             <div className=" max-w-[66.667vh] ">
           <div className="sticky h-20 flex items-center top-0 left-0">
             
-            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
+            <img className='mt-[0vh]  w-[22.222vh]' src={LA} alt="" />
           </div>
             <h2 >About Lumos</h2>
             <h3>Who We Are?</h3>
@@ -92,7 +92,7 @@ function About() {
             </div>
 
 
-            <div className="mt-[1.333vh]">
+            <div className="-mt-[1vh]">
               <p htmlFor="" className='text-[1.333vh] mb-[1.333vh] text-[#5F8F93]'>references:</p>
               <h6 className='mb-[1.333vh] text-[1.333vh] text-[#5F8F93] max-w-[38.889vh] w-full'>
               [1] SMEs contribute 60% of the UAE's GDP, creating more job opportunities for Finance Professionals. (thefinancestory.com)

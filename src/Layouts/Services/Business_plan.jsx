@@ -37,7 +37,7 @@ function Business_plan() {
 
   return (
     <>
-      <div id='service-three' className="max-h-[77.777vh] w-full h-full relative flex">
+      <div id='service-three' className="min-h-[77.777vh] h-fit max-h-fit w-full relative flex">
         <div className="flex flex-1">
           <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
           <div className="sticky h-20 flex items-center top-0 left-0">

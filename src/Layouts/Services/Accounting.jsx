@@ -6,7 +6,7 @@ import img8 from "../../assets/Img/pexels-mikhail-nilov-8297226 1.svg"
 function Accounting() {
   return (
     <>
-      <div id='service-five' className="flex max-h-[77.778vh] w-full h-full">
+      <div id='service-five' className="flex min-h-[77.778vh] max-h-fit w-full h-fit">
 
         <div className="flex w-full justify-between">
             <div className="w-[650px] ps-[5.333vh] pe-[0.889vh]  text-justify">
