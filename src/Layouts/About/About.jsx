@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
 import img2 from "../../assets/Img/pexels-photo-7108191 1.svg";
 import { images } from '../../static';
 
@@ -59,14 +58,11 @@ function About() {
 
   return (
     <>
-      <div id='about' className="relative max-h-fit  min-h-[77.778vh] w-full h-fit flex">
+      <div id='about' className="relative max-h-fit min-h-[100vh] w-full h-fit flex">
         <div className="flex flex-1">
-          <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
-            <div className=" max-w-[66.667vh] ">
-          <div className="sticky h-20 flex items-center top-0 left-0">
-            
-            <img className='mt-[0vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
+          <div className="flex-1 pt-[8vw]  ps-[5.333vh] pe-[3vh] ">
+            <div className=" ">
+       
             <h2 >About Lumos</h2>
             <h3>Who We Are?</h3>
             <p>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>
@@ -79,7 +75,7 @@ function About() {
 
             <div className="flex gap-[2.222vh]">
               <h3>Why focus on SMEs?</h3>
-              <div className="flex items-center justify-center mt-0">
+              <div className="flex items-center justify-center">
               
               <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
 
@@ -94,11 +90,11 @@ function About() {
 
             <div className="-mt-[1vh]">
               <p htmlFor="" className='text-[1.333vh] mb-[1.333vh] text-[#5F8F93]'>references:</p>
-              <h6 className='mb-[1.333vh] text-[1.333vh] text-[#5F8F93] max-w-[38.889vh] w-full'>
+              <h6 className='mb-[1.333vh] text-[1.333vh] text-[#5F8F93] w-full'>
               [1] SMEs contribute 60% of the UAE's GDP, creating more job opportunities for Finance Professionals. (thefinancestory.com)
               </h6>
 
-              <h6 className='text-[1.333vh] text-[#5F8F93] max-w-[38.889vh] w-full'>
+              <h6 className='text-[1.333vh] text-[#5F8F93] w-full'>
               [2] Small and Medium Enterprises | The Official Portal of the UAE Government
               </h6>
             
@@ -108,7 +104,7 @@ function About() {
             </div>
 
             {isPopupVisible && (
-              <div  ref={popupRef} className="absolute top-[6vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[49.444vh] w-full z-50">
+              <div  ref={popupRef} className="absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
                 <h3 className="text-white">Why focus on SMEs?</h3>
                 <p className='text-white'><span className='text-white'>Innovation:</span> SMEs often pioneer new products and services, pushing industries forward.</p>
                 <p className='text-white'><span className='text-white'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
@@ -126,9 +122,9 @@ function About() {
 
           </div>
 
-          <div className="flex w-[48.778vh]">
+          <div className="flex max-w-[40vw] w-full">
             <div className="bg-black w-[0.667vh] h-[50%]"></div>
-            <img className=' h-screen  max-w-[48.111vh] object-cover max-h-[77.778vh]' src={img2} alt="Loading..." />
+            <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img2} alt="Loading..." />
           </div>
         </div>
       </div>

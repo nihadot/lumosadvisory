@@ -6,18 +6,18 @@ import img9 from "../../assets/Img/pexels-photo-8297478 1.svg"
 function Tax() {
   return (
     <>
-      <div id='service-six' className="flex w-full h-full relative max-h-[111.111vh] min-h-[110.444vh]  bg-cover bg-center">
+      <div id='service-six' className="flex pt-[8vw]  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
 
         <div className="w-full   ps-[5.333vh]">
-        <div className="sticky h-20 flex items-center top-0 left-0">
+        {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
-        <div className="flex  mt-[2.222vh] h-[50vh] ">
+          </div> */}
+        <div className="flex h-[43vh] ">
           <div className="bg-black w-[0.667vh] h-[50%]">l</div>
           <div className="flex-1">
 
-          <img className='w-full object-cover h-[48.333vh]' src={img9} alt="" />
+          <img className='w-full object-cover h-[100%]' src={img9} alt="" />
           </div>
         </div>
 
@@ -32,7 +32,7 @@ function Tax() {
 
           </div>
 
-          <div className="max-w-[61.111vh] w-full pt-[0.889vh] pe-[0.889vh]">
+          <div className="max-w-[61.111vh] w-full pt-[0.889vh] pe-[3vh]">
             <p><span>Customs and Excise Tax:</span> Guidance on customs duties and excise tax compliance, import and export tax advisory services, assistance with customs declarations and documentation.</p>
             <p><span>Tax Advisory and Consulting:</span> Strategic tax advice tailored to your business goals, analysis of tax implications for business transactions and investments, and assistance in tax audits and disputes with tax authorities.</p>
             <p><span>Compliance Support:</span> Ensuring adherence to all regulatory requirements in the UAE, assistance with regulatory filings and reporting obligations, and keeping your business updated with changes in tax and compliance regulations</p>

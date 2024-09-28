@@ -40,13 +40,13 @@ function Business_Transformation() {
 
   return (
     <>
-      <div id='service-two' className="relative min-h-[77.778vh] max-h-fit h-fit w-full flex">
+      <div id='service-two' className="relative max-h-fit min-h-[100vh] w-full h-fit flex">
         <div className="flex w-full">
-          <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
-          <div className="sticky h-20 flex items-center top-0 left-0">
+          <div className="flex-1  pt-[8vw]  ps-[5.333vh] pe-[3vh]">
+           {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
+          </div> */}
             <h2  className='mt-[0.111vh]0'>Business Transformation <br />and Performance Improvement</h2>
             <p>Business Transformation and Performance Improvement services are essential for SMEs striving to remain competitive and achieve sustainable growth. We offer a suite of specialized services designed to optimize various facets of business operations, ensuring efficiency and enhanced performance.</p>
 
@@ -72,7 +72,7 @@ function Business_Transformation() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-[10.556vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] w-[49.444vh] z-50">
+              <div ref={popupRef} className="absolute top-[30%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] max-w-[40.5vw] z-50">
                 <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white"><span className="text-white">Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className="text-white"><span className="text-white">Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
@@ -85,9 +85,9 @@ function Business_Transformation() {
             )}
           </div>
 
-          <div className="flex w-[48.778vh] relative h-full max-h-[77.778vh]">
+          <div className="flex max-w-[40vw] w-full">
                 <div className="bg-black w-[0.667vh] h-[50%] bottom-0 absolute"></div>
-                <img className=' max-w-[48.111vh] ms-[0.667vh] object-cover max-h-[77.778vh] h-screen' src={img5} alt="Loading..." />
+                <img className='h-screen ps-[0.5vh] w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img5} alt="Loading..." />
           </div>
           
         </div>

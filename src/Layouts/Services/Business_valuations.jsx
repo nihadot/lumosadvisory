@@ -37,14 +37,14 @@ function Business_valuations() {
 
   return (
     <>
-      <div id='service-four' className="relative min-h-[77.778vh] max-h-fit w-full h-fit max-h-fit  flex">
-        <div className="flex w-full justify-between">
-          <div className="w-[650px]  ps-[5.333vh] pe-[0.889vh]   text-justify ">
-          <div className="sticky h-20 flex items-center top-0 left-0">
+      <div id='service-four' className="relative min-h-[77.778vh] w-full h-fit max-h-fit  flex">
+        <div className="flex w-full flex-1">
+          <div className="flex-1 pt-[8vw]  ps-[5.333vh] pe-[3vh]">
+           {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
-            <h2 className='mt-[0.111vh]0'>Business Valuations</h2>
+          </div> */}
+            <h2 className=''>Business Valuations</h2>
             <p>Business valuations are critical for numerous purposes, including mergers and acquisitions, estate planning, tax planning, and financing. They provide a clear and accurate depiction of your business's market value. For SME clients, having an accurate valuation is essential for strategic growth, competitive edge, and informed decision-making in terms of potential divestment and monetization.</p>
 
             <h3>Services Offered</h3>
@@ -68,7 +68,7 @@ function Business_valuations() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-[6.556vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] w-[49.444vh] z-50">
+              <div ref={popupRef} className="absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
                 <h3 className='text-white'>Our Process and Approach</h3>
                 <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
                 <p className='text-white'><span className='text-white'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
@@ -82,9 +82,9 @@ function Business_valuations() {
             )}
           </div>
 
-          <div className="flex relative w-[48.778vh] max-h-[77.778vh] h-full">
+          <div className="flex relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
-            <img className=' max-w-[48.111vh] ms-[0.667vh] object-cover max-h-[77.778vh] h-screen' src={img7} alt="Business Plan" />
+            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img7} alt="Business Plan" />
           </div>
 
           

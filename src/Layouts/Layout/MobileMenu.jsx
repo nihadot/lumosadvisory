@@ -4,14 +4,13 @@ import PreviewModalSingleClick from './PreviewModalSingleClick'
 
 function MobileMenu() {
   return (
-    <div className='md:hidden flex w-full fixed top-0 px-[1.778vh] justify-between items-center h-[70px] bg-white shadow-md'>
-        <img src={images.logo} alt="" className='w-[130px] -ms-0 h-[70%] object-contain' />
-        <PreviewModalSingleClick
-        previewClassName={"!w-full !h-full"}
-        previewContent={<MenuBar/>}
-        >
+    <div className='sm:hidden fixed left-2 top-4 h-[70px]  w-full '>
+        {/* <img src={images.logo} alt="" className='w-[130px] -ms-0 h-[70%] object-contain' /> */}
+        {/* <PreviewModalSingleClick */}
+        {/* previewClassName={"!w-full !h-full"} */}
+        {/* previewContent={<MenuBar/>} */}
+        {/* > */}
         <img src={images.menu} alt="" className='!w-8 !h-8' />
-        </PreviewModalSingleClick>
     </div>
   )
 }

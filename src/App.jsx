@@ -11,6 +11,7 @@ import Tax from './Layouts/Services/Tax'
 import { BrowserRouter, Route, Router, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
 import Demo from './Layouts/Home/Demo'
 import Layout from './Layouts/Layout/Layout'
+import FontCheckComponent from './FontCheckComponent'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-
+<FontCheckComponent/>
       <RouterProvider router={router} />
 
 

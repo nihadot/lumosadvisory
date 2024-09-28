@@ -38,22 +38,22 @@ function CFO_Services() {
 
   return (
     <>
-      <div id='service-one' className="flex w-full  relative min-h-[111.111vh] h-fit max-h-fit bg-cover bg-center">
+      <div id='service-one' className="flex pt-[8vw]  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
 
         <div className="w-full  ps-[5.333vh] ">
-          <div className="sticky h-20 flex items-center top-0 left-0">
+           {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
-          <div className="flex mt-[2.222vh] h-[50vh]">
+          </div> */}
+          <div className="flex h-[43vh]">
             <div className="bg-black w-[0.667vh] h-[50%]">l</div>
-            <div className="flex-1 ">
+            <div className="flex-1  ">
               
-            <img className='w-full object-cover h-[48.333vh] ' src={img4} alt="Outsourced CFO Services" />
+            <img className='w-full object-cover h-[100%] ' src={img4} alt="Outsourced CFO Services" />
             </div>
           </div>
 
-          <div className="flex w-full justify-between gap-[1.333vh] ]  mt-[0.889vh] "> 
+          <div className="flex w-full justify-between gap-[1.333vh] ] "> 
             {/* //mt-[6.222vh */}
             <div className="max-w-[61.111vh] w-full">
               <h2>Outsourced CFO Services</h2>
@@ -64,7 +64,7 @@ function CFO_Services() {
               <p><span>Cost Management:</span> Identifying cost-saving opportunities and optimizing spending to enhance profitability.</p>
             </div>
 
-            <div className="max-w-[61.111vh] w-full pt-0 pe-[0.889vh]">
+            <div className="max-w-[61.111vh] w-full pt-0 pe-[3vh]">
               <p><span>Cash Flow Management:</span> Ensuring liquidity and efficient cash flow handling to maintain business health.</p>
               <p><span>Risk Management:</span> Proactively identifying and mitigating financial risks.</p>
               <p><span>Financial Reporting:</span> Accurate and timely financial reports to inform decision-making.</p>
@@ -90,7 +90,7 @@ function CFO_Services() {
             </div>
 
             {isPopupVisible && (
-                <div ref={popupRef} className="absolute top-[19vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
+                <div ref={popupRef} className="absolute top-[15vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
                   <h3 className="text-white">Why focus on SMEs?</h3>
                   <p className='text-white'><span className='text-white'>Initial Consultation:</span>  Understanding your business, its goals, and financial challenges is the stepping stone. We conduct a thorough analysis to tailor our services.</p>
                   <p className='text-white'><span className='text-white'>Customized Plan Development:</span> Based on the initial consultation, we craft a bespoke financial management plan. This plan covers all critical areas of financial health, from budgeting to risk management.</p>

@@ -37,14 +37,14 @@ function Business_plan() {
 
   return (
     <>
-      <div id='service-three' className="min-h-[77.777vh] h-fit max-h-fit w-full relative flex">
+      <div id='service-three' className="relative max-h-fit min-h-[100vh] w-full h-fit flex">
         <div className="flex flex-1">
-          <div className="flex-1  ps-[5.333vh] pe-[0.889vh]">
-          <div className="sticky h-20 flex items-center top-0 left-0">
+          <div className="flex-1 ps-[5.333vh]  pt-[8vw] pe-[3vh]">
+           {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
-            <h2 className='mt-[0.111vh]0' >Feasibility Studies and Business Plan</h2>
+          </div> */}
+            <h2 className='' >Feasibility Studies and Business Plan</h2>
             <p>Conducting thorough feasibility studies for existing and new services and products and preparing a detailed and robust business plan are critical steps for the success of any SME business. Our services cater specifically to these needs by offering comprehensive planning, analysis, and strategic insights.</p>
             <p>Partnering with us means leveraging expertise, tailored solutions, and a proven approach to inch closer to your business objectives. We're committed to empowering SME clients to navigate the complexities of the business world with confidence and clarity.</p>
 
@@ -71,7 +71,7 @@ function Business_plan() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-[10vh] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] w-[49.444vh] z-50">
+              <div ref={popupRef} className="absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] max-w-[40.5vw] w-full z-50">
                 <h3 className="text-white">Our Process and Approach:</h3>
                 <p className="text-white">Our methodology is designed to be systematic and thorough, ensuring that each phase is carefully executed.</p>
                 <p className="text-white"><span className="text-white">Initial Consultation:</span> We start by understanding your business goals, challenges, and requirements.</p>
@@ -84,9 +84,9 @@ function Business_plan() {
             )}
           </div>
 
-          <div className="flex relative w-[48.778vh] max-h-[77.778vh] h-full">
+          <div className="flex relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
-            <img className=' max-w-[48.111vh] ms-[0.667vh] object-cover max-h-[77.778vh] h-screen' src={img6} alt="Business Plan" />
+            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img6} alt="Business Plan" />
           </div>
         </div>
       </div>

@@ -76,20 +76,20 @@ www.metaledtrade.com`
   return (
     <>
       <div id="contact" className="flex pb-5 flex-col">
-        <div className=" ps-[5.333vh] flex w-full h-[60.333vh]">
+        <div className=" ps-[5.333vh] flex w-full h-fit">
           <div className="max-w-[32.222vh] w-full h-full">
-          <div className="sticky h-20 flex items-center top-0 left-0">
+           {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div>
-            <div className=" mt-[6.111vh] text-[1.333vh] text-[#5F8F93]">
+          </div> */}
+            <div className="  pt-[8vw] text-[1.333vh] text-[#5F8F93]">
               <h2 >Contact</h2>
               <div className="flex gap-[1.333vh]">
                 <div className="w-[0.222vh] bg-[#5F8F93]"></div>
                 <div className="">
                   <p>
-                  +971 52 650 4080 [ ] <br />
-                  +971 52 650 4080 <br />
+                  <b>+971 52 650 4080</b> [ ] <br />
+                  <b>+971 52 650 4080</b> <br />
                   info@lumosadvisory.me <br />
                   Meydan Grandstand, 6th floor, <br />
                     Meydan Road, Nad Al Sheba, <br />
@@ -104,7 +104,7 @@ www.metaledtrade.com`
           </div>
           <div className="flex flex-1">
             <div className="bg-black w-[0.667vh] h-[65%]">l</div>
-            <img className="object-cover w-full min-h-[200px]  h-full" src={img9} alt="" />
+            <img className="object-cover w-full h-[43vh] " src={img9} alt="" />
           </div>
         </div>
         <div className=" ps-[5.333vh]">
@@ -127,16 +127,16 @@ www.metaledtrade.com`
                
                   { testimonials[index-1]?.paragraph && testimonials[index-1]?.paragraph.length > readMore && <p onClick={toggleHandleMoreReadOption}>more...</p>}
                    
-                   <div className="flex absolute bottom-1 left-[48%] items-center justify-center ">
+                   <div className="flex absolute bottom-[0.444vh] left-[48%] items-center justify-center ">
 
               <img onClick={incrementIndex} className='w-[2.222vh]  h-[2.222vh]' src={images.nextSlide} alt="" />
                    </div>
 
                 </div>
               </div>
-              <div className="max-w-[60vh] relative w-full h-[21.111vh]  px-[0.889vh] pt-0 bg-[#5F8F93]">
+              <div className="max-w-[60vh] relative w-full h-[21.111vh]  px-[0.889vh] bg-[#5F8F93]">
                 <div className="w-full h-full bg-white rounded-b-none rounded-t p-[1.778vh] text-[1.333vh]">
-              <div className="flex absolute top-1 left-[48%] justify-center mb-1 items-center">
+              <div className="flex absolute top-[0.444vh] left-[48%] justify-center mb-[0.444vh] items-center">
               <img onClick={decrementIndex} className='w-[2.222vh] h-[2.222vh]' src={images.bottomSlide} alt="" />
 
               </div>

@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-  /* @font-face {
-    font-family: 'Charter-regular';
-    src: url('./assets/Fonts/charter/ttf/Charter\ Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style:normal;
-  } */
+
+
 
 
 
@@ -38,6 +37,28 @@
   }
 
 
+
+  .baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+
+  /* Base font sizes for small screens (default) */
+:root {
+  --font-size-h1: 20px; /* 40px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h4: 1.5rem; /* 24px */
+  --font-size-h5: 1.25rem; /* 20px */
+  --font-size-h6: 1rem; /* 16px */
+  --font-size-p: 14px; /* 16px */
+  --font-size-span: 1rem; /* 16px */
+}
+
+
+
   * {
     box-sizing: border-box!important; /* Apply globally */
   }
@@ -47,12 +68,14 @@
   }
   /* Optionally apply global styles */
   body {
-    font-family: 'Charter-Regular', '';
+    /* font-family: 'Charter-Regular', ''; */
+    font-family: "Baskervville", serif;
+    font-weight: 400;
   }
 
-main::-webkit-scrollbar{
+/* main::-webkit-scrollbar{
     display: none;
-}
+} */
 
 
 
@@ -65,11 +88,13 @@ main::-webkit-scrollbar{
 }
 
 h1{
-    font-family: 'Charter-bold', serif;
-    font-weight: 700;
+    /* font-family: 'Charter-bold', serif; */
+    font-family: "Baskervville", serif;
+    font-weight: bold;
     font-style: normal;
-    font-size: 3vh;
+    font-size: var(--font-size-h1);
     /* 3.555vh */
+    /* 3vh */
     line-height: 4vh;
     margin-bottom: 1vh;
     color: #5F8F93;
@@ -77,10 +102,13 @@ h1{
 
 
 p{
-    font-family: 'Charter-regular', serif;
+    /* font-family: 'Charter-regular', serif; */
+    font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.7vh;
+    /* font-size: clamp(10px, 1.7vh, 1.7vh); */
+    font-size: var(--font-size-p);
     /*  1.9vh */
     /* line-height: 2.667vh; */
     color: #5F8F93;
@@ -88,8 +116,9 @@ p{
 }
 
 h2{
-    font-family: 'Charter-bold', serif;
-    font-weight: 700;
+    /* font-family: 'Charter-bold', serif; */
+    font-family: "Baskervville", serif;
+    font-weight: bold;
     font-style: normal;
     font-size: 2.2vh;
     /* font-size: 2.5vh; */
@@ -99,8 +128,9 @@ h2{
 }
 
 h3{
-    font-family: 'Charter-bold', serif;
-    font-weight: 700;
+    /* font-family: 'Charter-bold', serif; */
+    font-family: "Baskervville", serif;
+    font-weight: bold;
     font-style: normal;
     font-size: 2vh;
     line-height: 2.667vh;
@@ -118,8 +148,9 @@ h3{
 } */
 
 button{
-    font-family: 'Charter-bold', serif;
-    font-weight: 700;
+    /* font-family: 'Charter-bold', serif; */
+    font-family: "Baskervville", serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.3vh;
     margin-left: 1vh;
@@ -128,7 +159,8 @@ button{
 }
 
 h5{
-    font-family: 'Charter-regular', serif;
+    /* font-family: 'Charter-regular', serif; */
+    font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.999vh;
@@ -137,7 +169,8 @@ h5{
 }
 
 h6{
-    font-family: 'Charter-regular', serif;
+    /* font-family: 'Charter-regular', serif; */
+    font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.999vh; 
@@ -148,8 +181,9 @@ h6{
 
 
 span{
-  font-family: 'Charter-regular', serif;
-  font-weight: 600;
+  /* font-family: 'Charter-regular', serif; */
+  font-family: "Baskervville", serif;
+  font-weight: bold;
   font-style: normal;
   font-size: 1.7;
   line-height: 2.667vh;
@@ -172,4 +206,37 @@ input[type=number] {
 /* General for other browsers */
 input[type=number] {
     appearance: textfield;
+}
+
+
+
+
+/* Medium Screens (tablets) */
+/* 
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: 3rem; 48px
+    --font-size-h2: 2.5rem; 40px
+    --font-size-h3: 2.25rem; 36px
+    --font-size-h4: 2rem; 32px
+    --font-size-h5: 1.75rem; 28px
+    --font-size-h6: 1.5rem; 24px
+    --font-size-p: 1.125rem; 18px
+    --font-size-span: 1.125rem; 18px
+  }
+} */
+
+
+/* Large Screens (desktops) */
+@media (min-width: 1024px) {
+  :root {
+    --font-size-h1: 3vh; /* 64px */
+    --font-size-h2: 2.2vh; /* 56px */
+    --font-size-h3: 2vh; /* 48px */
+    --font-size-h4: 2.5rem; /* 40px */
+    --font-size-h5:1.999vh; /* 32px */
+    --font-size-h6: 1.999vh; /* 28px */
+    --font-size-p: 1.7vh; /* 20px */
+    --font-size-span: 1.7vh; /* 20px */
+  }
 }

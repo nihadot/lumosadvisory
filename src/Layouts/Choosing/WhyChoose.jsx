@@ -8,15 +8,15 @@ import img3 from "../../assets/Img/pexels-photo-6802052 2.svg"
 function WhyChoose() {
   return (
     <>
-      <div id='why-choose-us' className="flex min-h-[77.778vh] w-full h-fit max-h-fit">
+      <div id='why-choose-us' className="flex w-full h-fit max-h-fit min-h-[100vh]">
 
 
         <div className="flex flex-1">
-            <div className="flex-1  ps-[5.333vh] pe-[0.889vh] ">
-              <div className="sticky mb-[5vh] h-20 flex items-center top-0 left-0">
+            <div className="flex-1 pt-[8vw] ps-[5.333vh] pe-[3vh] ">
+              {/* <div className="sticky mb-[5vh] h-20 flex items-center top-0 left-0">
 
                 <img className='mt-[5.222vh]  w-[22.222vh]' src={LA} alt="" />
-              </div>
+              </div> */}
 
                 <h2 >Why Choose Us</h2>
                 <h3 >What We Offer</h3>
@@ -30,9 +30,9 @@ function WhyChoose() {
                 <p><span>Client-Centric:</span> We prioritize client satisfaction and work closely with you to ensure that our strategies are effectively implemented.</p>
             </div>
 
-            <div className="flex w-[48.778vh]">
+            <div className="flex max-w-[40vw] w-full">
                 <div className="bg-black w-[0.667vh] h-[50%]"></div>
-                <img className=' max-w-[48.111vh] object-cover max-h-[77.778vh] h-screen' src={img3} alt="Loading..." />
+                <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img3} alt="Loading..." />
             </div>
         </div>
 
