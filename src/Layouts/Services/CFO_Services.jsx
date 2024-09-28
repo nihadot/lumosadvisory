@@ -38,14 +38,14 @@ function CFO_Services() {
 
   return (
     <>
-      <div id='service-one' className="flex pt-[8vw]  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
+      <div id='service-one' className="flex sm:pt-[8vw]  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
 
-        <div className="w-full  ps-[5.333vh] ">
+        <div className="w-full ps-5  sm:ps-[5.333vh] ">
            {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
           </div> */}
-          <div className="flex h-[43vh]">
+          <div className="flex h-[43vh] me-5 sm:me-0">
             <div className="bg-black w-[0.667vh] h-[50%]">l</div>
             <div className="flex-1  ">
               
@@ -53,9 +53,9 @@ function CFO_Services() {
             </div>
           </div>
 
-          <div className="flex w-full justify-between gap-[1.333vh] ] "> 
+          <div className="flex sm:flex-row flex-col w-full md:gap-[8vh] sm:gap-[3vh]  lg:gap-[13vh] mt-[1vh] pe-[3vh] "> 
             {/* //mt-[6.222vh */}
-            <div className="max-w-[61.111vh] w-full">
+            <div className="w-full flex-1 ">
               <h2>Outsourced CFO Services</h2>
               <p>Outsourced CFO Services provides expert financial guidance without the expense of a full-time CFO. Opting for our Outsourced CFO Services positions SME clients for financial stability and strategic growth, equipping them with the expertise and insights to thrive in a competitive market.</p>
               <p>Here’s an in-depth look at what these services entail, why partnering with us is a superior choice, and our comprehensive process and approach.</p>
@@ -64,7 +64,7 @@ function CFO_Services() {
               <p><span>Cost Management:</span> Identifying cost-saving opportunities and optimizing spending to enhance profitability.</p>
             </div>
 
-            <div className="max-w-[61.111vh] w-full pt-0 pe-[3vh]">
+            <div className=" w-full flex-1 pt-0 mt-5 md:mt-0 pe-[3vh]">
               <p><span>Cash Flow Management:</span> Ensuring liquidity and efficient cash flow handling to maintain business health.</p>
               <p><span>Risk Management:</span> Proactively identifying and mitigating financial risks.</p>
               <p><span>Financial Reporting:</span> Accurate and timely financial reports to inform decision-making.</p>
@@ -90,11 +90,25 @@ function CFO_Services() {
             </div>
 
             {isPopupVisible && (
-                <div ref={popupRef} className="absolute top-[15vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
+                <div ref={popupRef} className="hidden sm:block absolute top-[15vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
                   <h3 className="text-white">Why focus on SMEs?</h3>
                   <p className='text-white'><span className='text-white'>Initial Consultation:</span>  Understanding your business, its goals, and financial challenges is the stepping stone. We conduct a thorough analysis to tailor our services.</p>
                   <p className='text-white'><span className='text-white'>Customized Plan Development:</span> Based on the initial consultation, we craft a bespoke financial management plan. This plan covers all critical areas of financial health, from budgeting to risk management.</p>
                   <p className='text-white'><span className='text-white'>Implementation and Integration:</span> We seamlessly integrate into your business operations, ensuring minimal disruption while implementing strategies for immediate and long-term benefits.</p>
+                </div>
+              )}
+
+
+{isPopupVisible && (
+                <div ref={popupRef} className="absolute block sm:hidden top-[50%] right-0  py-[1.333vh] px-[1.778vh] w-full z-50">
+                  <div className="bg-[#5F8F93] text-white bg-opacity-80 w-full px-3 py-1 ">
+
+                  <h3 className="text-white">Why focus on SMEs?</h3>
+                  <p className='text-white'><span className='text-white'>Initial Consultation:</span>  Understanding your business, its goals, and financial challenges is the stepping stone. We conduct a thorough analysis to tailor our services.</p>
+                  <p className='text-white'><span className='text-white'>Customized Plan Development:</span> Based on the initial consultation, we craft a bespoke financial management plan. This plan covers all critical areas of financial health, from budgeting to risk management.</p>
+                  <p className='text-white'><span className='text-white'>Implementation and Integration:</span> We seamlessly integrate into your business operations, ensuring minimal disruption while implementing strategies for immediate and long-term benefits.</p>
+                  </div>
+
                 </div>
               )}
           </div>

@@ -48,12 +48,12 @@
   /* Base font sizes for small screens (default) */
 :root {
   --font-size-h1: 20px; /* 40px */
-  --font-size-h2: 2rem; /* 32px */
-  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h2: 16px; /* 32px */
+  --font-size-h3: 14px; /* 28px */
   --font-size-h4: 1.5rem; /* 24px */
   --font-size-h5: 1.25rem; /* 20px */
   --font-size-h6: 1rem; /* 16px */
-  --font-size-p: 14px; /* 16px */
+  --font-size-p: 12px; /* 16px */
   --font-size-span: 1rem; /* 16px */
 }
 
@@ -107,6 +107,8 @@ p{
     font-weight: 400;
     font-style: normal;
     font-size: 1.7vh;
+    /* text-wrap: balance; */
+    
     /* font-size: clamp(10px, 1.7vh, 1.7vh); */
     font-size: var(--font-size-p);
     /*  1.9vh */
@@ -120,7 +122,8 @@ h2{
     font-family: "Baskervville", serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 2.2vh;
+    font-size: var(--font-size-h2);
+    /* 2.2vh */
     /* font-size: 2.5vh; */
     margin: 1.556vh 0px 1.556vh 0px;
     line-height: 2.667vh;

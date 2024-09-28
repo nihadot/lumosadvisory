@@ -78,7 +78,7 @@ function Layout() {
 
 
         {/* Main Content */}
-        <div className="main w-full  min-h-screen sm:ps-[18vh] sm:pe-[7vh] pe-[2vh]  ps-[5vh] absolute z-50">
+        <div className="main w-full  min-h-screen sm:ps-[18vh] sm:pe-[7vh] pe-[1.5vh]  ps-[4vh] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
             {/* Sections with Refs and Scroll Observation */}
         <div className="fixed top-0 left-0">
@@ -93,13 +93,17 @@ function Layout() {
             {/* <div className=""> */}
 
 
-            <div className="sticky h-[8.889vh]  z-[100] flex items-center top-[2vh] ms-[5vh]">
+            <div className="sticky h-[8.889vh] justify-center sm:justify-start z-[100] flex items-center top-[2vh] sm:ms-[5vh]">
             
-            <img className=' w-[20.222vh]' src={LA} alt="" />
+            <img className='  w-[20.222vh]' src={LA} alt="" />
           </div>
 
             {/*  */}
+            <div className="sm:-mt-[8.889vh] mt-0">
+
               <About />
+            </div>
+
               <WhyChoose />
               <CFO_Services />
               <Business_Transformation />

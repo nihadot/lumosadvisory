@@ -75,8 +75,8 @@ www.metaledtrade.com`
   const handleChange = (e)=> setFormData({...formData,[e.target.name]:e.target.value})
   return (
     <>
-      <div id="contact" className="flex pb-5 flex-col">
-        <div className=" ps-[5.333vh] flex w-full h-fit">
+      <div id="contact" className="flex pb-5 flex-col mt-10 sm:mt-0">
+        <div className="flex-col-reverse sm:flex-row ps-5 sm:ps-[5.333vh] flex w-full h-fit">
           <div className="max-w-[32.222vh] w-full h-full">
            {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
@@ -87,9 +87,14 @@ www.metaledtrade.com`
               <div className="flex gap-[1.333vh]">
                 <div className="w-[0.222vh] bg-[#5F8F93]"></div>
                 <div className="">
+
                   <p>
-                  <b>+971 52 650 4080</b> [ ] <br />
-                  <b>+971 52 650 4080</b> <br />
+                  <b className="flex gap-1"> 
+                    <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080 [ <div className="flex items-center justify-center"><img src={images.whatsapp_icon} className="w-4 h-4" alt="" /></div> ]</b> 
+                  </p>
+                  <p>
+                  
+                  <b className="flex gap-1"> <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080</b> <br />
                   info@lumosadvisory.me <br />
                   Meydan Grandstand, 6th floor, <br />
                     Meydan Road, Nad Al Sheba, <br />
@@ -102,18 +107,18 @@ www.metaledtrade.com`
               </div>
             </div>
           </div>
-          <div className="flex flex-1">
-            <div className="bg-black w-[0.667vh] h-[65%]">l</div>
+          <div className="flex flex-1 me-5 sm:me-0 ">
+            <div className="bg-black w-[0.667vh] h-[20vh] sm:h-[65%]">l</div>
             <img className="object-cover w-full h-[43vh] " src={img9} alt="" />
           </div>
         </div>
-        <div className=" ps-[5.333vh]">
+        <div className=" ps-5 sm:ps-[5.333vh]">
           <h3 className="m-[3.111vh]">
             Client Testimonies
           </h3>
 
 
-          <div className="flex justify-between pe-[3.556vh]">
+          <div className="flex sm:flex-row flex-col gap-10 sm:gap-0 justify-between pe-[3.556vh]">
             <div className="">
               <div className="max-w-[60vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
                 <div className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">

@@ -10,9 +10,10 @@ import layout from "../assets/Img/Mask group (4).svg";
 import right from "../assets/Img/Mask group (1).svg";
 import nextSlide from "../assets/Img/triangle-up-svgrepo-com.svg";
 import bottomSlide from '../assets/Img/triangle-down-svgrepo-com.svg'
-
+import callIcon from "../assets/Img/call-svgrepo-com.svg"
 // testimonial logo
 import metaled_trade from "../assets/Img/Metaled-Trade-Logo.jpeg"
+import whatsapp_icon from "../assets/Img/whatsapp-svgrepo-com.svg"
 export default {
     image1,
     facebook_icon,
@@ -25,5 +26,7 @@ export default {
 right,
 nextSlide,
 bottomSlide,
-metaled_trade
+metaled_trade,
+callIcon,
+whatsapp_icon
 }

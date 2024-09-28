@@ -37,9 +37,22 @@ function Business_valuations() {
 
   return (
     <>
+
+
+<div className=" flex sm:hidden w-full items-center justify-center mt-10">
+        <div className="max-w-[200px]  w-full flex h-[300px]">
+          <div className="bg-black  w-[4px] h-[50%]"></div>
+          <img
+            className=" w-[96%] block  object-cover h-full"
+            src={img7}
+            alt="Loading..."
+          />
+        </div>
+      </div>
+
       <div id='service-four' className="relative min-h-[77.778vh] w-full h-fit max-h-fit  flex">
         <div className="flex w-full flex-1">
-          <div className="flex-1 pt-[8vw]  ps-[5.333vh] pe-[3vh]">
+          <div className="flex-1 pt-[8vw] ps-5 sm:ps-[5.333vh] pe-[3vh]">
            {/* <div className="sticky h-20 flex items-center top-0 left-0">
             
             <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
@@ -68,7 +81,7 @@ function Business_valuations() {
             </div>
 
             {isPopupVisible && (
-              <div ref={popupRef} className="absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
+              <div ref={popupRef} className="hidden sm:block absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
                 <h3 className='text-white'>Our Process and Approach</h3>
                 <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
                 <p className='text-white'><span className='text-white'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
@@ -80,9 +93,27 @@ function Business_valuations() {
              
               </div>
             )}
+
+
+{isPopupVisible && (
+              <div ref={popupRef} className="absolute block sm:hidden -top-[10%] right-0 py-[0.444vh] px-[2.222vh] w-full z-50">
+                <div className="bg-[#5F8F93] text-white bg-opacity-90  w-full px-3 py-1">
+                  
+
+                <h3 className='text-white'>Our Process and Approach</h3>
+                <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
+                <p className='text-white'><span className='text-white'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
+                <p className='text-white'><span className='text-white'>Data Collection:</span> Gathering necessary financial, operational, and market data to form a comprehensive information base.</p>
+                <p className='text-white'><span className='text-white'>Analysis:</span> Utilizing various valuation methods to analyze collected data, ensuring a multi-faceted view of your business's worth.</p>
+                <p className='text-white'><span className='text-white'>Report Preparation:</span> Compiling findings into a detailed valuation report, highlighting key insights and recommendations.</p>
+                <p className='text-white'><span className='text-white'>Review and Delivery:</span> Presenting the report to you and addressing any questions or concerns to ensure clarity and understanding.</p>
+                </div>
+             
+              </div>
+            )}
           </div>
 
-          <div className="flex relative max-w-[40vw] w-full">
+          <div className="sm:flex hidden  relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
             <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img7} alt="Business Plan" />
           </div>
