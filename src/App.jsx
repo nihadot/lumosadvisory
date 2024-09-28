@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-<FontCheckComponent/>
+{/* <FontCheckComponent/> */}
       <RouterProvider router={router} />
 
 
