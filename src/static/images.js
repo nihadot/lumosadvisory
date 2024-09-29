@@ -9,8 +9,10 @@ import logo from "../assets/Img/Lumos Advisory Logo-01.png"
 import layout from "../assets/Img/Mask group (4).svg";
 import right from "../assets/Img/Mask group (1).svg";
 import nextSlide from "../assets/Img/triangle-up-svgrepo-com.svg";
-import bottomSlide from '../assets/Img/triangle-down-svgrepo-com.svg'
-import callIcon from "../assets/Img/call-svgrepo-com.svg"
+import bottomSlide from '../assets/Img/triangle-down-svgrepo-com.svg';
+import callIcon from "../assets/Img/call-svgrepo-com.svg";
+import person1 from "../assets/Img/WhatsApp Image 2024-09-28 at 17.40.48.jpeg"
+import person2 from "../assets/Img/WhatsApp Image 2024-09-28 at 17.40.49.jpeg"
 // testimonial logo
 import metaled_trade from "../assets/Img/Metaled-Trade-Logo.jpeg"
 import whatsapp_icon from "../assets/Img/whatsapp-svgrepo-com.svg"
@@ -28,5 +30,7 @@ nextSlide,
 bottomSlide,
 metaled_trade,
 callIcon,
-whatsapp_icon
+whatsapp_icon,
+person1,
+person2
 }

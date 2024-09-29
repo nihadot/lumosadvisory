@@ -22,7 +22,7 @@ function Tax() {
         </div>
 
         <div className="flex md:flex-row flex-col pe-[3vh] justify-between w-full md:gap-[8vh] sm:gap-[3vh]  lg:gap-[13vh] mt-[0.889vh]">
-          <div className="flex-1 w-full ">
+          <div className="flex-1 w-full  ">
             <h2 >Tax and Compliance Services</h2>
             <p >Our trusted partners specialize in navigating the intricate landscape of UAE tax laws and regulations, ensuring our clients’ business remains fully compliant while optimizing tax efficiency.</p>
             <p>Our comprehensive range of tax and compliance services includes:</p>

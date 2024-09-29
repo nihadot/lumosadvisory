@@ -107,7 +107,8 @@ p{
     font-weight: 400;
     font-style: normal;
     font-size: 1.7vh;
-    /* text-wrap: balance; */
+    text-wrap: pretty;
+    word-break: break-all;
     
     /* font-size: clamp(10px, 1.7vh, 1.7vh); */
     font-size: var(--font-size-p);

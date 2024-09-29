@@ -13,6 +13,7 @@ import LeftBar from "./LeftBar";
 import MobileMenu from "./MobileMenu";
 import { images } from "../../static";
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
+import AboutUs from "../About/AboutUs";
 // import MobileMenu from "../Layout/MobileMenu"
 function Layout() {
   const [activeSection, setActiveSection] = useState(""); // Track current section
@@ -103,6 +104,8 @@ function Layout() {
 
               <About />
             </div>
+            <AboutUs />
+
 
               <WhyChoose />
               <CFO_Services />

@@ -32,7 +32,16 @@ function LeftBar() {
           className={`block py-[0.444vh] ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
           onClick={() => handleClick('about')}
         >
-          About
+          About Lumos
+        </a>
+
+
+        <a
+          href="#about-us"
+          className={`block py-[0.444vh] ${activeSection === 'about-us' ? 'text-black' : 'text-white'}`}
+          onClick={() => handleClick('about-us')}
+        >
+          About Us
         </a>
 
         <a

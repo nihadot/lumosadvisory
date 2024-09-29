@@ -88,13 +88,12 @@ www.metaledtrade.com`
                 <div className="w-[0.222vh] bg-[#5F8F93]"></div>
                 <div className="">
 
-                  <p>
+                
+                  <p> 
                   <b className="flex gap-1"> 
                     <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080 [ <div className="flex items-center justify-center"><img src={images.whatsapp_icon} className="w-4 h-4" alt="" /></div> ]</b> 
-                  </p>
-                  <p>
                   
-                  <b className="flex gap-1"> <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080</b> <br />
+                  <b className="flex gap-1"> <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080</b> 
                   info@lumosadvisory.me <br />
                   Meydan Grandstand, 6th floor, <br />
                     Meydan Road, Nad Al Sheba, <br />
@@ -118,9 +117,9 @@ www.metaledtrade.com`
           </h3>
 
 
-          <div className="flex sm:flex-row flex-col gap-10 sm:gap-0 justify-between pe-[3.556vh]">
+          <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
             <div className="">
-              <div className="max-w-[60vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
+              <div className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[50vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
                 <div className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
                   {/* <span>
                     {testimonials[index-1]?.title}
@@ -139,7 +138,7 @@ www.metaledtrade.com`
 
                 </div>
               </div>
-              <div className="max-w-[60vh] relative w-full h-[21.111vh]  px-[0.889vh] bg-[#5F8F93]">
+              <div className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[50vh] relative w-full h-[21.111vh]  px-[0.889vh] bg-[#5F8F93]">
                 <div className="w-full h-full bg-white rounded-b-none rounded-t p-[1.778vh] text-[1.333vh]">
               <div className="flex absolute top-[0.444vh] left-[48%] justify-center mb-[0.444vh] items-center">
               <img onClick={decrementIndex} className='w-[2.222vh] h-[2.222vh]' src={images.bottomSlide} alt="" />
@@ -158,7 +157,7 @@ www.metaledtrade.com`
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="max-w-[60vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]">
+            <form onSubmit={handleSubmit} className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]">
               <input name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Name" className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
               <input  name="mobileNumber" onChange={handleChange} value={formData.mobileNumber} type="number" placeholder="Mobile no." className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
               <input name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]" />
