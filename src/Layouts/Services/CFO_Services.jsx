@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img4 from "../../assets/Img/pexels-photo-5716035 1.svg";
 import { images } from '../../static';
+import { cfoServices } from '../../assets/images';
 
 function CFO_Services() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -49,7 +48,7 @@ function CFO_Services() {
             <div className="bg-black w-[0.667vh] h-[50%]">l</div>
             <div className="flex-1  ">
               
-            <img className='w-full object-cover h-[100%] ' src={img4} alt="Outsourced CFO Services" />
+            <img className='w-full object-cover h-[100%] ' src={cfoServices} alt="Outsourced CFO Services" />
             </div>
           </div>
 

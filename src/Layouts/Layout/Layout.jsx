@@ -14,50 +14,11 @@ import MobileMenu from "./MobileMenu";
 import { images } from "../../static";
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
 import AboutUs from "../About/AboutUs";
+import MobileMenuBar from "./MobileMenuBar"
 // import MobileMenu from "../Layout/MobileMenu"
 function Layout() {
-  const [activeSection, setActiveSection] = useState(""); // Track current section
-  const sectionsRef = useRef([]); // To reference each section for scrolling logic
 
-  useEffect(() => {
-    // Set up IntersectionObserver to track which section is in view
-    const observerOptions = {
-      root: null, // observe within the viewport
-      rootMargin: "0px",
-      threshold: 0.5, // Trigger when at least 50% of the section is visible
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id); // Set the active section ID when it's visible
-        }
-      });
-    }, observerOptions);
-
-    // Observe all sections
-    sectionsRef.current.forEach((section) => {
-      if (section) {
-        observer.observe(section);
-      }
-    });
-
-    return () => {
-      if (sectionsRef.current.length) {
-        sectionsRef.current.forEach((section) => {
-          observer.unobserve(section); // Clean up the observer when component unmounts
-        });
-      }
-    };
-  }, []);
-
-  // Helper to set section refs
-  const setSectionRef = (section, index) => {
-    if (section && !sectionsRef.current[index]) {
-      sectionsRef.current[index] = section;
-    }
-  };
-
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -78,13 +39,17 @@ function Layout() {
         <LeftBar  /> 
 
 
+
         {/* Main Content */}
+       { menuOpen &&  <MobileMenuBar setMenuOpen={setMenuOpen}/>}
         <div className="main w-full  min-h-screen sm:ps-[18vh] sm:pe-[7vh] pe-[1.5vh]  ps-[4vh] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
+           
             {/* Sections with Refs and Scroll Observation */}
         <div className="fixed top-0 left-0">
 
-        <MobileMenu/>
+        <MobileMenu setMenuOpen={setMenuOpen}/>
+
         </div>
 
               <Home />

@@ -2,7 +2,6 @@ import React from 'react'
 import Leftside from './Leftside'
 import "./index.css"
 import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img1 from "../../assets/Img/pexels-cottonbro-4065895.jpg"
 import { images } from '../../static'
 import About from '../About/About'
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img6 from "../../assets/Img/pexels-photo-7693686 1.svg";
-import { images } from '../../static';
+import { LeftTriangleIcon } from '../../assets/icons';
+import { businessPlan } from '../../assets/images';
 
 function Business_plan() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -43,7 +42,7 @@ function Business_plan() {
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
             className=" w-[96%] block  object-cover h-full"
-            src={img6}
+            src={businessPlan}
             alt="Loading..."
           />
         </div>
@@ -72,7 +71,7 @@ function Business_plan() {
               <h3 >Our Process and Approach</h3>
               <div className="flex items-center justify-center mt-0">
               
-              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
+              <img className='w-[2.222vh] h-[2.222vh]' src={LeftTriangleIcon} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -116,7 +115,7 @@ function Business_plan() {
 
           <div className=" hidden sm:flex relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
-            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img6} alt="Business Plan" />
+            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={businessPlan} alt="Business Plan" />
           </div>
         </div>
       </div>

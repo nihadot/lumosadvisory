@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import social_logos from "../../assets/Img/SM Icons-01.png";
 import { images } from '../../static';
 
 function LeftBar() {

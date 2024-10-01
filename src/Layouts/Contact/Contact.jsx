@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png";
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img9 from "../../assets/Img/pexels-photo-257923 1.svg";
 import { images } from "../../static";
-import { Link } from "react-router-dom";
+import { contact } from "../../assets/images";
 
 function Contact() {
 
@@ -108,7 +105,7 @@ www.metaledtrade.com`
           </div>
           <div className="flex flex-1 me-5 sm:me-0 ">
             <div className="bg-black w-[0.667vh] h-[20vh] sm:h-[65%]">l</div>
-            <img className="object-cover w-full h-[43vh] " src={img9} alt="" />
+            <img className="object-cover w-full h-[43vh] " src={contact} alt="" />
           </div>
         </div>
         <div className=" ps-5 sm:ps-[5.333vh]">

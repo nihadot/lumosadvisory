@@ -8,36 +8,6 @@
 
 
 
-
-
-
-  /* Charter-bold */
-  @font-face {
-    font-family: 'Charter-bold';
-    src: url('./assets/Fonts/charter/eot/Charter-Bold.eot'); /* IE9 */
-    src: 
-         url('./assets/Fonts/charter/woff2/Charter-Bold.woff2') format('woff2'), /* Super modern browsers */
-         url('./assets/Fonts/charter/woff/Charter-Bold.woff') format('woff'), /* Modern browsers */
-         url('./assets/Fonts/charter/ttf/Charter-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-weight: bold;
-    font-style: normal;
-  }
-
-
-  /* Charter Regular */
-@font-face {
-    font-family: 'Charter-Regular';
-    src: url('./assets/Fonts/charter/eot/Charter-Regular.eot'); /* IE9 */
-    src: 
-         url('./assets/Fonts/charter/woff2/Charter-Regular.woff2') format('woff2'), /* Super modern browsers */
-         url('./assets/Fonts/charter/woff/Charter-Regular.woff') format('woff'), /* Modern browsers */
-         url('./assets/Fonts/charter/ttf/Charter-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-
   .baskervville-regular {
     font-family: "Baskervville", serif;
     font-weight: 400;

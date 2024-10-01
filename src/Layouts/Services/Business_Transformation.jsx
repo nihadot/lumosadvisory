@@ -1,10 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png";
-import social_logos from "../../assets/Img/SM Icons-01.png";
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import img5 from "../../assets/Img/pexels-photo-3756681 1.svg";
-import { GoTriangleLeft } from "react-icons/go";
-import { images } from '../../static';
+import { LeftTriangleIcon } from '../../assets/icons';
+import { businessTransform } from '../../assets/images';
 
 function Business_Transformation() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -47,7 +43,7 @@ function Business_Transformation() {
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
             className=" w-[96%] block  object-cover h-full"
-            src={img5}
+            src={businessTransform}
             alt="Loading..."
           />
         </div>
@@ -75,7 +71,7 @@ function Business_Transformation() {
               <h3 >Our Process and Approach</h3>
               <div className="flex items-center justify-center mt-0">
               
-              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
+              <img className='w-[2.222vh] h-[2.222vh]' src={LeftTriangleIcon} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -118,7 +114,7 @@ function Business_Transformation() {
 
           <div className="sm:flex hidden max-w-[40vw] w-full">
                 <div className="bg-black w-[0.667vh] h-[50%] bottom-0 absolute"></div>
-                <img className='h-screen ps-[0.5vh] w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img5} alt="Loading..." />
+                <img className='h-screen ps-[0.5vh] w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={businessTransform} alt="Loading..." />
           </div>
           
         </div>

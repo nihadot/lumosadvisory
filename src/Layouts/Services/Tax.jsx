@@ -1,7 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png"
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img9 from "../../assets/Img/pexels-photo-8297478 1.svg"
+import { tax } from '../../assets/images'
 
 function Tax() {
   return (
@@ -17,7 +15,7 @@ function Tax() {
           <div className="bg-black w-[0.667vh] h-[50%]">l</div>
           <div className="flex-1">
 
-          <img className='w-full object-cover h-[100%]' src={img9} alt="" />
+          <img className='w-full object-cover h-[100%]' src={tax} alt="" />
           </div>
         </div>
 

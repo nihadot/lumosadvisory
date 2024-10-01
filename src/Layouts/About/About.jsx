@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import img2 from "../../assets/Img/pexels-photo-7108191 1.svg";
-import { images } from '../../static';
+import { LeftTriangleIcon } from '../../assets/icons';
+import { about } from '../../assets/images';
 
 
 const ourVisionContentOne = 'We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.'
@@ -64,7 +64,7 @@ function About() {
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
             className=" w-[96%] block  object-cover h-full"
-            src={img2}
+            src={about}
             alt="Loading..."
           />
         </div>
@@ -89,7 +89,7 @@ function About() {
               <h3>Why focus on SMEs?</h3>
               <div className="flex items-center justify-center">
               
-              <img className='w-[2.222vh] h-[2.222vh]' src={images.readMore} alt="" />
+              <img className='w-[3vh] h-[4vh] object-cover' src={LeftTriangleIcon} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -157,7 +157,7 @@ function About() {
 
           <div className="sm:flex hidden max-w-[40vw] w-full">
             <div className="bg-black w-[0.667vh] h-[50%]"></div>
-            <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img2} alt="Loading..." />
+            <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={about} alt="Loading..." />
           </div>
         </div>
       </div>

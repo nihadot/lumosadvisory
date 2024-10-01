@@ -1,16 +1,15 @@
 import React from 'react'
 import { images } from '../../static'
-import PreviewModalSingleClick from './PreviewModalSingleClick'
 
-function MobileMenu() {
+function MobileMenu({setMenuOpen}) {
+
+  const handleClick = ()=>{
+    setMenuOpen(prev => !prev)
+  }
   return (
     <div className='sm:hidden fixed left-2 top-4 h-[70px]  w-full '>
-        {/* <img src={images.logo} alt="" className='w-[130px] -ms-0 h-[70%] object-contain' /> */}
-        {/* <PreviewModalSingleClick */}
-        {/* previewClassName={"!w-full !h-full"} */}
-        {/* previewContent={<MenuBar/>} */}
-        {/* > */}
-        <img src={images.menu} alt="" className='!w-8 !h-8' />
+       
+        <img onClick={handleClick} src={images.menu} alt="" className='!w-8 !h-8' />
     </div>
   )
 }

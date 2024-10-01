@@ -1,8 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png"
-import social_logos from "../../assets/Img/SM Icons-01.png"
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img3 from "../../assets/Img/pexels-photo-6802052 2.svg"
+import { whyChooseUs } from '../../assets/images'
 
 
 function WhyChoose() {
@@ -15,7 +12,7 @@ function WhyChoose() {
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
             className=" w-[96%] block  object-cover h-full"
-            src={img3}
+            src={whyChooseUs}
             alt="Loading..."
           />
         </div>
@@ -46,7 +43,7 @@ function WhyChoose() {
 
             <div className="sm:flex hidden max-w-[40vw] w-full">
                 <div className="bg-black w-[0.667vh] h-[50%]"></div>
-                <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img3} alt="Loading..." />
+                <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={whyChooseUs} alt="Loading..." />
             </div>
         </div>
 

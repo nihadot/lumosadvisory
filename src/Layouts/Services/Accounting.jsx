@@ -1,7 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../assets/Img/Lumos Advisory Website Background_1.png"
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png"
-import img8 from "../../assets/Img/pexels-mikhail-nilov-8297226 1.svg"
+import { accountingBookKeeping } from '../../assets/images'
 
 function Accounting() {
   return (
@@ -12,7 +10,7 @@ function Accounting() {
           <div className="bg-black w-[4px] h-[50%]"></div>
           <img
             className=" w-[96%] block  object-cover h-full"
-            src={img8}
+            src={accountingBookKeeping}
             alt="Loading..."
           />
         </div>
@@ -40,7 +38,7 @@ function Accounting() {
 
             <div className="sm:flex  hidden relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
-            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={img8} alt="Business Plan" />
+            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={accountingBookKeeping} alt="Business Plan" />
           </div>
         </div>
 
