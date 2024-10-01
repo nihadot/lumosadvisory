@@ -22,22 +22,32 @@ function AboutUs() {
 
               <h3>Paramita Nag - CA</h3>
               <p className="">
-                A Chartered Accountant from the Institute of Chartered
-                Accountants of India, she has spent the last 12 years working
-                for Big 4 consulting firms such as PwC and Deloitte in India. In
-                UAE, her career focus shifted to the underserved SME sector,
-                where she gained extensive experience in handling clients for
-                the international firm Moore Stephens.{" "}
+              A Chartered Accountant qualified from the Institute of Chartered Accountants of India, and an accomplished finance professional with over 12 years of expertise in core finance, auditing, financial management and corporate strategy. <br />
+              Comprehensive knowledge of accounting principles and financial reporting, ensuring accuracy and transparency in all financial statements. Significant experience in auditing ensures minimal audit adjustments and structured financial reporting.
+
               </p>
 
               <p>
-                She has also gained extensive industry experience as the Finance
-                Controller of the Moishi Group (a homegrown UAE luxury dessert
-                brand) and has guided the company through the COVID pandemic and
-                its subsequent expansion in the GCC, North Africa and the Indian
-                subcontinent. She has also been instrumental in the setting up,
-                and implementation of operations of the brand’s sister concept,
-                UCHI, a fine dining sushi highball concept located in DIFC.
+              Proven ability to establish, monitor, and enhance internal controls, ensuring compliance with international financial standards (IFRS, GAAP) and regulatory requirements. Successfully led the implementation of ERP systems, streamlining financial processes, enhancing reporting accuracy, and improving overall operational efficiency.
+
+              </p>
+
+              <p>
+              Proficiency in identifying cost-saving opportunities, improving operational efficiency, and enhancing bottom-line performance. 
+
+              </p>
+
+              <p>
+              Expertise in budgeting, forecasting, and long-term data-driven planning to guide strategic decisions and drive profitability.
+
+              </p>
+
+              <p>
+              Skilled in aligning financial strategies with business objectives, enabling sustainable growth and competitive advantage. <br />
+          
+              Experience in raising and managing deployment of capital. <br />
+
+              Demonstrated ability to lead finance teams and collaborate with other departments to drive business success.
               </p>
             </div>
           {/* </div> */}

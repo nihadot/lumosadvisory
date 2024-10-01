@@ -101,7 +101,7 @@ function LeftBar() {
               className={`block py-[0.889vh] ${activeSubLink === 'service-six' ? 'text-black' : 'text-white'}`}
               onClick={() => handleSubLinkClick('service-six')}
             >
-              Tax and <br />Compliance <br />Services
+              Tax, Compliance and AML Services
             </a>
           </div>
         )}
