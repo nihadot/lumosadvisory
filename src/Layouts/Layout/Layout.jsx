@@ -52,7 +52,7 @@ function Layout() {
             </div>
 
             {/*  */}
-            <div className="sm:-mt-[8.889vh] mt-0">
+            <div className="sm:-mt-[8.889vh] mt-0 ">
               <About />
             </div>
             <AboutUs />

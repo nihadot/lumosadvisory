@@ -10,13 +10,13 @@ function MobileMenuBar({setMenuOpen}) {
     const handleClick = (link) => {
         setActiveSection(link);
         document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
-        setMenuOpen(false)
+        // setMenuOpen(false)
       };
 
       const handleSubLinkClick = (subLink) => {
         setActiveSubLink(subLink);
         document.getElementById(subLink).scrollIntoView({ behavior: 'smooth' });
-        setMenuOpen(false)
+        // setMenuOpen(false)
       };
 
       const handleClickMenu = ()=>{
@@ -25,15 +25,15 @@ function MobileMenuBar({setMenuOpen}) {
 
   return (
     <div
-    className='w-[60%] sm:hidden block fixed z-[200] p-5 top-0 left-0 min-h-screen max-h-fit bg-[#5F8F93]'
+    className='w-[45%]  sm:hidden block fixed z-[200] p-5 top-0 left-0 min-h-[360px] max-h-fit bg-[#5F8F93] opacity-80'
     >
-        <div className=" bg-transparent my-4">
-            <img onClick={handleClickMenu} src={closeIcon} className='w-6 h-12 object-cover ' alt="close icon" />
+        <div className=" bg-transparent mt-4">
+            <img onClick={handleClickMenu} src={closeIcon} className='w-6 h-6 object-contain ' alt="close icon" />
 
         </div>
 
 
-        <div className="mt-[4.444vh] text-[1.999vh] ">
+        <div className="mt-[3vh] text-base ">
         <a
           href="#home"
           className={`block py-[0.444vh] ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
@@ -43,9 +43,9 @@ function MobileMenuBar({setMenuOpen}) {
         </a>
 
         <a
-          href="#about"
-          className={`block py-[0.444vh] ${activeSection === 'about' ? 'text-black' : 'text-white'}`}
-          onClick={() => handleClick('about')}
+          href="#about-mobile"
+          className={`block py-[0.444vh] ${activeSection === 'about-mobile' ? 'text-black' : 'text-white'}`}
+          onClick={() => handleClick('about-mobile')}
         >
           About Lumos
         </a>
@@ -60,9 +60,9 @@ function MobileMenuBar({setMenuOpen}) {
         </a>
 
         <a
-          href="#why-choose-us"
-          className={`block py-[0.444vh] ${activeSection === 'why-choose-us' ? 'text-black' : 'text-white'}`}
-          onClick={() => handleClick('why-choose-us')}
+          href="#why-choose-us-mobile"
+          className={`block py-[0.444vh] ${activeSection === 'why-choose-us-mobile' ? 'text-black' : 'text-white'}`}
+          onClick={() => handleClick('why-choose-us-mobile')}
         >
           Why Choose Us
         </a>
@@ -85,30 +85,30 @@ function MobileMenuBar({setMenuOpen}) {
               Outsourced <br />CFO Services
             </a>
             <a
-              href="#service-two"
-              className={`block py-[0.444vh] ${activeSubLink === 'service-two' ? 'text-black' : 'text-white'}`}
-              onClick={() => handleSubLinkClick('service-two')}
+              href="#business-transform"
+              className={`block py-[0.444vh] ${activeSubLink === 'business-transform' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleSubLinkClick('business-transform')}
             >
               Business <br />Transformation <br />and Performance Improvement
             </a>
             <a
-              href="#service-three"
-              className={`block py-[0.444vh] ${activeSubLink === 'service-three' ? 'text-black' : 'text-white'}`}
-              onClick={() => handleSubLinkClick('service-three')}
+              href="#business-plan-mobile"
+              className={`block py-[0.444vh] ${activeSubLink === 'business-plan-mobile' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleSubLinkClick('business-plan-mobile')}
             >
               Feasibility <br />Studies and <br />Business Plan
             </a>
             <a
-              href="#service-four"
-              className={`block py-[0.444vh] ${activeSubLink === 'service-four' ? 'text-black' : 'text-white'}`}
-              onClick={() => handleSubLinkClick('service-four')}
+              href="#business-valuations"
+              className={`block py-[0.444vh] ${activeSubLink === 'business-valuations' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleSubLinkClick('business-valuations')}
             >
               Business <br />Valuations
             </a>
             <a
-              href="#service-five"
-              className={`block py-[0.444vh] ${activeSubLink === 'service-five' ? 'text-black' : 'text-white'}`}
-              onClick={() => handleSubLinkClick('service-five')}
+              href="#accounting-mobile"
+              className={`block py-[0.444vh] ${activeSubLink === 'accounting-mobile' ? 'text-black' : 'text-white'}`}
+              onClick={() => handleSubLinkClick('accounting-mobile')}
             >
               Accounting and <br />Book-Keeping
             </a>

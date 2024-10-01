@@ -4,7 +4,7 @@ import { tax } from '../../assets/images'
 function Tax() {
   return (
     <>
-      <div id='service-six' className="flex pt-[8vw]  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
+      <div id='service-six' className="flex sm:pt-[8vw] pt-24  relative max-h-fit min-h-[100vh] w-full h-fit  bg-cover bg-center">
 
         <div className="w-full ps-5  sm:ps-[5.333vh]">
         {/* <div className="sticky h-20 flex items-center top-0 left-0">
@@ -34,6 +34,7 @@ function Tax() {
             <p><span>Customs and Excise Tax:</span> Guidance on customs duties and excise tax compliance, import and export tax advisory services, assistance with customs declarations and documentation.</p>
             <p><span>Tax Advisory and Consulting:</span> Strategic tax advice tailored to your business goals, analysis of tax implications for business transactions and investments, and assistance in tax audits and disputes with tax authorities.</p>
             <p><span>Compliance Support:</span> Ensuring adherence to all regulatory requirements in the UAE, assistance with regulatory filings and reporting obligations, and keeping your business updated with changes in tax and compliance regulations</p>
+            <p> <span> Anti-Money Laundering (AML) Support:</span> Development and implementation of robust AML policies, conducting in-depth risk assessments, preparing essential regulatory compliance documentation, conducting training programs, facilitating filing of Suspicious Activity Reports (SARs) and regulatory submissions to the Executive Office of Control and Non-Proliferation.</p>
           </div>
         </div>
 

@@ -45,7 +45,9 @@ function AboutUs() {
               <p>
               Skilled in aligning financial strategies with business objectives, enabling sustainable growth and competitive advantage. <br />
           
-              Experience in raising and managing deployment of capital. <br />
+              </p>
+              <p>Experience in raising and managing deployment of capital.</p>
+              <p>
 
               Demonstrated ability to lead finance teams and collaborate with other departments to drive business success.
               </p>

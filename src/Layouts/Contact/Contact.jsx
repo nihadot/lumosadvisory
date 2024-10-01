@@ -72,7 +72,7 @@ www.metaledtrade.com`
   const handleChange = (e)=> setFormData({...formData,[e.target.name]:e.target.value})
   return (
     <>
-      <div id="contact" className="flex pb-5 flex-col mt-10 sm:mt-0">
+      <div id="contact" className="flex pb-5 flex-col pt-24 sm:mt-0">
         <div className="flex-col-reverse sm:flex-row ps-5 sm:ps-[5.333vh] flex w-full h-fit">
           <div className="max-w-[32.222vh] w-full h-full">
            {/* <div className="sticky h-20 flex items-center top-0 left-0">
@@ -109,9 +109,9 @@ www.metaledtrade.com`
           </div>
         </div>
         <div className=" ps-5 sm:ps-[5.333vh]">
-          <h3 className="m-[3.111vh]">
+          <h2 >
             Client Testimonies
-          </h3>
+          </h2>
 
 
           <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
@@ -122,7 +122,7 @@ www.metaledtrade.com`
                     {testimonials[index-1]?.title}
                   </span> */}
                   <img className="w-[12vh] h-[3vh]" src={testimonials[index-1]?.imageUrl} alt="logo" />
-                  <p className={`line-clamp-4 whitespace-pre text-balance ${ readMore  !== 272 && 'overflow-y-scroll' } `} >
+                  <p className={`sm:line-clamp-4 line-clamp-3 whitespace-pre text-balance ${ readMore  !== 272 && 'overflow-y-scroll' } `} >
                     {testimonials[index-1]?.paragraph && testimonials[index-1]?.paragraph.length > readMore ? testimonials[index-1]?.paragraph.split(0,readMore-3)+'...' : testimonials[index-1]?.paragraph }
                   </p>
                

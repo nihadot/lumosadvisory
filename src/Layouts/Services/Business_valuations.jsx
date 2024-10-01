@@ -38,7 +38,7 @@ function Business_valuations() {
     <>
 
 
-<div className=" flex sm:hidden w-full items-center justify-center mt-10">
+<div id='business-valuations' className=" flex sm:hidden w-full items-center justify-center pt-24">
         <div className="max-w-[200px]  w-full flex h-[300px]">
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
