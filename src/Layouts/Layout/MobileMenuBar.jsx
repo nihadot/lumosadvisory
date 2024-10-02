@@ -35,9 +35,9 @@ function MobileMenuBar({setMenuOpen}) {
 
         <div className="mt-[3vh] text-base ">
         <a
-          href="#home"
-          className={`block py-[0.444vh] ${activeSection === 'home' ? 'text-black' : 'text-white'}`}
-          onClick={() => handleClick('home')}
+          href="#home-mobile"
+          className={`block py-[0.444vh] ${activeSection === 'home-mobile' ? 'text-black' : 'text-white'}`}
+          onClick={() => handleClick('home-mobile')}
         >
           Home
         </a>

@@ -1,7 +1,10 @@
 
 import facebook_icon from "../assets/Img/facebook-svgrepo-com (1).svg";
-import instagram from "../assets/Img/instagram-svgrepo-com.svg";
+import facebook_icon_light_green from "../assets/Img/facebook-svgrepo-com-light-green.svg";
+import instagram from "../assets/Img/instagram-svgrepo-com.svg"
+import instagram_light_green from "../assets/Img/instagram-svgrepo-com-light-green.svg";
 import linkedin from "../assets/Img/linkedin-fill-svgrepo-com.svg"
+import linkedinLightGreen from "../assets/Img/linkedin-fill-svgrepo-com-light-green.svg"
 import readMore from "../assets/Img/triangle-left-svgrepo-com.svg"
 import menu from "../assets/Img/menu-svgrepo-com.svg"
 import logo from "../assets/Img/Lumos Advisory Logo-01.png"
@@ -17,7 +20,9 @@ import metaled_trade from "../assets/Img/Metaled-Trade-Logo.jpeg"
 import whatsapp_icon from "../assets/Img/whatsapp-svgrepo-com.svg"
 export default {
     facebook_icon,
+    facebook_icon_light_green,
     instagram,
+    instagram_light_green,
     linkedin,
     readMore,
     menu,
@@ -30,5 +35,6 @@ metaled_trade,
 callIcon,
 whatsapp_icon,
 person1,
-person2
+person2,
+linkedinLightGreen
 }

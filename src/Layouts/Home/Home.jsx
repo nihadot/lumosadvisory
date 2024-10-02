@@ -5,7 +5,7 @@ import { home } from "../../assets/images";
 function Home() {
   return (
     <>
-      <div className=" flex sm:hidden w-full items-center justify-center mt-10">
+      <div id="home-mobile" className=" flex sm:hidden w-full items-center justify-center pt-24">
         <div className="max-w-[200px]  w-full flex h-[300px]">
           <div className="bg-black  w-[4px] h-[50%]"></div>
           <img
@@ -21,14 +21,14 @@ function Home() {
         className="flex -mt-5 sm:mt-0  w-full h-fit pb-10 sm:pb-0 max-h-fit sm:min-h-[100vh]  "
       >
         <div className="flex flex-1 flex-col sm:flex-row">
-          <div className="flex-1 sm:pt-[10vh] pt-0  sm:ps-[5.333vh] ps-1 pe-[0.889vh] ">
+          <div className="flex-1 pb-[3vh] sm:pt-[10vh] pt-0  sm:ps-[5.333vh] ps-1 pe-[0.889vh] ">
             <img
-              className=" sm:max-w-[44.444vh] max-w-[260px] w-full mx-auto px-[6vh] pt-[6vh] pb-[3vh]  sm:p-[7.111vh]"
+              className=" sm:block hidden sm:max-w-[44.444vh] max-w-[260px] w-full mx-auto px-[6vh] pt-[6vh] pb-[3vh]  sm:p-[7.111vh]"
               src={LA}
               alt=""
             />
-            <div className="max-w-[58.999vh] w-full p-[2.222vh] mx-auto text-justify">
-              <h1 className="sm:text-start text-center">
+            <div className="max-w-[58.999vh]  w-full p-[2.222vh] mx-auto text-justify">
+              <h1 className="sm:text-start pt-[6vh] text-center">
                 Welcome to Lumos Advisory
               </h1>
               <p>

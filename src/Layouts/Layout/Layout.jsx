@@ -45,9 +45,13 @@ function Layout() {
               <MobileMenu setMenuOpen={setMenuOpen} />
             </div>
 
+            <div className="sticky sm:hidden h-[8.889vh] justify-center sm:justify-start z-[100] flex items-center top-[2vh] sm:ms-[5vh]">
+              <img className="  w-[20.222vh]" src={LA} alt="" />
+            </div>
+
             <Home />
 
-            <div className="sticky h-[8.889vh] justify-center sm:justify-start z-[100] flex items-center top-[2vh] sm:ms-[5vh]">
+            <div className="sticky hidden h-[8.889vh] justify-center sm:justify-start z-[100] sm:flex items-center top-[2vh] sm:ms-[5vh]">
               <img className="  w-[20.222vh]" src={LA} alt="" />
             </div>
 

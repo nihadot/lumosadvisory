@@ -87,17 +87,23 @@ www.metaledtrade.com`
 
                 
                   <p> 
-                  <b className="flex gap-1"> 
-                    <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080 [ <div className="flex items-center justify-center"><img src={images.whatsapp_icon} className="w-4 h-4" alt="" /></div> ]</b> 
+                  <b className="flex gap-1 items-center"> 
+                    <img src={images.callIcon} className="w-5 h-5" alt="" /> +971 52 650 4080 [ <div className="flex items-center justify-center"><img src={images.whatsapp_icon} className="w-5 h-5" alt="" /></div> ]</b> 
                   
-                  <b className="flex gap-1"> <img src={images.callIcon} className="w-4 h-4" alt="" /> +971 52 650 4080</b> 
+                  <b className="flex gap-1 items-center"> <img src={images.callIcon} className="w-5 h-5" alt="" /> +971 52 650 4080</b> 
                   info@lumosadvisory.me <br />
                   Meydan Grandstand, 6th floor, <br />
                     Meydan Road, Nad Al Sheba, <br />
-                    Dubai, U.A.E <br />
-                    @lumos.advisory
-                   
+                    Dubai, U.A.E <br />       
                   </p>
+                  <div className="flex items-center -mt-3">
+                  <div className="flex gap-0 me-1">
+                      <img src={images.facebook_icon_light_green} alt="" className="w-[2vh] h-[2h]" />
+                      <img src={images.instagram_light_green} alt="" className="w-[2vh] h-[2vh] me-1 " />
+                      <img src={images.linkedinLightGreen} alt="" className="w-[2vh] h-[2vh]" />
+                    </div>
+                   <p> @lumos.advisory</p>
+                  </div>
                  
                 </div>
               </div>
@@ -121,8 +127,10 @@ www.metaledtrade.com`
                   {/* <span>
                     {testimonials[index-1]?.title}
                   </span> */}
+                  {console.log(readMore,'-----')}
+                  {console.log(readMore  !== 272,'readMore  !== 272')}
                   <img className="w-[12vh] h-[3vh]" src={testimonials[index-1]?.imageUrl} alt="logo" />
-                  <p className={`sm:line-clamp-4 line-clamp-3 whitespace-pre text-balance ${ readMore  !== 272 && 'overflow-y-scroll' } `} >
+                  <p className={`sm:line-clamp-4 line-clamp-3 whitespace-pre !text-balance ${ (readMore  !== 272) && '!overflow-y-scroll' } `} >
                     {testimonials[index-1]?.paragraph && testimonials[index-1]?.paragraph.length > readMore ? testimonials[index-1]?.paragraph.split(0,readMore-3)+'...' : testimonials[index-1]?.paragraph }
                   </p>
                
@@ -154,11 +162,11 @@ www.metaledtrade.com`
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]">
-              <input name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Name" className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <input  name="mobileNumber" onChange={handleChange} value={formData.mobileNumber} type="number" placeholder="Mobile no." className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <input name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]" />
-              <textarea name="message" onChange={handleChange} value={formData.message} placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none p-[1.0vh] rounded mt-[1.5vh]"></textarea>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdkTxJHoJUbKiHSdpFaGG6Ziav1290OthtnWeCgCltU5wqDwA/formResponse" className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]">
+              <input name="entry.2003910202"   type="text" placeholder="Name" className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <input  name="entry.2006136947"  type="number" placeholder="Mobile no." className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <input name="entry.730477543"  type="email" placeholder="Email ID" className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]" />
+              <textarea name="entry.1911790893"  placeholder="Message" className="text-[1.777vh]  w-full h-[17.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none p-[1.0vh] rounded mt-[1.5vh]"></textarea>
               <div className="flex justify-between text-white text-[2vh]">
                 <input type="submit" value='Send' />
                 <input type="reset" value='Cancel'/>
