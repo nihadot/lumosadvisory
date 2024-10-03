@@ -32,7 +32,7 @@ function MobileMenuBar({ setMenuOpen }) {
       </div>
 
       {/* mobile menu links */}
-      <div className="mt-[3vh] text-base ">
+      <div className="mt-[3vh] text-[15px] ">
         {/* Home section */}
         <a
           href="#home-mobile"
@@ -92,7 +92,7 @@ function MobileMenuBar({ setMenuOpen }) {
 
         {/* Services section */}
         {activeSection === "services" && (
-          <div className="pl-[2vh] text-[2.1vh] h-fit ">
+          <div className="pl-[2vh] text-[14px] h-fit ">
             {/* Outsourced CFO Services */}
             <a
               href="#service-one"
@@ -181,7 +181,7 @@ function MobileMenuBar({ setMenuOpen }) {
         {/* Contact section */}
         <a
           href="#contact"
-          className={`block py-[0.666vh] ${
+          className={`block pt-[0.666vh] pb-4 ${
             activeSection === "contact" ? "text-black" : "text-white"
           }`}
           onClick={() => handleClick("contact")}
