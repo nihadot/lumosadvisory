@@ -6,10 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        'charter-bold': ['Charter-bold', 'sans-serif'],
-        'charter-regular': ['Charter-regular', 'sans-serif'],
-      },
       screens:{
         '1300px': '1300px',
         '1200px': '1200px',

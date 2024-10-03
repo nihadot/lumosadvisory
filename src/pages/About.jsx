@@ -1,59 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { LeftTriangleIcon } from '../../assets/icons';
-import { about } from '../../assets/images';
+import React, { useState} from 'react';
+import { LeftTriangleIcon } from '../assets/icons';
+import { about } from '../assets/images';
 
 
-const ourVisionContentOne = 'We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.'
-// const ourVisionContentTwo = 'We envision a world where SME owners and stakeholders are well equipped to achieve their financial goals. SMEs are important to any economy as they drive economic growth through innovation, employment, and community development. We will be your trusted advisor and be by your side in every step of your journey.'
-
-const ourMissionContentOne = 'We strive to help SME clients succeed in their business journey by providing them with data-driven tools for practical decision-making and designing custom and cost-effective strategies for sustainable growth at an affordable price.';
-// const ourMissionContentTwo = 'Our mission is to guide SME clients through their business journey, ensuring growth and adding significant value every step of the way. We help our clients unlock the right value potential by helping formulate sustainable growth strategies, implementing the right controls as required for the business, and providing customized solutions tailored to the unique needs of each business.';
 function About() {
   const [isPopupVisible, setPopupVisible] = useState(false);
-  const popupRef = useRef(null);
-
-  const [ourVision, setOurVision] = useState(ourVisionContentOne);
-  const [ourMission, setOurMission] = useState(ourMissionContentOne);
-
   const togglePopup = () => {
-    // isPopupVisible ? 
-    // setOurVision(ourVisionContentTwo)
-    // : 
-    // setOurMission(ourMissionContentTwo)
-    // setOurVision(ourVisionContentOne)
-
-
     setPopupVisible(prev => !prev);
   };
-
-
-
-  const handleClickOutside = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
-      setPopupVisible(false);
-      //  isPopupVisible ? 
-    // setOurVision(ourVisionContentTwo)
-    // : 
-    setOurMission(ourMissionContentOne)
-    setOurVision(ourVisionContentOne)
-
-    }
-  };
-
-  // useEffect(() => {
-  //   if (isPopupVisible) {
-  //     document.addEventListener('mousedown', handleClickOutside);
-
-  //   } else {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   }
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, [isPopupVisible]);
-
-
 
 
   return (
@@ -80,10 +34,10 @@ function About() {
             <p className=''>We are a team of finance and strategy professionals with a cumulative experience of 30 years working in Big 4 firms and top-tier companies. We have gained in-depth practical knowledge and expertise on handling all financial, strategic and commercial aspects of the business.</p>
 
             <h3>Our Vision</h3>
-            <p className=''>{ourVision}</p>
+            <p className=''>We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.</p>
 
             <h3>Our Mission</h3>
-            <p className=''>{ourMission}</p>
+            <p className=''>We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.</p>
 
             <div className="flex gap-[2.222vh]">
               <h3>Why focus on SMEs?</h3>
@@ -116,7 +70,7 @@ function About() {
             </div>
 
             {isPopupVisible && (
-              <div  ref={popupRef} className="absolute top-[25%] right-0 bg-[#5F8F93] text-white md:block hidden bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
+              <div className="absolute top-[25%] right-0 bg-[#5F8F93] text-white md:block hidden bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
                 <h3 className="text-white">Why focus on SMEs?</h3>
                 <p className='text-white'><span className='text-white'>Innovation:</span> SMEs often pioneer new products and services, pushing industries forward.</p>
                 <p className='text-white'><span className='text-white'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
@@ -134,7 +88,7 @@ function About() {
 
 
 {isPopupVisible && (
-              <div  ref={popupRef} className="absolute -top-[10%] right-0  md:hidden block  py-[0] px-[15px] w-full z-50">
+              <div className="absolute -top-[10%] right-0  md:hidden block  py-[0] px-[15px] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-90 px-3 py-1">
 
                 <h3 className="text-white">Why focus on SMEs?</h3>

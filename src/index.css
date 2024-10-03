@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-  .baskervville-regular {
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
- 
-
-  /* Base font sizes for small screens (default) */
+/* Base font sizes for small screens (default) */
 :root {
   --font-size-h1: 20px; /* 40px */
   --font-size-h2: 16px; /* 32px */
@@ -27,164 +16,129 @@
   --font-size-span: 1rem; /* 16px */
 }
 
-
-
-  * {
-    box-sizing: border-box!important; /* Apply globally */
-  }
-  
-  html{
-    scroll-behavior: smooth;
-  }
-  /* Optionally apply global styles */
-  body {
-    /* font-family: 'Charter-Regular', ''; */
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-  }
-
-/* main::-webkit-scrollbar{
-    display: none;
-} */
-
-
-
-.layout{
-    width: 100%;
+/* font declaration */
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.main-inner-content::-webkit-scrollbar{
-    display: none;
+* {
+  box-sizing: border-box !important; /* Apply globally */
 }
 
-h1{
-    /* font-family: 'Charter-bold', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: var(--font-size-h1);
-    /* 3.555vh */
-    /* 3vh */
-    line-height: 4vh;
-    margin-bottom: 1vh;
-    color: #5F8F93;
+html {
+  scroll-behavior: smooth;
 }
 
-
-p{
-    /* font-family: 'Charter-regular', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.7vh;
-    /* text-wrap: pretty; */
-    /* word-break: break-all; */
-    text-align:  justify;
-    
-    /* font-size: clamp(10px, 1.7vh, 1.7vh); */
-    font-size: var(--font-size-p);
-    /*  1.9vh */
-    /* line-height: 2.667vh; */
-    color: #5F8F93;
-    margin: 0.999vh 0px;
+/* Optionally apply global styles */
+body {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
 }
 
-h2{
-    /* font-family: 'Charter-bold', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: var(--font-size-h2);
-    /* 2.2vh */
-    /* font-size: 2.5vh; */
-    margin: 1.556vh 0px 1.556vh 0px;
-    line-height: 2.667vh;
-    color: #000000;
+.layout {
+  width: 100%;
 }
 
-h3{
-    /* font-family: 'Charter-bold', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 2vh;
-    line-height: 2.667vh;
-    color: #5F8F93;
-    margin: 1.556vh 0px 1.556vh 0px;
+.main-inner-content::-webkit-scrollbar {
+  display: none;
 }
 
-/* label{
-    font-family: 'Charter-regular', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: vh;
-    line-height: 2.667vh;
-    color: #5F8F93;
-} */
-
-button{
-    /* font-family: 'Charter-bold', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3vh;
-    margin-left: 1vh;
-    line-height: 2.667vh;
-    color: #5F8F93;
+h1 {
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: var(--font-size-h1);
+  line-height: 4vh;
+  margin-bottom: 1vh;
+  color: #5f8f93;
 }
 
-h5{
-    /* font-family: 'Charter-regular', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.999vh;
-    line-height: 2vh;
-    color: #5F8F93;
+p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7vh;
+  text-align: justify;
+  font-size: var(--font-size-p);
+  color: #5f8f93;
+  margin: 0.999vh 0px;
 }
 
-h6{
-    /* font-family: 'Charter-regular', serif; */
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.999vh; 
-    /* 1.999vh */
-    line-height: 2vh;
-    color: #5F8F93;
+h2 {
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: var(--font-size-h2);
+  margin: 1.556vh 0px 1.556vh 0px;
+  line-height: 2.667vh;
+  color: #000000;
 }
 
+h3 {
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2vh;
+  line-height: 2.667vh;
+  color: #5f8f93;
+  margin: 1.556vh 0px 1.556vh 0px;
+}
 
-span{
-  /* font-family: 'Charter-regular', serif; */
+button {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3vh;
+  margin-left: 1vh;
+  line-height: 2.667vh;
+  color: #5f8f93;
+}
+
+h5 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.999vh;
+  line-height: 2vh;
+  color: #5f8f93;
+}
+
+h6 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.999vh;
+  line-height: 2vh;
+  color: #5f8f93;
+}
+
+span {
   font-family: "Baskervville", serif;
   font-weight: bold;
   font-style: normal;
   font-size: 1.7;
   line-height: 2.667vh;
-  color: #5F8F93;
+  color: #5f8f93;
 }
 
-
 /* Chrome, Safari, Edge, and Opera */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* General for other browsers */
-input[type=number] {
-    appearance: textfield;
+input[type="number"] {
+  appearance: textfield;
 }
-
-
-
 
 /* Medium Screens (tablets) */
 /* 
@@ -201,7 +155,6 @@ input[type=number] {
   }
 } */
 
-
 /* Large Screens (desktops) */
 @media (min-width: 1024px) {
   :root {
@@ -209,7 +162,7 @@ input[type=number] {
     --font-size-h2: 2.2vh; /* 56px */
     --font-size-h3: 2vh; /* 48px */
     --font-size-h4: 2.5rem; /* 40px */
-    --font-size-h5:1.999vh; /* 32px */
+    --font-size-h5: 1.999vh; /* 32px */
     --font-size-h6: 1.999vh; /* 28px */
     --font-size-p: 1.7vh; /* 20px */
     --font-size-span: 1.7vh; /* 20px */

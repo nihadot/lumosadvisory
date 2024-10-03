@@ -1,34 +1,46 @@
 import React, { useState } from "react";
-import Home from "../Home/Home";
-import WhyChoose from "../Choosing/WhyChoose";
-import CFO_Services from "../Services/CFO_Services";
-import Business_Transformation from "../Services/Business_Transformation";
-import About from "../About/About";
-import Business_plan from "../Services/Business_plan";
-import Business_valuations from "../Services/Business_valuations";
-import Accounting from "../Services/Accounting";
-import Tax from "../Services/Tax";
-import Contact from "../Contact/Contact";
-import LeftBar from "./LeftBar";
+// mobile screens
 import MobileMenu from "./MobileMenu";
-import { images } from "../../static";
-import LA from "../../assets/Img/Lumos Advisory Logo-01.png";
-import AboutUs from "../About/AboutUs";
 import MobileMenuBar from "./MobileMenuBar";
+// import static images
+import {
+  landingPageLogo,
+  layout_image,
+  right_image,
+} from "../../assets/images";
+// left sidebar for layout (desktop) medium is limit 'md'
+import LeftBar from "./LeftBar";
+
+// pages
+import {
+  About,
+  AboutUs,
+  Accounting,
+  Business_plan,
+  Business_Transformation,
+  Business_valuations,
+  CFO_Services,
+  Contact,
+  Home,
+  WhyChoose,
+  Tax,
+} from "../../pages";
+
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <div className="w-full h-screen m-auto relative">
-        {/* Background Images */}
+        {/* Background Images (left side) */}
         <img
-          src={images.layout}
+          src={layout_image}
           alt="Background Layout"
           className="block sm:w-[68vh] w-[39vh] h-screen object-cover absolute z-50 left-0 top-0"
         />
+        {/* background Images (right side) */}
         <img
-          src={images.right}
+          src={right_image}
           alt="Right Side Image"
           className="block h-screen object-cover fixed z-[100] right-0 top-0 w-[3vh]  sm:w-[10vh]"
         />
@@ -36,38 +48,59 @@ function Layout() {
         {/* LeftBar Component */}
         <LeftBar />
 
-        {/* Main Content */}
+        {/* Mobile Menu Bar (sm) small is limit 'sm' */}
         {menuOpen && <MobileMenuBar setMenuOpen={setMenuOpen} />}
+
         <div className="main w-full  min-h-screen sm:ps-[18vh] sm:pe-[7vh] pe-[1.5vh]  ps-[4vh] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
-            {/* Sections with Refs and Scroll Observation */}
+            {/* Mobile Menu (sm) small is limit 'sm' */}
             <div className="fixed top-0 left-0">
               <MobileMenu setMenuOpen={setMenuOpen} />
             </div>
 
+            {/* floating logo mobile view only small is limit 'sm' */}
             <div className="sticky sm:hidden h-[8.889vh] justify-center sm:justify-start z-[100] flex items-center top-[2vh] sm:ms-[5vh]">
-              <img className="  w-[20.222vh]" src={LA} alt="" />
+              <img className="  w-[20.222vh]" src={landingPageLogo} alt="" />
             </div>
 
+            {/* Home section */}
             <Home />
 
+            {/* floating section desktop view from starting sm */}
             <div className="sticky hidden h-[8.889vh] justify-center sm:justify-start z-[100] sm:flex items-center top-[2vh] sm:ms-[5vh]">
-              <img className="  w-[20.222vh]" src={LA} alt="" />
+              <img className="  w-[20.222vh]" src={landingPageLogo} alt="" />
             </div>
 
-            {/*  */}
+            {/* About Section */}
             <div className="sm:-mt-[8.889vh] mt-0 ">
               <About />
             </div>
+
+            {/* About Us Section */}
             <AboutUs />
 
+            {/* Why Choose */}
             <WhyChoose />
+
+            {/* CFO Services */}
             <CFO_Services />
+
+            {/* Business Transformation */}
             <Business_Transformation />
+
+            {/* Business Plan */}
             <Business_plan />
+
+            {/* Business Valuations */}
             <Business_valuations />
+
+            {/* Accounting and Book-Keeping */}
             <Accounting />
+
+            {/* Tax and Compliance */}
             <Tax />
+
+            {/* Contact */}
             <Contact />
           </div>
         </div>

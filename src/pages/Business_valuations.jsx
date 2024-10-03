@@ -1,43 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { businessValuations } from '../../assets/images';
-import { LeftTriangleIcon } from '../../assets/icons';
+import { businessValuations } from '../assets/images';
+import { LeftTriangleIcon } from '../assets/icons';
 
 function Business_valuations() {
   const [isPopupVisible, setPopupVisible] = useState(false);
-  const popupRef = useRef(null);
 
   const togglePopup = () => {
     setPopupVisible(!isPopupVisible);
   };
 
-  const handleClickOutside = (event) => {
-    // If click is outside popup and not on toggle button, close the popup
-    if (
-      popupRef.current &&
-      !popupRef.current.contains(event.target) &&
-      toggleButtonRef.current &&
-      !toggleButtonRef.current.contains(event.target)
-    ) {
-      setPopupVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    if (isPopupVisible) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isPopupVisible]);
-
   return (
     <>
-
-
+    {/* mobile only visible */}
 <div id='business-valuations' className=" flex sm:hidden w-full items-center justify-center pt-24">
         <div className="max-w-[200px]  w-full flex h-[300px]">
           <div className="bg-black  w-[4px] h-[50%]"></div>
@@ -52,10 +26,7 @@ function Business_valuations() {
       <div id='service-four' className="relative min-h-[77.778vh] w-full h-fit max-h-fit  flex">
         <div className="flex w-full flex-1">
           <div className="flex-1 pt-[8vw] ps-5 sm:ps-[5.333vh] pe-[3vh]">
-           {/* <div className="sticky h-20 flex items-center top-0 left-0">
-            
-            <img className='mt-[1.778vh]  w-[22.222vh]' src={LA} alt="" />
-          </div> */}
+
             <h2 className=''>Business Valuations</h2>
             <p>Business valuations are critical for numerous purposes, including mergers and acquisitions, estate planning, tax planning, and financing. They provide a clear and accurate depiction of your business's market value. For SME clients, having an accurate valuation is essential for strategic growth, competitive edge, and informed decision-making in terms of potential divestment and monetization.</p>
 
@@ -69,7 +40,7 @@ function Business_valuations() {
               <h3 >Our Process and Approach</h3>
               <div className="flex items-center justify-center mt-0">
               
-              <img className='w-[2.222vh] h-[2.222vh]' src={LeftTriangleIcon} alt="" />
+              <img className='w-[3vh] h-[4vh] object-cover' src={LeftTriangleIcon} alt="" />
 
               <button 
                 onClick={togglePopup}
@@ -79,8 +50,9 @@ function Business_valuations() {
                 </div>
             </div>
 
+{/* Popup from sm to all devices */}
             {isPopupVisible && (
-              <div ref={popupRef} className="hidden sm:block absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
+              <div className="hidden sm:block absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.444vh] px-[2.222vh] max-w-[40.5vw] w-full z-50">
                 <h3 className='text-white'>Our Process and Approach</h3>
                 <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>
                 <p className='text-white'><span className='text-white'>Initial Consultation:</span> We begin with an in-depth discussion to understand your business and valuation needs.</p>
@@ -94,8 +66,9 @@ function Business_valuations() {
             )}
 
 
+ {/* Popup below sm  */}
 {isPopupVisible && (
-              <div ref={popupRef} className="absolute block sm:hidden -top-[10%] right-0 py-[0.444vh] px-[2.222vh] w-full z-50">
+              <div className="absolute block sm:hidden -top-[10%] right-0 py-[0.444vh] px-[2.222vh] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-90  w-full px-3 py-1">
                   
 
