@@ -16,7 +16,7 @@ import callIcon from "./call-icon.svg";
 import whatsAppIcon from "./whatsapp-icon.svg";
 import facebookIconLightGreen from "./facebook-light-green.svg";
 import instagramIconLightGreen from "./instagram-light-green.svg";
-import linkedInIconLightGreen from "./linkedin-light-green.svg";
+import linkedInIconLightGreen from "./linkedIn-light-green.svg";
 import downArrow from "./down-arrow.svg";
 import upwardTriangle from "./upwardArrow-.svg";
 

@@ -3,7 +3,7 @@ import { home, landingPageLogo } from "../assets/images";
 function Home() {
     return (
       <>
-        <div id="home-mobile" className=" flex sm:hidden w-full items-center justify-center pt-24">
+        <div id="home-mobile" className=" flex sm:hidden w-full items-center justify-center pt-10">
           <div className="max-w-[200px]  w-full flex h-[300px]">
             <div className="bg-black  w-[4px] h-[50%]"></div>
             <img
