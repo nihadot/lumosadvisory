@@ -20,7 +20,7 @@ function MobileMenuBar({ setMenuOpen }) {
   };
 
   return (
-    <div className="w-[45%]  sm:hidden block fixed z-[200] p-5 top-0 left-0 min-h-[360px] max-h-fit bg-[#5F8F93] opacity-80">
+    <div className="w-[45%]  sm:hidden block fixed z-[200] px-5 top-0 left-0 min-h-[360px] max-h-fit bg-[#5F8F93] opacity-80">
       {/* close function button */}
       <div className=" bg-transparent mt-4">
         <img
@@ -92,7 +92,7 @@ function MobileMenuBar({ setMenuOpen }) {
 
         {/* Services section */}
         {activeSection === "services" && (
-          <div className="pl-[0vh] ">
+          <div className="pl-[2vh] text-[2.1vh] h-fit ">
             {/* Outsourced CFO Services */}
             <a
               href="#service-one"
@@ -166,7 +166,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Tax and Compliance Services */}
             <a
               href="#service-six"
-              className={`block py-[0.889vh] ${
+              className={`block py-[0.444vh] ${
                 activeSubLink === "service-six" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-six")}
@@ -181,7 +181,7 @@ function MobileMenuBar({ setMenuOpen }) {
         {/* Contact section */}
         <a
           href="#contact"
-          className={`block py-[0.444vh] ${
+          className={`block py-[0.666vh] ${
             activeSection === "contact" ? "text-black" : "text-white"
           }`}
           onClick={() => handleClick("contact")}

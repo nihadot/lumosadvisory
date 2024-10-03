@@ -16,7 +16,7 @@ function Home() {
   
         <div
           id="home"
-          className="flex -mt-5 sm:mt-0  w-full h-fit pb-10 sm:pb-0 max-h-fit sm:min-h-[100vh]  "
+          className="flex -mt-5 sm:mt-0  w-full h-fit pb-0 sm:pb-0 max-h-fit sm:min-h-[100vh]  "
         >
           <div className="flex flex-1 flex-col sm:flex-row">
             <div className="flex-1 pb-[3vh] sm:pt-[10vh] pt-0  sm:ps-[5.333vh] ps-1 pe-[0.889vh] ">
