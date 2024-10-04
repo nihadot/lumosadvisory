@@ -36,12 +36,20 @@ function Layout() {
 
     const leftImageElement = document.getElementById("left-image");
     const rightImageElement = document.getElementById("right-image");
+
+    const floatingMobileImageElement = document.getElementById("floating-logo-mobile");
+    const floatingDesktopImageElement = document.getElementById("floating-logo-desktop");
+
     leftImageElement.addEventListener("contextmenu",handelContextMenu);
     rightImageElement.addEventListener("contextmenu",handelContextMenu);
+    floatingMobileImageElement.addEventListener("contextmenu",handelContextMenu);
+    floatingDesktopImageElement.addEventListener("contextmenu",handelContextMenu);
   
     return ()=>{
       leftImageElement.removeEventListener("contextmenu",handelContextMenu);
       rightImageElement.removeEventListener("contextmenu",handelContextMenu);
+      floatingDesktopImageElement.removeEventListener("contextmenu",handelContextMenu);
+      floatingMobileImageElement.removeEventListener("contextmenu",handelContextMenu);
 
     }
   })
@@ -79,7 +87,7 @@ function Layout() {
 
             {/* floating logo mobile view only small is limit 'sm' */}
             <div className="sticky sm:hidden h-[8.889vh] justify-center sm:justify-start z-[100] flex items-center top-[2.4vh] sm:ms-[5vh]">
-              <img className="  w-[20.222vh]" src={landingPageLogo} alt="" />
+              <img className="w-[20.222vh]" id="floating-logo-mobile" src={landingPageLogo} alt="" />
             </div>
 
             {/* Home section */}
@@ -87,7 +95,7 @@ function Layout() {
 
             {/* floating section desktop view from starting sm */}
             <div className="sticky hidden h-[8.889vh] justify-center sm:justify-start z-[100] sm:flex items-center top-[2vh] sm:ms-[5vh]">
-              <img className="  w-[20.222vh]" src={landingPageLogo} alt="" />
+              <img className="w-[20.222vh]" id="floating-logo-desktop" src={landingPageLogo} alt="" />
             </div>
 
             {/* About Section */}
