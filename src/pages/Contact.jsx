@@ -136,7 +136,7 @@ www.metaledtrade.com`,
                 <div className="">
                   <p>
                     <b className="flex gap-1 items-center">
-                      <img src={callIcon} className="w-5 h-[18px]" alt="" />{" "}
+                      <img src={callIcon} className="w-5 h-5" alt="" />{" "}
                       +971 52 650 4080 [{" "}
                       <div className="flex items-center justify-center">
                         <img
@@ -151,7 +151,7 @@ www.metaledtrade.com`,
                       {" "}
                       <img
                         src={callIcon}
-                        className="w-5 h-[18px]"
+                        className="w-5 h-5"
                         alt=""
                       />{" "}
                       +971 52 650 4080
@@ -161,25 +161,25 @@ www.metaledtrade.com`,
                     Meydan Road, Nad Al Sheba, <br />
                     Dubai, U.A.E <br />
                   </p>
-                  <div className="flex items-center -mt-3">
-                    <div className="flex gap-0 me-1">
+                  <div className="flex items-center justify-center -mt-1 -ms-4">
+                    <div className="flex gap-0 items-center me-1 ">
                       <img
                         src={facebookIconLightGreen}
                         alt=""
-                        className="w-[2vh] h-[2h]"
+                        className="w-5 h-5"
                       />
                       <img
                         src={instagramIconLightGreen}
                         alt=""
-                        className="w-[2vh] h-[2vh] me-1 "
+                        className="w-5 h-5 me-1 "
                       />
                       <img
                         src={linkedInIconLightGreen}
                         alt=""
-                        className="w-[2vh] h-[2vh]"
+                        className="w-5 h-4"
                       />
                     </div>
-                    <p> @lumos.advisory</p>
+                    <p className="p-0 m-0"> @lumos.advisory</p>
                   </div>
                 </div>
               </div>
