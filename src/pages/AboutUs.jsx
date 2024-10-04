@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { paramitaNag, siddharthNag } from "../assets/images";
 
 function AboutUs() {
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+
+    const paramitaNagElement = document.getElementById("paramitaNag");
+    const siddharthNagElement = document.getElementById("siddharthNag");
+    
+    paramitaNagElement.addEventListener("contextmenu",handelContextMenu);
+    siddharthNagElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      paramitaNagElement.removeEventListener("contextmenu",handelContextMenu);
+      siddharthNagElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
   return (
     <>
       <div
@@ -17,6 +34,7 @@ function AboutUs() {
                 className="w-[16vh] h-[16vh] object-cover"
                 src={paramitaNag}
                 alt=""
+                id="paramitaNag"
               />
             </div>
 
@@ -72,6 +90,7 @@ function AboutUs() {
                 className="w-[16vh] h-[16vh] object-cover"
                 src={siddharthNag}
                 alt=""
+                id="siddharthNag"
               />
             </div>
 

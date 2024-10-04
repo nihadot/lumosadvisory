@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { whyChooseUs } from "../assets/images";
 
 function WhyChoose() {
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileWhyChooseImageElement = document.getElementById("mobile-whyChoose-image");
+    const desktopWhyChooseImageElement = document.getElementById("desktop-whyChoose-image");
+    
+    mobileWhyChooseImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopWhyChooseImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileWhyChooseImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopWhyChooseImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
   return (
     <>
       {/* mobile only visible */}
@@ -15,7 +31,9 @@ function WhyChoose() {
             className=" w-[96%] block  object-cover h-full"
             src={whyChooseUs}
             alt="Loading..."
+            id="mobile-whyChoose-image"
           />
+
         </div>
       </div>
 
@@ -76,6 +94,7 @@ function WhyChoose() {
               className=" h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]"
               src={whyChooseUs}
               alt="Loading..."
+              id="desktop-whyChoose-image"
             />
           </div>
         </div>

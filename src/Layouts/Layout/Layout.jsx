@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // mobile screens
 import MobileMenu from "./MobileMenu";
 import MobileMenuBar from "./MobileMenuBar";
@@ -29,17 +29,36 @@ import {
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+
+    const leftImageElement = document.getElementById("left-image");
+    const rightImageElement = document.getElementById("right-image");
+    leftImageElement.addEventListener("contextmenu",handelContextMenu);
+    rightImageElement.addEventListener("contextmenu",handelContextMenu);
+  
+    return ()=>{
+      leftImageElement.removeEventListener("contextmenu",handelContextMenu);
+      rightImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
   return (
     <>
       <div className="w-full h-screen m-auto relative">
         {/* Background Images (left side) */}
         <img
+        id="left-image"
           src={layout_image}
           alt="Background Layout"
           className="block sm:w-[68vh] w-[39vh] h-screen object-cover absolute z-50 left-0 top-0"
         />
         {/* background Images (right side) */}
         <img
+        id="right-image"
           src={right_image}
           alt="Right Side Image"
           className="block h-screen object-cover fixed z-[100] right-0 top-0 w-[3vh]  sm:w-[10vh]"
@@ -51,7 +70,7 @@ function Layout() {
         {/* Mobile Menu Bar (sm) small is limit 'sm' */}
         {menuOpen && <MobileMenuBar setMenuOpen={setMenuOpen} />}
 
-        <div className="main w-full  min-h-screen sm:ps-[18vh] sm:pe-[7vh] pe-[1.5vh]  ps-[4vh] absolute z-50">
+        <div className=" min-h-screen sm:ps-[19vh] sm:pe-[9.5vh] pe-[1.5vh]  ps-[4vh] absolute z-50">
           <div className="w-full h-screen main-inner-content overflow-y-scroll">
             {/* Mobile Menu (sm) small is limit 'sm' */}
             <div className="fixed top-0 left-0">

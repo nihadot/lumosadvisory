@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { contact, metaled_trade_logo } from "../assets/images";
 import { callIcon, downArrow, facebookIconLightGreen, instagramIconLightGreen, linkedInIconLightGreen, upwardTriangle, whatsAppIcon } from "../assets/icons";
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobileNumber: "",
+    number: "",
     message: "",
   });
 
@@ -68,6 +66,63 @@ www.metaledtrade.com`,
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  // Function to handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    try {
+      // Send the form data with fetch
+      const response = await fetch("https://script.google.com/macros/s/AKfycby0v36vfoxfc0IqPWDUh9oXkuk9uZmWS4cUgIhbbr4QsIqI3nrNdgxL67T_NhrvptIiug/exec", {
+        method: "POST",
+        body: new URLSearchParams(formData), // Serialize form data like FormData but simpler
+      });
+
+      // Check if the response is ok
+      if (response.ok) {
+        alert("Submitted successfully");
+
+        handleCancel();
+        // Optionally reload or redirect
+        // window.location.reload();
+        // window.location.href = "https://google.com";
+      } else {
+        throw new Error("Something went wrong");
+      }
+    } catch (error) {
+      alert("Something Error");
+      console.error("Error:", error);
+    }
+  };
+
+
+  const handleCancel = ()=>{
+    setFormData({
+      name: '',
+      email: '',
+      number:'',
+      message:''
+    })
+  }
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+
+    const rootElement = document.getElementById("contact-image");
+    const TestMonialElement = document.getElementById("testmonials-logo-image");
+    rootElement.addEventListener("contextmenu",handelContextMenu);
+    TestMonialElement.addEventListener("contextmenu",handelContextMenu);
+    
+
+
+    return ()=>{
+      rootElement.removeEventListener("contextmenu",handelContextMenu);
+    TestMonialElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
   return (
     <>
       <div id="contact" className="flex pb-5 flex-col pt-24 sm:pt-0 sm:mt-0">
@@ -81,7 +136,7 @@ www.metaledtrade.com`,
                 <div className="">
                   <p>
                     <b className="flex gap-1 items-center">
-                      <img src={callIcon} className="w-5 h-5" alt="" />{" "}
+                      <img src={callIcon} className="w-5 h-[18px]" alt="" />{" "}
                       +971 52 650 4080 [{" "}
                       <div className="flex items-center justify-center">
                         <img
@@ -96,7 +151,7 @@ www.metaledtrade.com`,
                       {" "}
                       <img
                         src={callIcon}
-                        className="w-5 h-5"
+                        className="w-5 h-[18px]"
                         alt=""
                       />{" "}
                       +971 52 650 4080
@@ -136,6 +191,7 @@ www.metaledtrade.com`,
               className="object-cover w-full h-[43vh] "
               src={contact}
               alt=""
+                 id="contact-image"
             />
           </div>
         </div>
@@ -145,11 +201,14 @@ www.metaledtrade.com`,
           <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
             <div className="">
               <div className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[50vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
-                <div className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
+                <div 
+               
+                className="relative w-full h-full bg-white rounded p-[1.778vh] text-[1.333vh]">
                   <img
                     className="w-[12vh] h-[3vh]"
                     src={testimonials[index - 1]?.imageUrl}
                     alt="logo"
+                   id="testmonials-logo-image"
                   />
                   <p
                     className={`sm:line-clamp-4 line-clamp-3 whitespace-pre !text-balance ${
@@ -198,35 +257,43 @@ www.metaledtrade.com`,
 
             {/* contact form */}
             <form
-              action="https://docs.google.com/forms/d/e/1FAIpQLSdkTxJHoJUbKiHSdpFaGG6Ziav1290OthtnWeCgCltU5wqDwA/formResponse"
-              className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]"
+  onSubmit={handleSubmit}
+className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]"
             >
               <input
-                name="entry.2003910202"
+                name="name"
                 type="text"
+                onChange={handleChange}
+                value={formData.name}
                 placeholder="Name"
                 className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <input
-                name="entry.2006136947"
+                name="number"
+                onChange={handleChange}
+                value={formData.number}
                 type="number"
                 placeholder="Mobile no."
                 className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <input
-                name="entry.730477543"
+                name="email"
                 type="email"
+                onChange={handleChange}
+                value={formData.email}
                 placeholder="Email ID"
                 className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <textarea
-                name="entry.1911790893"
+                name="message"
+                onChange={handleChange}
+                value={formData.message}
                 placeholder="Message"
                 className="text-[1.777vh]  w-full h-[17.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none p-[1.0vh] rounded mt-[1.5vh]"
               ></textarea>
               <div className="flex justify-between text-white text-[2vh]">
-                <input type="submit" value="Send" />
-                <input type="reset" value="Cancel" />
+                <input type="submit" className="cursor-pointer" value="Send" />
+                <input onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer" />
               </div>
             </form>
           </div>

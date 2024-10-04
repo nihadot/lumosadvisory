@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import { LeftTriangleIcon } from '../assets/icons';
 import { about } from '../assets/images';
 
@@ -9,6 +9,21 @@ function About() {
     setPopupVisible(prev => !prev);
   };
 
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileHomeImageElement = document.getElementById("mobile-about-image");
+    const desktopHomeImageElement = document.getElementById("desktop-about-image");
+    
+    mobileHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
 
   return (
     <>
@@ -20,6 +35,7 @@ function About() {
             className=" w-[96%] block  object-cover h-full"
             src={about}
             alt="Loading..."
+            id='mobile-about-image'
           />
         </div>
       </div>
@@ -111,7 +127,9 @@ function About() {
 
           <div className="sm:flex hidden max-w-[40vw] w-full">
             <div className="bg-black w-[0.667vh] h-[50%]"></div>
-            <img className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={about} alt="Loading..." />
+            <img
+            id='desktop-about-image'
+            className=' h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={about} alt="Loading..." />
           </div>
         </div>
       </div>

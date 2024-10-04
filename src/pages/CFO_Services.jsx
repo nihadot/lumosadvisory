@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { cfoServices } from "../assets/images";
 import { LeftTriangleIcon } from "../assets/icons";
 
@@ -8,6 +8,17 @@ function CFO_Services() {
   const togglePopup = () => {
     setPopupVisible((prev) => !prev);
   };
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileCFOImageElement = document.getElementById("cfo-image");
+    mobileCFOImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileCFOImageElement.removeEventListener("contextmenu",handelContextMenu);
+    }
+  })
 
   return (
     <>
@@ -23,6 +34,7 @@ function CFO_Services() {
                 className="w-full object-cover h-[100%] "
                 src={cfoServices}
                 alt="Outsourced CFO Services"
+                id="cfo-image"
               />
             </div>
           </div>

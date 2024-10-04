@@ -9,6 +9,23 @@ function Business_Transformation() {
     setPopupVisible(!isPopupVisible);
   };
 
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileHomeImageElement = document.getElementById("mobile-business-transform-image");
+    const desktopHomeImageElement = document.getElementById("desktop-business-transform-image");
+    
+    mobileHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
+
   return (
     <>
 <div id='business-transform' className=" flex sm:hidden w-full items-center justify-center pt-24">
@@ -18,6 +35,7 @@ function Business_Transformation() {
             className=" w-[96%] block  object-cover h-full"
             src={businessTransform}
             alt="Loading..."
+            id='mobile-business-transform-image'
           />
         </div>
       </div>
@@ -82,7 +100,7 @@ function Business_Transformation() {
 
           <div className="sm:flex hidden max-w-[40vw] w-full">
                 <div className="bg-black w-[0.667vh] h-[50%] bottom-0 absolute"></div>
-                <img className='h-screen ps-[0.5vh] w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={businessTransform} alt="Loading..." />
+                <img id='desktop-business-transform-image' className='h-screen ps-[0.5vh] w-full max-w-[40vw] object-cover max-h-[100vh]' src={businessTransform} alt="Loading..." />
           </div>
           
         </div>

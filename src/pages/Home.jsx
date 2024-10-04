@@ -1,6 +1,30 @@
+import { useEffect } from "react";
 import { home, landingPageLogo } from "../assets/images";
 
 function Home() {
+
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+
+    const logoImageElement = document.getElementById("logo-image");
+    const mobileHomeImageElement = document.getElementById("mobile-home-image");
+    const desktopHomeImageElement = document.getElementById("desktop-home-image");
+    
+    logoImageElement.addEventListener("contextmenu",handelContextMenu);
+    mobileHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopHomeImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      logoImageElement.removeEventListener("contextmenu",handelContextMenu);
+      mobileHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopHomeImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
+
     return (
       <>
         <div id="home-mobile" className=" flex sm:hidden w-full items-center justify-center pt-10">
@@ -10,6 +34,7 @@ function Home() {
               className=" w-[96%] block  object-cover h-full"
               src={home}
               alt="Loading..."
+              id="mobile-home-image"
             />
           </div>
         </div>
@@ -24,6 +49,7 @@ function Home() {
                 className=" sm:block hidden sm:max-w-[44.444vh] max-w-[260px] w-full mx-auto px-[6vh] pt-[6vh] pb-[3vh]  sm:p-[7.111vh]"
                 src={landingPageLogo}
                 alt=""
+                id="logo-image"
               />
               <div className="max-w-[58.999vh]  w-full p-[2.222vh] mx-auto text-justify">
                 <h1 className="sm:text-start pt-[6vh] text-center">
@@ -55,6 +81,7 @@ function Home() {
                 className="h-screen  w-full max-w-[39.700vw] object-cover max-h-[100vh]"
                 src={home}
                 alt="Loading..."
+                id="desktop-home-image"
               />
             </div>
           </div>

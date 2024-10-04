@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { accountingBookKeeping } from "../assets/images";
 
 function Accounting() {
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileAccountingImageElement = document.getElementById("mobile-accounting-image");
+    const desktopAccountingImageElement = document.getElementById("desktop-accounting-image");
+    
+    mobileAccountingImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopAccountingImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileAccountingImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopAccountingImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
   return (
     <>
       {/* mobile only visible */}
@@ -15,6 +31,7 @@ function Accounting() {
             className=" w-[96%] block  object-cover h-full"
             src={accountingBookKeeping}
             alt="Loading..."
+            id="mobile-accounting-image"
           />
         </div>
       </div>
@@ -66,9 +83,10 @@ function Accounting() {
           <div className="sm:flex  hidden relative max-w-[40vw] w-full">
             <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
             <img
-              className="h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]"
+              className="h-screen w-full max-w-[40vw] ps-[0.5vh] object-cover max-h-[100vh]"
               src={accountingBookKeeping}
               alt="Business Plan"
+              id="desktop-accounting-image"
             />
           </div>
         </div>

@@ -9,6 +9,22 @@ function Business_valuations() {
     setPopupVisible(!isPopupVisible);
   };
 
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileBusinessValuationsImageElement = document.getElementById("mobile-businessValuations-image");
+    const desktopBusinessValuationsImageElement = document.getElementById("desktop-businessValuations-image");
+    
+    mobileBusinessValuationsImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopBusinessValuationsImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileBusinessValuationsImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopBusinessValuationsImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
   return (
     <>
     {/* mobile only visible */}
@@ -19,6 +35,7 @@ function Business_valuations() {
             className=" w-[96%] block  object-cover h-full"
             src={businessValuations}
             alt="Loading..."
+            id='mobile-businessValuations-image'
           />
         </div>
       </div>
@@ -87,7 +104,7 @@ function Business_valuations() {
 
           <div className="sm:flex hidden  relative max-w-[40vw] w-full">
               <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
-            <img className='h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]' src={businessValuations} alt="Business Plan" />
+            <img id='desktop-businessValuations-image' className='h-screen ps-[0.5vh] w-full max-w-[40vw] object-cover max-h-[100vh]' src={businessValuations} alt="Business Plan" />
           </div>
 
           

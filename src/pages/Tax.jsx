@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { tax } from "../assets/images";
 
 function Tax() {
+
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const TaxImageElement = document.getElementById("tax-image");
+    
+    TaxImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      TaxImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
   return (
     <>
       <div
@@ -12,7 +26,7 @@ function Tax() {
           <div className="flex h-[43vh] me-5 sm:me-0 ">
             <div className="bg-black w-[0.667vh] h-[50%]">l</div>
             <div className="flex-1">
-              <img className="w-full object-cover h-[100%]" src={tax} alt="" />
+              <img id="tax-image" className="w-full object-cover h-[100%]" src={tax} alt="" />
             </div>
           </div>
 

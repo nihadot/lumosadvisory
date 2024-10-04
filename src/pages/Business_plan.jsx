@@ -9,6 +9,23 @@ function Business_plan() {
     setPopupVisible(!isPopupVisible);
   };
 
+  useEffect(()=>{
+    function handelContextMenu(e) {
+      e.preventDefault();
+    }
+    const mobileBusinessImageElement = document.getElementById("mobile-busineePlan-image");
+    const desktopBusinessImageElement = document.getElementById("desktop-busineePlan-image");
+    
+    mobileBusinessImageElement.addEventListener("contextmenu",handelContextMenu);
+    desktopBusinessImageElement.addEventListener("contextmenu",handelContextMenu);
+    return ()=>{
+      mobileBusinessImageElement.removeEventListener("contextmenu",handelContextMenu);
+      desktopBusinessImageElement.removeEventListener("contextmenu",handelContextMenu);
+
+    }
+  })
+
+
   return (
     <>
       {/* mobile only visible */}
@@ -22,6 +39,7 @@ function Business_plan() {
             className=" w-[96%] block  object-cover h-full"
             src={businessPlan}
             alt="Loading..."
+            id="mobile-busineePlan-image"
           />
         </div>
       </div>
@@ -175,9 +193,10 @@ function Business_plan() {
           <div className=" hidden sm:flex relative max-w-[40vw] w-full">
             <div className="bg-black absolute bottom-0 w-[0.667vh] h-[50%]"></div>
             <img
-              className="h-screen w-full max-w-[39.444vw] object-cover max-h-[100vh]"
+              className="h-screen w-full ps-[0.5vh] max-w-[40vw] object-cover max-h-[100vh]"
               src={businessPlan}
               alt="Business Plan"
+              id="desktop-busineePlan-image"
             />
           </div>
         </div>
