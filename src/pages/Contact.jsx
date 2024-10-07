@@ -8,7 +8,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    number: "",
+    mobileNo: "",
     message: "",
   });
 
@@ -99,7 +99,7 @@ www.metaledtrade.com`,
     setFormData({
       name: '',
       email: '',
-      number:'',
+      mobileNo:'',
       message:''
     })
   }
@@ -196,7 +196,7 @@ www.metaledtrade.com`,
           </div>
         </div>
         <div className=" ps-5 sm:ps-[5.333vh]">
-          <h2>Client Testimonies</h2>
+          <h2 className="sm:py-0 py-3">Client Testimonies</h2>
 
           <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
             <div className="">
@@ -269,10 +269,10 @@ className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#
                 className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold  w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <input
-                name="number"
+                name="mobileNo"
                 onChange={handleChange}
-                value={formData.number}
-                type="number"
+                value={formData.mobileNo}
+                type="mobileNo"
                 placeholder="Mobile no."
                 className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
