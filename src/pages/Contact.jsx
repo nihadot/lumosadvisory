@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { contact, metaled_trade_logo } from "../assets/images";
 import { callIcon, downArrow, facebookIconLightGreen, instagramIconLightGreen, linkedInIconLightGreen, upwardTriangle, whatsAppIcon } from "../assets/icons";
 
@@ -11,6 +11,10 @@ function Contact() {
     mobileNo: "",
     message: "",
   });
+
+  const [loadingState,setLoadingState] = useState({
+    formSubmiting:false
+  })
 
   const [testimonials, setTestimonials] = useState([
     {
@@ -62,14 +66,23 @@ www.metaledtrade.com`,
       }
     });
   };
+  // Inside your Contact component
+const inputRef = useRef(null);
+
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   // Function to handle form submission
   const handleSubmit = async (e) => {
+     
     e.preventDefault(); // Prevent default form submission
 
+    setLoadingState({formSubmiting:true});
+ // Blur the input to prevent scrolling
+ if (inputRef.current) {
+  inputRef.current.blur();
+}
     try {
       // Send the form data with fetch
       const response = await fetch("https://script.google.com/macros/s/AKfycbzxT40AZpd9wPtYJ-dCNnLazcZsmv6pbHAC0w1_F_Dt4GPy7vTDTky_M_9TmvVnXRzK/exec", {
@@ -91,6 +104,9 @@ www.metaledtrade.com`,
     } catch (error) {
       alert("Something Error");
       console.error("Error:", error);
+    }finally{
+    setLoadingState({formSubmiting:false});
+
     }
   };
 
@@ -102,6 +118,11 @@ www.metaledtrade.com`,
       mobileNo:'',
       message:''
     })
+
+      // Ensure no inputs are focused
+  if (inputRef.current) {
+    inputRef.current.blur(); 
+  }
   }
 
   useEffect(()=>{
@@ -262,7 +283,10 @@ className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#
             >
               <input
                 name="name"
+                required
+                ref={inputRef}
                 type="text"
+                disabled={loadingState.formSubmiting}
                 onChange={handleChange}
                 value={formData.name}
                 placeholder="Name"
@@ -270,30 +294,45 @@ className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#
               />
               <input
                 name="mobileNo"
+                ref={inputRef}
+                disabled={loadingState.formSubmiting}
                 onChange={handleChange}
                 value={formData.mobileNo}
-                type="mobileNo"
+                type="number"
+                required
                 placeholder="Mobile no."
                 className="text-[1.777vh] placeholder:text-[#5f8f93a9] placeholder:font-bold w-full h-[4.999vh] outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <input
                 name="email"
+                required
+                ref={inputRef}
                 type="email"
                 onChange={handleChange}
+                disabled={loadingState.formSubmiting}
                 value={formData.email}
                 placeholder="Email ID"
                 className="text-[1.777vh]  w-full h-[4.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none px-[1.0vh] rounded mt-[1.5vh]"
               />
               <textarea
+                required
                 name="message"
+                ref={inputRef}
                 onChange={handleChange}
                 value={formData.message}
+                disabled={loadingState.formSubmiting}
                 placeholder="Message"
                 className="text-[1.777vh]  w-full h-[17.999vh] placeholder:text-[#5f8f93a9] placeholder:font-bold outline-none p-[1.0vh] rounded mt-[1.5vh]"
               ></textarea>
               <div className="flex justify-between text-white text-[2vh]">
-                <input type="submit" className="cursor-pointer" value="Send" />
-                <input onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer" />
+                <input 
+                     ref={inputRef}
+                   disabled={loadingState.formSubmiting}
+                type="submit" className="cursor-pointer" value={ loadingState.formSubmiting ? 'wait...' : 'Submit' } />
+                <input
+                     ref={inputRef}
+                   disabled={loadingState.formSubmiting}
+                onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer" />
               </div>
             </form>
           </div>
