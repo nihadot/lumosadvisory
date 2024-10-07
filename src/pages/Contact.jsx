@@ -72,7 +72,7 @@ www.metaledtrade.com`,
 
     try {
       // Send the form data with fetch
-      const response = await fetch("https://script.google.com/macros/s/AKfycby0v36vfoxfc0IqPWDUh9oXkuk9uZmWS4cUgIhbbr4QsIqI3nrNdgxL67T_NhrvptIiug/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzxT40AZpd9wPtYJ-dCNnLazcZsmv6pbHAC0w1_F_Dt4GPy7vTDTky_M_9TmvVnXRzK/exec", {
         method: "POST",
         body: new URLSearchParams(formData), // Serialize form data like FormData but simpler
       });
