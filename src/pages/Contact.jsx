@@ -146,7 +146,7 @@ const inputRef = useRef(null);
 
   return (
     <>
-      <div id="contact" className="flex pb-5 flex-col pt-24 sm:pt-0 sm:mt-0">
+      <div id="contact" className="flex pb-5 h-screen flex-col pt-24 sm:pt-0 sm:mt-0">
         <div className="flex-col-reverse sm:flex-row ps-5 sm:ps-[5.333vh] flex w-full h-fit">
           <div className="max-w-[32.222vh] w-full h-full">
             <div className="  pt-[8vw] text-[1.333vh] text-[#5F8F93]">

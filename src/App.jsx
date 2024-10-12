@@ -1,5 +1,6 @@
 import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layouts/Layout/Layout'
+import LayoutCopy from './Layouts/Layout/LayoutCopy'
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
   const router = createBrowserRouter ([
     {
       path: "/",
-      element: <Layout/>,
+      // element: <Layout/>,
+      element:<LayoutCopy/>
     }  ,
     ])
 
