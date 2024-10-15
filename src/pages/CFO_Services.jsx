@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { cfoServices } from "../assets/images";
-import { LeftTriangleIcon } from "../assets/icons";
+import { closeWhiteIcon, LeftTriangleIcon } from "../assets/icons";
 
 function CFO_Services() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -134,6 +134,15 @@ function CFO_Services() {
             {isPopupVisible && (
               <div className="absolute block sm:hidden top-[50%] right-0  py-[1.333vh] px-[1.778vh] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-80 w-full px-3 py-1 ">
+                    {/* close function button */}
+                    <div className="flex justify-end bg-transparent mt-4">
+                      <img
+                        onClick={togglePopup}
+                        src={closeWhiteIcon}
+                        className="w-6 h-6 cursor-pointer object-contain "
+                        alt="close icon"
+                      />
+                    </div>
                   <h3 className="text-white">Why focus on SMEs?</h3>
                   <p className="text-white">
                     <span className="text-white">Initial Consultation:</span>{" "}

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { businessValuations } from '../assets/images';
-import { LeftTriangleIcon } from '../assets/icons';
+import { closeWhiteIcon, LeftTriangleIcon } from '../assets/icons';
 
 function Business_valuations() {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -87,7 +87,15 @@ function Business_valuations() {
 {isPopupVisible && (
               <div className="absolute block sm:hidden -top-[10%] right-0 py-[0.444vh] px-[2.222vh] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-90  w-full px-3 py-1">
-                  
+                      {/* close function button */}
+                      <div className="flex justify-end bg-transparent mt-4">
+                      <img
+                        onClick={togglePopup}
+                        src={closeWhiteIcon}
+                        className="w-6 cursor-pointer h-6 object-contain "
+                        alt="close icon"
+                      />
+                    </div>
 
                 <h3 className='text-white'>Our Process and Approach</h3>
                 <p className='text-white'>Our methodical approach ensures that your business valuation is comprehensive, clear, and directly aligned with your goals. Our process is streamlined and thorough, designed to deliver accurate and actionable valuations:</p>

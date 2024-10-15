@@ -1,5 +1,6 @@
 import LeftTriangleIcon from "./left-triangle.svg";
 import closeIcon from "./close.svg";
+import closeWhiteIcon from "./close-white.svg";
 
 // social median icons
 import facebookIcon from "./facebook.svg";
@@ -40,5 +41,9 @@ mobileMenu,
   instagramIconLightGreen,
   linkedInIconLightGreen,
   downArrow,
-  upwardTriangle
+  upwardTriangle,
+
+
+  // close white icon
+  closeWhiteIcon,
 };

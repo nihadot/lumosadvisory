@@ -62,7 +62,7 @@ function Layout() {
         id="left-image"
           src={layout_image}
           alt="Background Layout"
-          className="block sm:w-[68vh] w-[39vh] h-screen object-cover absolute z-50 left-0 top-0"
+          className="block sm:w-[73vh] w-[39vh] h-screen object-cover absolute z-50 left-0 top-0"
         />
         {/* background Images (right side) */}
         <img

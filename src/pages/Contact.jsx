@@ -131,15 +131,15 @@ const inputRef = useRef(null);
     }
 
     const rootElement = document.getElementById("contact-image");
-    const TestMonialElement = document.getElementById("testmonials-logo-image");
+    // const TestMonialElement = document.getElementById("testmonials-logo-image");
     rootElement.addEventListener("contextmenu",handelContextMenu);
-    TestMonialElement.addEventListener("contextmenu",handelContextMenu);
+    // TestMonialElement.addEventListener("contextmenu",handelContextMenu);
     
 
 
     return ()=>{
       rootElement.removeEventListener("contextmenu",handelContextMenu);
-    TestMonialElement.removeEventListener("contextmenu",handelContextMenu);
+    // TestMonialElement.removeEventListener("contextmenu",handelContextMenu);
 
     }
   })
@@ -157,12 +157,12 @@ const inputRef = useRef(null);
                 <div className="">
                   <p>
                     <b className="flex gap-1 items-center">
-                      <img src={callIcon} className="w-5 h-5" alt="" />{" "}
+                      <img src={callIcon} className="w-[2.222vh] h-[2.222vh]" alt="" />{" "}
                       +971 52 650 4080 [{" "}
                       <div className="flex items-center justify-center">
                         <img
                           src={whatsAppIcon}
-                          className="w-5 h-5"
+                          className="w-[2.222vh] h-[2.222vh]"
                           alt=""
                         />
                       </div>{" "}
@@ -172,7 +172,7 @@ const inputRef = useRef(null);
                       {" "}
                       <img
                         src={callIcon}
-                        className="w-5 h-5"
+                        className="w-[2.222vh] h-[2.222vh]"
                         alt=""
                       />{" "}
                       +971 52 650 4080
@@ -182,22 +182,22 @@ const inputRef = useRef(null);
                     Meydan Road, Nad Al Sheba, <br />
                     Dubai, U.A.E <br />
                   </p>
-                  <div className="flex items-center justify-center -mt-1 -ms-4">
-                    <div className="flex gap-0 items-center me-1 ">
+                  <div className="flex items-center justify-center -mt-[0.444vh] -ms-[4vh]">
+                    <div className="flex gap-0 items-center me-[0.444vh] ">
                       <img
                         src={facebookIconLightGreen}
                         alt=""
-                        className="w-5 h-5"
+                        className="w-[2.222vh] h-[2.222vh]"
                       />
                       <img
                         src={instagramIconLightGreen}
                         alt=""
-                        className="w-5 h-5 me-1 "
+                        className="w-[2.222vh] h-[2.222vh] me-1 "
                       />
                       <img
                         src={linkedInIconLightGreen}
                         alt=""
-                        className="w-5 h-4"
+                        className="w-[2.222vh] h-[1.778vh]"
                       />
                     </div>
                     <p className="p-0 m-0"> @lumos.advisory</p>
@@ -220,7 +220,7 @@ const inputRef = useRef(null);
           <h2 className="sm:py-0 py-3">Client Testimonies</h2>
 
           <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
-            <div className="">
+            {/* <div className="">
               <div className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[50vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
                 <div 
                
@@ -274,7 +274,7 @@ const inputRef = useRef(null);
                   <p>{testimonials[index]?.paragraph}</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* contact form */}
             <form
@@ -328,11 +328,11 @@ className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#
                 <input 
                      ref={inputRef}
                    disabled={loadingState.formSubmiting}
-                type="submit" className="cursor-pointer" value={ loadingState.formSubmiting ? 'wait...' : 'Submit' } />
+                type="submit" className="text-[1.777vh] cursor-pointer" value={ loadingState.formSubmiting ? 'wait...' : 'Submit' } />
                 <input
                      ref={inputRef}
                    disabled={loadingState.formSubmiting}
-                onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer" />
+                onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer text-[1.777vh]" />
               </div>
             </form>
           </div>

@@ -48,7 +48,7 @@ function LeftBar() {
           }`}
           onClick={() => handleClick("about-us")}
         >
-          About Us
+          Our Founders
         </a>
 
         {/* why choose us section */}
@@ -75,11 +75,11 @@ function LeftBar() {
 
         {/* Services sublinks */}
         {activeSection === "services" && (
-          <div className="pl-[0vh]">
+          <div className="pl-[1.3vh]">
             {/* outsourced CFO services */}
             <a
               href="#service-one"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh] border-b-[1px] border-white ${
                 activeSubLink === "service-one" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-one")}
@@ -90,7 +90,7 @@ function LeftBar() {
             {/* business transformation */}
             <a
               href="#service-two"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "service-two" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-two")}
@@ -102,7 +102,7 @@ function LeftBar() {
             {/* feasibility */}
             <a
               href="#service-three"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "service-three" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-three")}
@@ -114,7 +114,7 @@ function LeftBar() {
             {/* business valuations */}
             <a
               href="#service-four"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "service-four" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-four")}
@@ -125,7 +125,7 @@ function LeftBar() {
             {/* accounting and book-keeping */}
             <a
               href="#service-five"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "service-five" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-five")}
@@ -136,7 +136,7 @@ function LeftBar() {
             {/* tax, compliance and AML services */}
             <a
               href="#service-six"
-              className={`block py-[0.889vh] ${
+              className={`block py-[0.889vh]  ${
                 activeSubLink === "service-six" ? "text-black" : "text-white"
               }`}
               onClick={() => handleSubLinkClick("service-six")}

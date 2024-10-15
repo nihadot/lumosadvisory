@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { LeftTriangleIcon } from "../assets/icons";
+import { closeWhiteIcon, LeftTriangleIcon } from "../assets/icons";
 import { businessPlan } from "../assets/images";
 
 function Business_plan() {
@@ -151,6 +151,15 @@ function Business_plan() {
             {isPopupVisible && (
               <div className=" sm:hidden block absolute top-[25%] right-0  py-[0.889vh] px-[1.778vh] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-90 px-3 py-1 w-full">
+                     {/* close function button */}
+                     <div className="flex justify-end bg-transparent mt-4">
+                      <img
+                        onClick={togglePopup}
+                        src={closeWhiteIcon}
+                        className="w-6 cursor-pointer h-6 object-contain "
+                        alt="close icon"
+                      />
+                    </div>
                   <h3 className="text-white">Our Process and Approach:</h3>
                   <p className="text-white">
                     Our methodology is designed to be systematic and thorough,

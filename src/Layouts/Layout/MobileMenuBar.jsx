@@ -39,7 +39,10 @@ function MobileMenuBar({ setMenuOpen }) {
           className={`block py-[0.444vh] ${
             activeSection === "home-mobile" ? "text-black" : "text-white"
           }`}
-          onClick={() => handleClick("home-mobile")}
+          onClick={() => {
+            handleClick("home-mobile");
+            handleClickMenu();
+          }}
         >
           Home
         </a>
@@ -50,7 +53,11 @@ function MobileMenuBar({ setMenuOpen }) {
           className={`block py-[0.444vh] ${
             activeSection === "about-mobile" ? "text-black" : "text-white"
           }`}
-          onClick={() => handleClick("about-mobile")}
+      
+          onClick={() => {
+            handleClick("about-mobile");
+            handleClickMenu();
+          }}
         >
           About Lumos
         </a>
@@ -61,7 +68,11 @@ function MobileMenuBar({ setMenuOpen }) {
           className={`block py-[0.444vh] ${
             activeSection === "about-us" ? "text-black" : "text-white"
           }`}
-          onClick={() => handleClick("about-us")}
+          onClick={() => {
+            handleClick("about-us");
+            handleClickMenu();
+
+          }}
         >
           About Us
         </a>
@@ -74,7 +85,10 @@ function MobileMenuBar({ setMenuOpen }) {
               ? "text-black"
               : "text-white"
           }`}
-          onClick={() => handleClick("why-choose-us-mobile")}
+          onClick={() => {
+            handleClick("why-choose-us-mobile")
+            handleClickMenu();
+          }}
         >
           Why Choose Us
         </a>
@@ -85,7 +99,11 @@ function MobileMenuBar({ setMenuOpen }) {
           className={`block py-[0.444vh] ${
             activeSection === "services" ? "text-black" : "text-white"
           }`}
-          onClick={() => handleClick("services")}
+          onClick={() => {
+            handleClick("services");
+            handleClickMenu();
+
+          }}
         >
           Our Services
         </a>
@@ -99,7 +117,11 @@ function MobileMenuBar({ setMenuOpen }) {
               className={`block py-[0.444vh] ${
                 activeSubLink === "service-one" ? "text-black" : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("service-one")}
+              onClick={() => {
+                handleSubLinkClick("service-one")
+            handleClickMenu();
+
+              }}
             >
               Outsourced <br />
               CFO Services
@@ -113,7 +135,11 @@ function MobileMenuBar({ setMenuOpen }) {
                   ? "text-black"
                   : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("business-transform")}
+              onClick={() => {
+                handleSubLinkClick("business-transform");
+                handleClickMenu();
+
+              }}
             >
               Business <br />
               Transformation <br />
@@ -128,7 +154,11 @@ function MobileMenuBar({ setMenuOpen }) {
                   ? "text-black"
                   : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("business-plan-mobile")}
+              onClick={() => {
+                handleSubLinkClick("business-plan-mobile");
+            handleClickMenu();
+
+              }}
             >
               Feasibility <br />
               Studies and <br />
@@ -143,7 +173,11 @@ function MobileMenuBar({ setMenuOpen }) {
                   ? "text-black"
                   : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("business-valuations")}
+              onClick={() => {
+                handleSubLinkClick("business-valuations")
+            handleClickMenu();
+
+              }}
             >
               Business <br />
               Valuations
@@ -157,7 +191,11 @@ function MobileMenuBar({ setMenuOpen }) {
                   ? "text-black"
                   : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("accounting-mobile")}
+              onClick={() => {
+                handleSubLinkClick("accounting-mobile")
+            handleClickMenu();
+
+              }}
             >
               Accounting and <br />
               Book-Keeping
@@ -169,7 +207,11 @@ function MobileMenuBar({ setMenuOpen }) {
               className={`block py-[0.444vh] ${
                 activeSubLink === "service-six" ? "text-black" : "text-white"
               }`}
-              onClick={() => handleSubLinkClick("service-six")}
+              onClick={() => {
+                handleSubLinkClick("service-six")
+            handleClickMenu();
+
+              }}
             >
               Tax and <br />
               Compliance <br />
@@ -184,7 +226,11 @@ function MobileMenuBar({ setMenuOpen }) {
           className={`block pt-[0.666vh] pb-4 ${
             activeSection === "contact" ? "text-black" : "text-white"
           }`}
-          onClick={() => handleClick("contact")}
+          onClick={() => {handleClick("contact");
+
+            handleClickMenu();
+
+          }}
         >
           Contact
         </a>

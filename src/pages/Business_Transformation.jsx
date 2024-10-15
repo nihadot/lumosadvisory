@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { LeftTriangleIcon } from '../assets/icons';
+import { closeWhiteIcon, LeftTriangleIcon } from '../assets/icons';
 import { businessTransform } from '../assets/images';
 
 function Business_Transformation() {
@@ -84,7 +84,15 @@ function Business_Transformation() {
 {isPopupVisible && (
               <div className="block sm:hidden absolute top-[10%] right-0  py-[0.889vh] px-[1.778vh] w-full z-50">
                 <div className="bg-[#5F8F93] text-white bg-opacity-90 w-full px-3 py-1">
-
+  {/* close function button */}
+  <div className="flex justify-end bg-transparent mt-4">
+                      <img
+                        onClick={togglePopup}
+                        src={closeWhiteIcon}
+                        className="w-6 h-6 cursor-pointer object-contain "
+                        alt="close icon"
+                      />
+                    </div>
                 <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white"><span className="text-white">Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className="text-white"><span className="text-white">Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
