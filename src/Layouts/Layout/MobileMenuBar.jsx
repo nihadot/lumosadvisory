@@ -149,7 +149,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Feasibility Studies and Business Plan */}
             <a
               href="#business-plan-mobile"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white${
                 activeSubLink === "business-plan-mobile"
                   ? "text-black"
                   : "text-white"
