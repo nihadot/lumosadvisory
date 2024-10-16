@@ -74,7 +74,7 @@ function MobileMenuBar({ setMenuOpen }) {
 
           }}
         >
-          About Us
+          Our Founders
         </a>
 
         {/* Why Choose Us section */}
@@ -114,7 +114,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Outsourced CFO Services */}
             <a
               href="#service-one"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "service-one" ? "text-black" : "text-white"
               }`}
               onClick={() => {
@@ -130,7 +130,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Business Transformation and Performance Improvement */}
             <a
               href="#business-transform"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "business-transform"
                   ? "text-black"
                   : "text-white"
@@ -168,7 +168,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Business Valuations */}
             <a
               href="#business-valuations"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "business-valuations"
                   ? "text-black"
                   : "text-white"
@@ -186,7 +186,7 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Accounting and Book-Keeping */}
             <a
               href="#accounting-mobile"
-              className={`block py-[0.444vh] ${
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
                 activeSubLink === "accounting-mobile"
                   ? "text-black"
                   : "text-white"

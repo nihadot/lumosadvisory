@@ -127,7 +127,7 @@ function About() {
                     <p className='text-white text-[10px] mb-[0.889vh]'>We seek to serve this underserved yet massive segment with quality financial services which bring value to their business and empower stakeholders to achieve their targets.</p>
 
                     <div className="mb-[1.5vh]">
-                <p htmlFor="" className='text-[1.333vh] mb-[1.333vh] text-white'>references:</p>
+                <p htmlFor="" className='text-[1.333vh] mb-[1.333vh] text-white'>References:</p>
                 <h6 className='mb-[1.333vh] text-[1.333vh] text-white w-full'>
                   [1] SMEs contribute 60% of the UAE's GDP, creating more job opportunities for Finance Professionals. (thefinancestory.com)
                 </h6>
