@@ -216,10 +216,12 @@ const inputRef = useRef(null);
             />
           </div>
         </div>
-        <div className=" ps-5 sm:ps-[5.333vh]">
-          <h2 className="sm:py-0 py-3">Client Testimonies</h2>
+        <div className=" ps-5 sm:ps-[5.333vh] items-center flex flex-col justify-center w-full">
+          <div className=" ">
 
-          <div className="flex sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
+          <h2 className="sm:pt-[2.222vh] sm:pb-[0.889vh] py-[1.333vh]">Need assistance? We're here to help</h2>
+
+          <div className="flex pb-11 md:pb-0 sm:flex-row flex-col justify-between gap-10 sm:gap-[3vh] pe-[2vh] md:pe-[8vh]">
             {/* <div className="">
               <div className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[50vh] w-full h-[22vh] p-[0.889vh]  bg-[#5F8F93]">
                 <div 
@@ -279,7 +281,7 @@ const inputRef = useRef(null);
             {/* contact form */}
             <form
   onSubmit={handleSubmit}
-className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]"
+className="xl:max-w-[75vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#5F8F93]  px-[1.333vh]"
             >
               <input
                 name="name"
@@ -335,6 +337,8 @@ className="xl:max-w-[60vh] lg:max-w-[55vh] md:max-w-[40vh] w-full h-[45vh] bg-[#
                 onClick={handleCancel} type="reset" value="Cancel" className="cursor-pointer text-[1.777vh]" />
               </div>
             </form>
+          </div>
+
           </div>
         </div>
       </div>

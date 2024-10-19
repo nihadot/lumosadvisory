@@ -1,13 +1,59 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { closeWhiteIcon, LeftTriangleIcon } from '../assets/icons';
 import { about } from '../assets/images';
-
+import {Client1,Client2,Client3,Client4,Client5,Client6,Client7,Client8} from "../assets/clients-Logos"
 
 function About() {
+
+
   const [isPopupVisible, setPopupVisible] = useState(false);
   const togglePopup = () => {
     setPopupVisible(prev => !prev);
   };
+ 
+
+
+
+
+
+  const scrollContainerRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0); // Track scroll position
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+
+    let scrollAmount = 0;
+    const scrollStep = 0.2; // Adjust the speed (lower is slower)
+    let isScrolling = true; // Track if scrolling is enabled
+
+    const autoScroll = () => {
+      if (scrollContainer && isScrolling) {
+        scrollAmount += scrollStep;
+        scrollContainer.scrollLeft = scrollAmount;
+
+        // Reset scroll when reaching the end
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+          scrollAmount = 0; // Reset to start
+        }
+
+        // Request the next frame for smooth animation
+        requestAnimationFrame(autoScroll);
+      }
+    };
+
+    // Start the auto-scrolling
+    requestAnimationFrame(autoScroll);
+
+    // Clean up the effect when the component unmounts
+    return () => {
+      isScrolling = false; // Stop scrolling when unmounting
+    };
+  }, []);
+
+
+
+
+
 
   useEffect(() => {
     function handelContextMenu(e) {
@@ -24,6 +70,46 @@ function About() {
 
     }
   })
+
+    // Calculate opacity based on scroll position
+    const leftOpacity = Math.max(0, 1 - (scrollPosition / 200)); // Adjust 200 based on the desired fade distance
+    const rightOpacity = Math.max(0, 1 - (scrollPosition / 200)); // Same for right
+  
+
+    const carouselArray = [
+      {
+        name:"Ten Films - Film Production",
+        imaLink:Client1
+      },
+      {
+        name:"M’OISHI - F&B Retail",
+        imaLink:Client2
+      },
+      {
+        name:"Wadi A’a Zafran - Exotic Spice Retail",
+        imaLink:Client3
+      },
+      {
+        name:"UCHI - F&B",
+        imaLink:Client4
+      },
+      {
+        name:"Accutree - HR Consultancy",
+        imaLink:Client5
+      },
+      {
+        name:"Metaled Trade - Steel Trading",
+        imaLink:Client6
+      },
+      {
+        name:"Luxtron - Commodity Trading",
+        imaLink:Client6
+      },
+      {
+        name:"The Juice Lab F&B Retail",
+        imaLink:Client7
+      },
+    ]
 
   return (
     <>
@@ -68,7 +154,38 @@ function About() {
                   </button>
                 </div>
               </div>
+              
 
+                <div className="">
+              <h2 >Our Clients</h2>
+
+                </div>
+              <div className="relative w-[21.111vh] pt-[0.444vh] overflow-hidden pb-[0.444vh] border border-[#5f8f93a9]">
+               {/* Fading effect on the sides */}
+      <div
+        className="absolute left-0 w-[6.222vh] h-[6.667vh] bg-[#e9e9e99c] transition-opacity duration-300"
+        style={{ opacity: leftOpacity }}
+      ></div>
+      <div
+        className="absolute right-0 w-[7.111vh] h-[6.667vh] bg-[#fdfdfd96] transition-opacity duration-300"
+        style={{ opacity: rightOpacity }}
+      ></div>
+
+              <div 
+              ref={scrollContainerRef}
+              className="flex  gap-[0.444vh] px-0 w-[21.111vh] overflow-hidden">
+               { carouselArray.length > 0 && carouselArray.map((item,index)=> {
+                return (
+                <div className="w-full h-[11.111vh]">
+                  <div className="w-[6.667vh] h-[6.667vh]">
+                  <img className='w-full h-full object-cover' src={item.imaLink} alt={item.name} key={index} />
+                  </div>
+                  <p className=' line-clamp-2 text-left'>{item.name}</p>
+                </div>)
+               }) }
+                
+              </div>
+              </div>
 
            
               {/* desktop popup */}

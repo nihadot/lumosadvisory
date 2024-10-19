@@ -65,7 +65,7 @@ function Business_plan() {
               complexities of the business world with confidence and clarity.
             </p>
 
-            <h3>Services Offered:</h3>
+            <h3>Services Offered</h3>
             <p>
               <span>Feasibility Studies:</span> Conducting meticulous due
               diligence to assess potential opportunities, validate business
@@ -112,7 +112,7 @@ function Business_plan() {
             {/* Popup from sm to all devices */}
             {isPopupVisible && (
               <div className="hidden sm:block absolute top-[25%] right-0 bg-[#5F8F93] text-white bg-opacity-50 py-[0.889vh] px-[1.778vh] max-w-[40.5vw] w-full z-50">
-                <h3 className="text-white">Our Process and Approach:</h3>
+                <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white">
                   Our methodology is designed to be systematic and thorough,
                   ensuring that each phase is carefully executed.
@@ -160,7 +160,7 @@ function Business_plan() {
                         alt="close icon"
                       />
                     </div>
-                  <h3 className="text-white">Our Process and Approach:</h3>
+                  <h3 className="text-white">Our Process and Approach</h3>
                   <p className="text-white">
                     Our methodology is designed to be systematic and thorough,
                     ensuring that each phase is carefully executed.

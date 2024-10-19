@@ -105,7 +105,7 @@ function CFO_Services() {
 
             {isPopupVisible && (
               <div className="hidden sm:block absolute top-[15vh] right-0 bg-[#5F8F93] text-white bg-opacity-80 py-[1.333vh] px-[1.778vh] w-[46.667vh] z-50">
-                <h3 className="text-white">Why focus on SMEs?</h3>
+                <h3 className="text-white">Our Process and Approach</h3>
                 <p className="text-white">
                   <span className="text-white">Initial Consultation:</span>{" "}
                   Understanding your business, its goals, and financial
@@ -143,7 +143,7 @@ function CFO_Services() {
                         alt="close icon"
                       />
                     </div>
-                  <h3 className="text-white">Why focus on SMEs?</h3>
+                  <h3 className="text-white">Our Process and Approach?</h3>
                   <p className="text-white">
                     <span className="text-white">Initial Consultation:</span>{" "}
                     Understanding your business, its goals, and financial
