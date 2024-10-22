@@ -12,48 +12,137 @@ function About() {
   };
  
 
+  const carouselArray = [
+    {
+      name:"Ten Films - Film Production",
+      imaLink:Client1
+    },
+    {
+      name:"M’OISHI - F&B Retail",
+      imaLink:Client2
+    },
+    {
+      name:"Wadi A’a Zafran - Exotic Spice Retail",
+      imaLink:Client3
+    },
+    {
+      name:"UCHI - F&B",
+      imaLink:Client4
+    },
+    {
+      name:"Accutree - HR Consultancy",
+      imaLink:Client5
+    },
+    {
+      name:"Metaled Trade - Steel Trading",
+      imaLink:Client6
+    },
+    {
+      name:"Luxtron - Commodity Trading",
+      imaLink:Client7
+    },
+    {
+      name:"The Juice Lab F&B Retail",
+      imaLink:Client8
+    },
+  ]
+  
 
+  const containerRef = useRef(null);
 
-
+  const [centerIndex, setCenterIndex] = useState(0); // Tracks the center image index
 
   const scrollContainerRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0); // Track scroll position
 
+  // useEffect(() => {
+  //   const scrollContainer = scrollContainerRef.current;
+
+  //   let scrollAmount = 0;
+  //   const scrollStep = 0.2; // Adjust the speed (lower is slower)
+  //   let isScrolling = true; // Track if scrolling is enabled
+
+  //   const autoScroll = () => {
+  //     if (scrollContainer && isScrolling) {
+  //       scrollAmount += scrollStep;
+  //       scrollContainer.scrollLeft = scrollAmount;
+
+  //       // Reset scroll when reaching the end
+  //       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+  //         scrollAmount = 0; // Reset to start
+  //       }
+
+  //       // Request the next frame for smooth animation
+  //       requestAnimationFrame(autoScroll);
+  //     }
+  //   };
+
+  //   // Start the auto-scrolling
+  //   requestAnimationFrame(autoScroll);
+
+  //   // Clean up the effect when the component unmounts
+  //   return () => {
+  //     isScrolling = false; // Stop scrolling when unmounting
+  //   };
+  // }, []);
+
+
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
+    const handleScroll = () => {
+      const container = containerRef.current; // current container
+      const scrollLeft = container.scrollLeft; // scrolled width
+      const containerWidth = container.offsetWidth; // visible full width
 
-    let scrollAmount = 0;
-    const scrollStep = 0.2; // Adjust the speed (lower is slower)
-    let isScrolling = true; // Track if scrolling is enabled
+      console.log(container,scrollLeft,containerWidth,'[[[')
 
-    const autoScroll = () => {
-      if (scrollContainer && isScrolling) {
-        scrollAmount += scrollStep;
-        scrollContainer.scrollLeft = scrollAmount;
+      // Calculate the middle index based on scroll position
+      const centerPoint = scrollLeft + containerWidth / 2.1;
 
-        // Reset scroll when reaching the end
-        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-          scrollAmount = 0; // Reset to start
-        }
-
-        // Request the next frame for smooth animation
-        requestAnimationFrame(autoScroll);
-      }
+      // Find the index of the center element
+      const imageWidth = container.scrollWidth / carouselArray.length;
+      const newCenterIndex = Math.floor(centerPoint / imageWidth);
+      console.log(newCenterIndex,'newCenterIndex')
+      // Update the centerIndex state
+      setCenterIndex(newCenterIndex);
     };
 
-    // Start the auto-scrolling
-    requestAnimationFrame(autoScroll);
+    const container = containerRef.current;
+    container.addEventListener('scroll', handleScroll);
 
-    // Clean up the effect when the component unmounts
+    // Cleanup scroll event listener
     return () => {
-      isScrolling = false; // Stop scrolling when unmounting
+      container.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [carouselArray]);
 
 
+// Auto scroll effect with smooth scrolling
+useEffect(() => {
+  const container = containerRef.current;
 
+  const autoScroll = () => {
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+      // If at the end, reset scroll position to start smoothly
+      container.scrollTo({
+        left: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      // Scroll right by a few pixels smoothly
+      container.scrollBy({
+        left: 1, // Adjust speed for smoothness
+        behavior: 'smooth',
+      });
+    }
+  };
 
+  // Auto-scroll every 20ms for smooth continuous scroll (adjust for speed)
+  const scrollInterval = setInterval(autoScroll, 150);
 
+  return () => {
+    clearInterval(scrollInterval); // Clear interval on unmount
+  };
+}, [carouselArray]);
 
   useEffect(() => {
     function handelContextMenu(e) {
@@ -71,45 +160,10 @@ function About() {
     }
   })
 
-    // Calculate opacity based on scroll position
-    const leftOpacity = Math.max(0, 1 - (scrollPosition / 200)); // Adjust 200 based on the desired fade distance
-    const rightOpacity = Math.max(0, 1 - (scrollPosition / 200)); // Same for right
-  
 
-    const carouselArray = [
-      {
-        name:"Ten Films - Film Production",
-        imaLink:Client1
-      },
-      {
-        name:"M’OISHI - F&B Retail",
-        imaLink:Client2
-      },
-      {
-        name:"Wadi A’a Zafran - Exotic Spice Retail",
-        imaLink:Client3
-      },
-      {
-        name:"UCHI - F&B",
-        imaLink:Client4
-      },
-      {
-        name:"Accutree - HR Consultancy",
-        imaLink:Client5
-      },
-      {
-        name:"Metaled Trade - Steel Trading",
-        imaLink:Client6
-      },
-      {
-        name:"Luxtron - Commodity Trading",
-        imaLink:Client6
-      },
-      {
-        name:"The Juice Lab F&B Retail",
-        imaLink:Client7
-      },
-    ]
+
+
+
 
   return (
     <>
@@ -139,7 +193,7 @@ function About() {
               <p className=''>We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.</p>
 
               <h3>Our Mission</h3>
-              <p className=''>We are committed to developing a scalable advisory platform that will enable SME owners and stakeholders to chart a clear path towards achieving their financial goals and driving profitable growth.</p>
+              <p className=''>We strive to help SME clients succeed in their business journey by providing them with data-driven tools for practical decision-making and designing custom and cost-effective strategies for sustainable growth at an affordable price.</p>
 
               <div className="flex gap-[2.222vh]">
                 <h3>Why focus on SMEs?</h3>
@@ -160,8 +214,7 @@ function About() {
               <h2 >Our Clients</h2>
 
                 </div>
-              <div className="relative w-[21.111vh] pt-[0.444vh] overflow-hidden pb-[0.444vh] border border-[#5f8f93a9]">
-               {/* Fading effect on the sides */}
+              {/* <div className="relative w-[21.111vh] pt-[0.444vh] overflow-hidden pb-[0.444vh] border border-[#5f8f93a9]">
       <div
         className="absolute left-0 w-[6.222vh] h-[6.667vh] bg-[#e9e9e99c] transition-opacity duration-300"
         style={{ opacity: leftOpacity }}
@@ -185,7 +238,27 @@ function About() {
                }) }
                 
               </div>
+              </div> */}
+
+
+
+
+              {/*  */}
+              <div ref={containerRef} className="border-[1.5px] border-[#5f8f93a9] overflow-hidden rounded gap-0 flex max-w-[180px] h-[95px] ">
+                {
+                  carouselArray.length > 0 && carouselArray.map((item,index)=> {
+                    return (
+                      <div className={`w-[64px] h-[14.111vh] justify-center items-center flex flex-col  ${ centerIndex === index ? 'opacity-100' : 'opacity-30'} `}>
+                        <div className="w-[8vh] h-[8vh] ">
+                        <img className='w-full h-full object-cover' src={item.imaLink} alt={item.name} key={index} />
+                        </div>
+                        <p className='text-center h-5 baskervville-regular w-[68px] text-pretty text-[8px] font-bold mt-1'>{item.name}</p>
+                      </div>)
+                  })
+                }
+        
               </div>
+              {/*  */}
 
            
               {/* desktop popup */}
@@ -196,7 +269,9 @@ function About() {
                   <p className='text-white'><span className='text-white'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
                   <p className='text-white'><span className='text-white'>Community Impact:</span> SMEs usually operate locally, nurturing community and social cohesion.</p>
                   <p className='text-white'><span className='text-white'>Economic Diversity:</span> They offer varied goods and services, balancing economic scales and reducing dependency on large corporations.</p>
-                  <p className='text-white'><span className='text-white'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
+                  <p className='text-white'><span className='text-white'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. </p>
+
+                  <p  className='text-white'>During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
 
                   <p className='text-white'>According to the Ministry of Economy of UAE the SME sector accounts for more than 94% of all companies in the country[1]. They employ more than 86% of the private sector’s workforce and made up over 60% of the non-oil GDP[1][2].</p>
                   <p className='text-white mb-[0.889vh]'>We seek to serve this underserved yet massive segment with quality financial services which bring value to their business and empower stakeholders to achieve their targets.</p>
@@ -238,7 +313,9 @@ function About() {
                     <p className='text-white text-[10px] '><span className='text-white'>Employment:</span> Over 60% of global jobs spring from SMEs, combating unemployment.</p>
                     <p className='text-white text-[10px] '><span className='text-white'>Community Impact:</span> SMEs usually operate locally, nurturing community and social cohesion.</p>
                     <p className='text-white text-[10px] '><span className='text-white'>Economic Diversity:</span> They offer varied goods and services, balancing economic scales and reducing dependency on large corporations.</p>
-                    <p className='text-white text-[10px] '><span className='text-white'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
+                    <p className='text-white text-[10px] '><span className='text-white'>Resilience:</span> By spreading risks across numerous small businesses, economies withstand crisis better. </p>
+
+                    <p className='text-white text-[10px]'>During and post the COVID -19 pandemic, we noted the need to build more resilience in the SME segment through offering the right strategic and financial guidance to business owners and key stakeholders and be fully equipped to weather any economic uncertainties.</p>
 
                     <p className='text-white text-[10px]'>According to the Ministry of Economy of UAE the SME sector accounts for more than 94% of all companies in the country[1]. They employ more than 86% of the private sector’s workforce and made up over 60% of the non-oil GDP[1][2].</p>
                     <p className='text-white text-[10px] mb-[0.889vh]'>We seek to serve this underserved yet massive segment with quality financial services which bring value to their business and empower stakeholders to achieve their targets.</p>

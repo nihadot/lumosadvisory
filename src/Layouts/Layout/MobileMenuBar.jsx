@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { closeIcon } from "../../assets/icons";
+import { useLocation } from 'react-router-dom';
 
 function MobileMenuBar({ setMenuOpen }) {
   const [activeSection, setActiveSection] = useState("home");
@@ -11,9 +12,16 @@ function MobileMenuBar({ setMenuOpen }) {
   };
 
   const handleSubLinkClick = (subLink) => {
+    console.log(subLink,'submnk')
     setActiveSubLink(subLink);
     document.getElementById(subLink).scrollIntoView({ behavior: "smooth" });
   };
+
+  const {hash} = useLocation();
+
+  console.log(hash,'location')
+
+
 
   const handleClickMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -95,7 +103,7 @@ function MobileMenuBar({ setMenuOpen }) {
 
         {/* Our Services section */}
         <a
-          href="#services"
+          // href="#services"
           className={`block py-[0.444vh] ${
             activeSection === "services" ? "text-black" : "text-white"
           }`}
@@ -115,7 +123,7 @@ function MobileMenuBar({ setMenuOpen }) {
             <a
               href="#service-one"
               className={`block py-[0.444vh]  border-b-[1px] border-white ${
-                activeSubLink === "service-one" ? "text-black" : "text-white"
+                activeSubLink === "service-one" || (hash === '#service-one') ? "text-black" : "text-white"
               }`}
               onClick={() => {
                 handleSubLinkClick("service-one")
@@ -131,7 +139,7 @@ function MobileMenuBar({ setMenuOpen }) {
             <a
               href="#business-transform"
               className={`block py-[0.444vh]  border-b-[1px] border-white ${
-                activeSubLink === "business-transform"
+                activeSubLink === "business-transform" || (hash === '#business-transform')
                   ? "text-black"
                   : "text-white"
               }`}
@@ -149,8 +157,8 @@ function MobileMenuBar({ setMenuOpen }) {
             {/* Feasibility Studies and Business Plan */}
             <a
               href="#business-plan-mobile"
-              className={`block py-[0.444vh]  border-b-[1px] border-white${
-                activeSubLink === "business-plan-mobile"
+              className={`block py-[0.444vh]  border-b-[1px] border-white ${
+                activeSubLink === "business-plan-mobile" || (hash === '#business-plan-mobile')
                   ? "text-black"
                   : "text-white"
               }`}
@@ -163,13 +171,12 @@ function MobileMenuBar({ setMenuOpen }) {
               Feasibility <br />
               Studies and <br />
               Business Plan
-            </a>
-
+            </a>  
             {/* Business Valuations */}
             <a
               href="#business-valuations"
               className={`block py-[0.444vh]  border-b-[1px] border-white ${
-                activeSubLink === "business-valuations"
+                activeSubLink === "business-valuations" || (hash === '#business-valuations')
                   ? "text-black"
                   : "text-white"
               }`}
@@ -187,7 +194,7 @@ function MobileMenuBar({ setMenuOpen }) {
             <a
               href="#accounting-mobile"
               className={`block py-[0.444vh]  border-b-[1px] border-white ${
-                activeSubLink === "accounting-mobile"
+                activeSubLink === "accounting-mobile" || (hash === '#accounting-mobile')
                   ? "text-black"
                   : "text-white"
               }`}
@@ -205,7 +212,7 @@ function MobileMenuBar({ setMenuOpen }) {
             <a
               href="#service-six"
               className={`block py-[0.444vh] ${
-                activeSubLink === "service-six" ? "text-black" : "text-white"
+                activeSubLink === "service-six" || (hash === '#service-six') ? "text-black" : "text-white"
               }`}
               onClick={() => {
                 handleSubLinkClick("service-six")

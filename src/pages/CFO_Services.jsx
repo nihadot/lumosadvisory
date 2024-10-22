@@ -65,7 +65,7 @@ function CFO_Services() {
               </p>
             </div>
 
-            <div className=" w-full flex-1 pt-0 mt-5 md:mt-0 pe-[3vh]">
+            <div className=" w-full flex-1 pt-0 mt-0 md:mt-0 pe-[3vh]">
               <p>
                 <span>Cash Flow Management:</span> Ensuring liquidity and
                 efficient cash flow handling to maintain business health.
