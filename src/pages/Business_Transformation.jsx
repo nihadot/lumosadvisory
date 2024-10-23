@@ -97,7 +97,7 @@ function Business_Transformation() {
                 <p className="text-white"><span className="text-white">Initial Assessment:</span> Conduct a thorough analysis of current business operations and identify key areas for improvement and potential growth opportunities.</p>
                 <p className="text-white"><span className="text-white">Strategic Development:</span> Collaborate with your team to develop a strategic plan tailored to your business objectives and set measurable goals and implement a roadmap for achieving them.</p>
                 <p className="text-white"><span className="text-white">Implementation:</span> Execute the strategic plan using our proven methodologies and integrate new processes, technologies, and practices across your organization.</p>
-                <p className="text-white"><span className="text-white">Monitoring and Support:</span> Monitoring and Support: Continuously monitor progress and adjust strategies as needed and provide ongoing support and training to ensure successful adoption of new initiatives.</p>
+                <p className="text-white"><span className="text-white">Monitoring and Support:</span> Continuously monitor progress and adjust strategies as needed and provide ongoing support and training to ensure successful adoption of new initiatives.</p>
                 <p className="text-white"><span className="text-white">Review and Improvement:</span> Conduct regular reviews to assess the effectiveness of implemented strategies and identify further areas for enhancement and continue to refine processes.
                 </p>
                 </div>
