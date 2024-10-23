@@ -201,19 +201,7 @@ useEffect(() => {
               <h3>Our Mission</h3>
               <p className=''>We strive to help SME clients succeed in their business journey by providing them with data-driven tools for practical decision-making and designing custom and cost-effective strategies for sustainable growth at an affordable price.</p>
 
-              <div className="flex gap-[2.222vh]">
-                <h3>Why focus on SMEs?</h3>
-                <div className="flex items-center justify-center">
-
-                  <img className='w-[3vh] h-[4vh] object-cover' src={LeftTriangleIcon} alt="" />
-
-                  <button
-                    onClick={togglePopup}
-                  >
-                    Click to know more
-                  </button>
-                </div>
-              </div>
+            
               
 
                 <div className="">
@@ -324,6 +312,21 @@ useEffect(() => {
               </div>
               {/*  */}
 
+
+
+              <div className="flex gap-[2.222vh] mt-[2.111vh]">
+                <h3>Why focus on SMEs?</h3>
+                <div className="flex items-center justify-center">
+
+                  <img className='w-[3vh] h-[4vh] object-cover' src={LeftTriangleIcon} alt="" />
+
+                  <button
+                    onClick={togglePopup}
+                  >
+                    Click to know more
+                  </button>
+                </div>
+              </div>
 
 
            
