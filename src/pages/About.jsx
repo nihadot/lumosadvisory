@@ -120,17 +120,18 @@ function About() {
       container.removeEventListener('scroll', handleScroll);
     };
   }, [carouselArray]);
-
 // Auto scroll effect with smooth scrolling
 useEffect(() => {
   const container = containerRef.current;
 
   const autoScroll = () => {
-    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+    const maxScrollLeft = container.scrollWidth - container.offsetWidth;
+
+    if (container.scrollLeft >= maxScrollLeft) {
       // If at the end, reset scroll position to start smoothly
       container.scrollTo({
         left: 0,
-        behavior: 'smooth',
+        behavior: 'auto', // Reset instantly without smooth scrolling
       });
     } else {
       // Scroll right by a few pixels smoothly
@@ -266,7 +267,7 @@ useEffect(() => {
                         <p className='text-center  mt-1  baskervville-regular w-[8.556vh] text-pretty text-[12px] font-bold m-0'>{carouselArray[1].name}</p>
                         <p className='text-center baskervville-regular w-[8.556vh] text-pretty text-[8px] font-medium m-0 h-full'>{carouselArray[1].description}</p>
                       </div>
-                      
+
 
                       <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 2 ? 'opacity-100' : 'opacity-30'} `}>
                         <div className="w-[8vh] h-[8vh] ">
