@@ -102,7 +102,7 @@ function About() {
       const containerWidth = container.offsetWidth; // visible full width
 
       // Calculate the middle point based on scroll position
-      const centerPoint = scrollLeft + containerWidth / 1.4; // middle of the visible area
+      const centerPoint = scrollLeft + containerWidth / 1.5; // middle of the visible area
 
       // Find the index of the center element
       const imageWidth = container.scrollWidth / carouselArray.length;
@@ -252,7 +252,7 @@ useEffect(() => {
               {/*  */}
               <div ref={containerRef} className="border-[0.167vh] border-[#5f8f93a9] overflow-hidden rounded gap-[1vh] flex max-w-[28vh] h-full pt-1  w-full "> 
                 
-                      <div className={`w-[7.111vh] ms-0  h-[100px]  justify-center mt-0 items-center flex flex-col  transition-opacity duration-1000  ${ centerIndex === 0 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-0  h-[100px]  justify-center mt-0 items-center flex flex-col  transition-opacity duration-1000  ${ centerIndex === 0 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[0].imaLink} alt={carouselArray[0].name} />
                         </div>
@@ -260,7 +260,7 @@ useEffect(() => {
                         <p className='text-center baskervville-regular w-[8.556vh] text-pretty text-[8px] font-medium m-0 h-full'>{carouselArray[0].description}</p>
                       </div>
 
-                      <div className={`w-[7.111vh]  ms-3  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 1 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh]  ms-3  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 1 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[1].imaLink} alt={carouselArray[1].name} />
                         </div>
@@ -269,7 +269,7 @@ useEffect(() => {
                       </div>
 
 
-                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 2 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 2 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[2].imaLink} alt={carouselArray[2].name} />
                         </div>
@@ -277,7 +277,7 @@ useEffect(() => {
                         <p className='text-center baskervville-regular w-[16.556vh] text-pretty text-[9px] font-medium m-0 h-full'>{carouselArray[2].description}</p>
                       </div>
 
-                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 3 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 3 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[3].imaLink} alt={carouselArray[3].name} />
                         </div>
@@ -285,7 +285,7 @@ useEffect(() => {
                         <p className='text-center baskervville-regular w-[16.556vh] text-pretty text-[9px] font-medium m-0 h-full'>{carouselArray[3].description}</p>
                       </div>
 
-                      <div className={`w-[7.111vh] ms-2  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 4 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-2  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 4 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[4].imaLink} alt={carouselArray[4].name} />
                         </div>
@@ -293,7 +293,7 @@ useEffect(() => {
                         <p className='text-center baskervville-regular w-[16.556vh] text-pretty text-[9px] font-medium m-0 h-full'>{carouselArray[4].description}</p>
                       </div>
 
-                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 5 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-4  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 5 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[5].imaLink} alt={carouselArray[5].name} />
                         </div>
@@ -302,7 +302,7 @@ useEffect(() => {
                       </div>
 
 
-                      <div className={`w-[7.111vh] ms-6  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 6 ? 'opacity-100' : 'opacity-30'} `}>
+                      <div className={`w-[7.111vh] ms-6  h-[100px]  justify-center items-center flex flex-col   transition-opacity duration-1000  ${ centerIndex === 6 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[6].imaLink} alt={carouselArray[6].name} />
                         </div>
@@ -310,7 +310,7 @@ useEffect(() => {
                         <p className='text-center  baskervville-regular w-[16.556vh] text-pretty text-[9px] font-medium m-0 h-full'>{carouselArray[6].description}</p>
                       </div>
 
-                     <div className={`w-[7.111vh] ms-6  h-[100px]  justify-center items-center flex flex-col  ${ centerIndex === 7 ? 'opacity-100' : 'opacity-30'} `}>
+                     <div className={`w-[7.111vh] ms-6  h-[100px]  justify-center items-center flex flex-col  ${ centerIndex === 7 ? 'opacity-100' : 'opacity-20'} `}>
                         <div className="w-[8vh] h-[8vh] ">
                         <img className='w-full h-full object-cover' src={carouselArray[7].imaLink} alt={carouselArray[7].name} />
                         </div>
