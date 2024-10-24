@@ -76,11 +76,6 @@ function WhyChoose() {
               into the future.
             </p>
             <p>
-              <span>Sustainable Results:</span> Our focus is on delivering
-              long-term improvements that continue to benefit your business well
-              into the future.
-            </p>
-            <p>
               <span>Client-Centric:</span> We prioritize client satisfaction and
               work closely with you to ensure that our strategies are
               effectively implemented.
